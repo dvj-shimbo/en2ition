@@ -1,5 +1,23 @@
 /*************************** Header Styles ****************************/
 
+
+
+@mixin header-padding ($media-min, $media-max, $padding-min, $padding-max) {
+	$d: ($padding-max - $padding-min) / 1px;
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+		@include media('>=' + round($min), '<' + round($max)) {
+			$padding: $i + $padding-min;
+			@include rem(padding, 0 $padding 8px);
+		}
+	}
+}
+
+
+
+
 header {
 //	background-color: rgba(255,0,0,0.2);
 
@@ -32,9 +50,13 @@ header {
 
 		@include rem(width, 170px);
 
-		@include rem(margin-top, 2px);
+//		width: 12.4%;
+
+		@include rem(margin-top, 3px);
 
 		margin-left: 5%;
+
+//		display: none;
 
 //		opacity: 0.5;
 	}
@@ -55,7 +77,15 @@ header {
 		color: $font-color-header;
 
 
+/**/
 		@include rem(margin, 18px 42px 0);
+/**/
+
+//		@include rem(margin, 18px 36px 0);
+/**
+		@include rem(margin-top, 18px);
+		margin-right: 3%;
+/**/
 
 		li {
 
@@ -65,13 +95,42 @@ header {
 
 			position: relative;
 
-//			cursor: pointer;
+			
+
 
 			@include rem(font-size, 18px);
+
+/**			
 			@include rem(padding, 0 22px 8px);
+/**/
+			@include header-padding (1024px, 1248px, 16px, 21px);
+
+			@include media('screen', '>=1248px') {
+				@include rem(padding, 0 22px 8px);
+			}
+
+/**		
+			padding-left: 16px;
+			padding-right: 16px;
+			padding-bottom: 8px;
+/**/
+
+
+//			@include rem(padding-bottom, 8px);
+
+
 //			@include rem(margin, 0 22px 8px);
 
+			
+
 			&:not(.active) {
+
+//				cursor: pointer;
+
+//				&:hover {
+//					border-bottom: 3px solid $purple;
+//				}
+
 				ul {
 					&.active {
 						@include rem(top, 6px);
@@ -91,6 +150,12 @@ header {
 			a {
 				color: $font-color-header;
 				text-decoration: none;
+
+				&:hover {
+					color: $purple;
+				}
+
+
 			}
 
 			ul {
@@ -142,6 +207,8 @@ header {
 				
 
 				li {
+
+//					cursor: default;
 
 					
 
