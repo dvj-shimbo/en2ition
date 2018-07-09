@@ -1,0 +1,192 @@
+/*************************** Announcement Section Styles ****************************/
+
+
+.announcement {
+
+//	background-color: rgba(255,0,255,0.2);
+
+	position: relative;
+
+	@include rem(max-width, 1368px);
+	margin: 0 auto;
+
+	h1 {
+
+//		background-color: rgba(0,255,255,0.2);
+
+		color: $font-color;
+
+		font-family: "Source-Sans-Pro-Light";
+		@include rem(font-size, 48px);
+
+//		margin: 80px 7%;
+//		@include rem(margin-top, 80px);
+//		@include rem(margin-top, 80px);
+		@include rem(padding-top, 80px);
+
+		margin-left: 7%;
+		margin-right: 7%;
+
+	}
+
+	img {
+
+//		opacity: 0.5;
+
+		margin-left: 5%;
+		@include rem(margin-top, 88px);
+		vertical-align: top;
+	}
+
+	.panel {
+
+		background-color: $dark-purple;
+		color: $light-gray;
+
+		position: absolute;
+		bottom: 0;
+		left: 47.5%;
+		width: 47.5%;
+
+//		@include rem(padding-bottom, 48px);
+		@include rem(padding-top, 48px);
+		@include rem(padding-bottom, 4px);
+
+		h2 {
+
+//			background-color: rgba(0,0,255,0.2);
+
+			font-family: "Source-Sans-Pro-Light";
+			@include rem(font-size, 36px);
+			@include rem(line-height, 45px);
+
+			margin-left: 11%;
+			margin-right: 11%;
+//			@include rem(margin-top, 48px);
+			@include rem(margin-bottom, 27px);
+		}
+
+		p {
+//			background-color: rgba(0,0,255,0.2);
+
+			@include rem(font-size, 18px);
+			@include rem(line-height, 30px);
+
+			margin-left: 11%;
+			margin-right: 11%;
+
+			&:first-child {
+//				background-color: red;
+				@include rem(margin-top, 60px);
+//				@include rem(margin-bottom, 72px);
+				@include rem(margin-bottom, 60px);
+			}
+
+			&:not(:first-child) {
+//				background-color: red;
+				@include rem(margin-bottom, 43px);
+			}
+
+//			&:nth-child(2),
+//			&:last-child {
+////				background-color: blue;
+//				@include rem(margin-bottom, 43px);
+//			}
+
+
+//			@include rem(margin-top, 42px);
+//			@include rem(margin-bottom, 43px);
+
+			a {
+//				color: $light-gray;
+				color: $white;
+				text-decoration: none;
+			}
+			
+		}
+	}
+
+
+
+
+
+	.col {
+
+//		padding-top: 70px;
+		@include rem(padding-top, 70px);
+//		@include rem(padding-bottom, 145px);
+		@include rem(padding-bottom, 74px);
+
+		vertical-align: middle;
+
+		&:first-child {
+			padding-left: 10%;
+			padding-right: 5%;
+		}
+		&:last-child {
+			padding-left: 5%;
+			padding-right: 10%;
+		}
+
+		h2 {
+			color: $font-color;
+			font-family: "Source-Sans-Pro-Light";
+			@include rem(font-size, 36px);
+			@include rem(line-height, 45px);
+		}
+
+		p, 
+		ul {
+
+			color: $gray;
+
+			@include rem(font-size, 18px);
+			@include rem(line-height, 30px);
+
+			a {
+				color: $purple;
+				text-decoration: none;
+			}
+		}
+
+		p {
+//			background-color: rgba(255,0,0,0.2);
+			@include rem(margin-top, 32px);
+		}
+
+		ul {
+//			background-color: rgba(255,0,255,0.2);
+
+			position: relative;
+//			@include rem(margin-top, 18px);
+			@include rem(margin-left, 24px);
+
+			
+
+			li {
+				@include rem(margin-top, 18px);
+
+				&:before {
+//					background-color: rgba(0,255,255,0.2);
+					content: "—";
+					position: absolute;
+//					left: -24px;
+					@include rem(left, -24px);
+				}
+
+				p {
+					margin-top: 0;
+				}
+			}
+		}
+
+		img {
+			vertical-align: middle;
+
+			margin: 0;
+//			vertical-align: top;
+//			opacity: 0.5;
+		}
+	}
+
+}

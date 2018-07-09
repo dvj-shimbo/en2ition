@@ -1,0 +1,222 @@
+/*************************** Header Styles ****************************/
+
+header {
+//	background-color: rgba(255,0,0,0.2);
+
+//	margin: 0 auto;
+
+//margin: 43px 0 0 70px;
+//margin: 40px 0 0 70px;
+//margin: 40px auto;
+
+//display: inline-block;
+
+//padding: 0 5%;
+
+
+
+//	@include rem(margin, 44px auto);
+	@include rem(margin, 40px auto);
+///	@include rem(padding, 0 72px);
+
+//	margin: 0 auto;
+
+
+//	@include rem(max-width, 1226px);
+	@include rem(max-width, 1368px);
+
+
+
+	img {
+//		background-color: rgba(0,255,0,0.4);
+
+		@include rem(width, 170px);
+
+		@include rem(margin-top, 2px);
+
+		margin-left: 5%;
+
+//		opacity: 0.5;
+	}
+
+
+	ul {
+
+//		background-color: rgba(255,0,0,0.2);
+
+		cursor: default;
+
+		display: inline-block;
+
+//		position: relative;
+
+		float: right;
+
+		color: $font-color-header;
+
+
+		@include rem(margin, 18px 42px 0);
+
+		li {
+
+//			background-color: rgba(0,0,255,0.2);
+
+			display: inline-block;
+
+			position: relative;
+
+//			cursor: pointer;
+
+			@include rem(font-size, 18px);
+			@include rem(padding, 0 22px 8px);
+//			@include rem(margin, 0 22px 8px);
+
+			&:not(.active) {
+				ul {
+					&.active {
+						@include rem(top, 6px);
+					}
+				}
+			}
+
+			&.active {
+				border-bottom: 3px solid $purple;
+				ul {
+					&.active {
+						@include rem(top, 12px);
+					}
+				}
+			}
+
+			a {
+				color: $font-color-header;
+				text-decoration: none;
+			}
+
+			ul {
+
+//				background-color: rgba(0,255,0,0.8);
+
+				position: absolute;
+
+				overflow: hidden;
+
+				z-index: 1;
+				
+
+				@include rem(padding-top, 14px);
+
+
+
+				&:not(.active) {
+					cursor: pointer;			
+					@include rem(top, -18px);
+					@include rem(left, -42px);
+					width: 100%;
+
+					li {
+						display: none;
+					}
+				}
+
+			
+
+				&.active {
+					@include rem(left, -42px);
+//					cursor: default;
+//					@include rem(top, 9px);
+					width: 170%;
+
+					li {
+/**/
+//						opacity: 0;
+//						top: -200px;
+/**/
+					}
+				}
+				
+
+
+
+
+				
+
+				li {
+
+					
+
+//					background-color: rgba(255,255,0,0.5);
+					background-color: $purple;
+
+					color: $font-color;
+
+					@include rem(font-size, 16px);
+
+
+					&:first-child {
+
+						@include rem(padding-top, 14px);
+
+						&:before {
+							position: absolute;
+							content: "";
+							@include rem(top, -13px);
+							width: 0;
+							height: 0;
+							border-style: solid;
+//							border-width: 0 14px 14px 14px;
+							@include rem(border-width, 0 14px 14px 14px);
+//							border-color: transparent transparent #007bff transparent;
+							border-color: transparent transparent $purple transparent;
+
+						}
+					}
+
+					&:not(:first-child) {
+						&:before {
+							content: "";
+							position: relative;
+							display: block;
+							background-color: $white;
+							opacity: 0.3;
+
+							@include rem(height, 1px);
+							@include rem(top, -8px);
+						}
+
+					}
+					&:not(:first-child) {
+						@include rem(padding-top, 8px);
+					}
+
+					&:last-child {
+						@include rem(padding-bottom, 14px);
+					}
+
+
+					
+					a {
+						color: $white;
+						&:hover {
+							color: $font-color;
+						}
+					}
+					
+
+										
+
+				}
+			}
+		}
+
+		
+	}
+
+
+	.button {
+		float: right;
+
+		margin-right: 5%;
+	}
+
+}

@@ -1,0 +1,105 @@
+// Variables
+
+
+//$baseFontSize: 10; // Based on HTML reset html { font-size: 62.5%; }
+$baseFontSize: 16;
+
+
+
+
+
+$columns: 12;
+
+
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+
+
+// Breakpoints:
+//
+// ph - phone
+// pw - phone-wide
+// pt - phablet
+// ts - tablet-small
+// tb - tablet
+// tw - tablet-wide
+// dt - desktop
+// dw - desktop-wide
+
+//$breakpoints: (
+//    "ph": 400px,
+//    "pw": 480px,
+//    "pt": 560px,
+//    "ts": 640px,
+//    "tb": 768px,
+//    "tw": 1024px,
+//    "dt": 1248px,
+//    "dw": 1440px
+//);
+
+
+
+
+
+$bg-white: #fafafa;
+//$bg-white: rgba(0,255,0,0.6);
+
+
+//$background-color: #f2f3f3;
+//$background-color: pink;
+
+
+//$background-color-dark: #0f0f0f;
+////$background-color-tag: #0f0f0f;
+
+
+
+$font-color: #161d28;
+//$font-color: red;
+
+
+$font-color-header: #455a64;
+//$font-color-header: red;
+
+
+//$font-color-light: #8b8b8b;
+//
+//$font-color-tag: #9b9ea1;
+//
+//
+////$row-background-color: #f2f2ed;
+//
+//////$row-background-color: red;
+////$row-background-color: #f6f6f6;
+//
+//////$row-arrow-color: red;
+////$row-arrow-color: #aaaaaa;
+//
+//
+
+
+
+$purple: #894ea2;
+//$purple: rgba(0,255,255,0.8);
+
+$dark-purple: #472d52;
+
+
+$dark-gray: #e4e6e6;
+
+$gray: #5c666f;
+
+
+$light-gray: #f2f3f3;
+//$light-gray: rgba(255,0,255,0.8);
+
+
+$white: #ffffff;

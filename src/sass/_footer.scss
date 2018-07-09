@@ -1,0 +1,147 @@
+/*************************** Footer Styles ****************************/
+
+footer {
+
+//	background-color: rgba(0,255,255,0.2);
+
+	@include rem(max-width, 1368px);
+
+	margin: 0 auto;
+
+	padding-left: 5%;
+	padding-right: 5%;
+
+//	@include rem(padding-bottom, 80px);
+
+//	h3 {
+//		@include rem(font-size, 18px);
+//		float: right;
+//		b {
+//			text-transform: uppercase;
+//		}
+//	}
+//	h4 {
+//		float: left;
+//	}
+
+	p,
+	h4 {
+		@include rem(font-size, 16px);
+		@include rem(line-height, 24px);
+	}
+
+//	p {
+//		color: $gray;
+//	}
+
+	h4 {
+
+		color: $gray;
+
+		@include rem(margin-top, 90px);
+
+		@include rem(margin-bottom, 30px);
+
+
+		&:not(:last-child) {
+			float: left;
+		}
+		&:last-child {
+//			background-color: rgba(0,0,255,0.2);
+			float: right;
+			@include rem(padding-right, 50px);
+		}
+
+		b {
+			color: $font-color;
+			text-transform: uppercase;
+			span {
+				color: $purple;
+//				padding-right: 20px;
+				@include rem(padding-right, 8px);
+			}
+		}
+	}
+
+
+
+	.row {
+
+//		border-top: solid 1px red;
+		border-top: solid 1px $dark-gray;
+
+//		h4 {
+//			float: none;
+//		}
+
+
+
+		.col {
+
+			vertical-align: top;
+
+//			padding-left: 5%;
+//			padding-right: 5%;
+	
+			&:first-child {
+//				padding-left: 5%;
+				padding-right: 8%;
+			}
+	
+			&:nth-child(2) {
+				padding-left: 8%;
+			}
+	
+			&:last-child {
+				padding-left: 9%;
+//				padding-right: 5%;
+			}
+	
+			@include rem(padding-top, 40px);
+	
+			img {
+				width: 100%;
+				@include rem(max-width, 174px);
+//				@include rem(margin-top, 4px);
+			}
+
+			h3 {
+				color: $font-color;
+				@include rem(font-size, 18px);
+				@include rem(padding-top, 12px);
+				@include rem(padding-bottom, 12px);
+			}
+	
+//			p,
+//			h4 {
+//				@include rem(font-size, 16px);
+//				@include rem(line-height, 24px);
+//			}
+
+			p {
+				color: $gray;
+				@include rem(margin-top, 26px);
+			}
+
+			h4 {
+
+				color: $font-color;
+
+				float: none;
+
+				@include rem(margin-top, 16px);
+				margin-bottom: 0;
+				padding: 0;
+
+				a {
+					color: $font-color;
+					text-decoration: none;
+				}
+			}
+		}	
+	}
+
+
+
+
+}

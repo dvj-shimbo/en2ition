@@ -1,0 +1,38 @@
+/*************************** Banner-Bottom Section Styles ****************************/
+
+
+.banner-bottom {
+//	background-color: rgba(255,0,0,0.2);
+
+	@include rem(max-width, 1368px);
+	margin: 0 auto;
+
+	text-align: center;
+
+//	margin-top: 90px; //<-- убрать, заглушка!
+
+//	padding: 108px 0;
+	@include rem(padding, 108px 0);
+
+	h2 {
+
+//		background-color: rgba(0,255,255,0.2);
+		color: $font-color;
+
+		font-family: "Source-Sans-Pro-Light";
+		@include rem(font-size, 36px);
+		@include rem(line-height, 45px);
+
+//		padding-top: 80px;
+
+//		margin: 80px 7%;
+//		@include rem(margin-top, 80px);
+
+		@include rem(margin-bottom, 52px);
+
+
+		margin-left: 7%;
+		margin-right: 7%;
+
+	}
+}

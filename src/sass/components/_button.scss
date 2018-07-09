@@ -1,0 +1,56 @@
+/*************************** Button Component Styles ****************************/
+
+
+.button {
+
+//	background-color: rgba(255,0,0,0.2);
+//	background-color: $blue-color;
+	
+//	color: rgba(0,255,255,0.8);
+	
+
+	display: inline-block;
+
+	font-family: "Source-Sans-Pro";
+	
+
+	text-transform: uppercase;
+	text-decoration: none;
+//	text-align: center;
+
+//	@include rem(font-size, 13px);
+	@include rem(font-size, 14px);
+
+	@include rem(padding, 16px 24px);
+
+	border: 2px solid $purple;
+
+
+	color: $white;
+	background-color: $purple;
+	
+
+	&:hover {
+		border-color: $dark-purple;
+		background-color: $dark-purple;
+	}
+	
+
+}
+
+header {
+	.button {
+		font-weight: bold;
+		@include rem(font-size, 13px);
+
+		color: $purple;
+
+		background-color: transparent;
+
+		&:hover {
+			color: $white;
+			border-color: $purple;
+			background-color: $purple;;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+/*************************** Background Component Styles ****************************/
+
+
+//[class*="bg-"] {
+.group {
+	
+
+	margin: 0 auto;
+	@include rem(max-width, 1368px);
+	@include rem(padding-bottom, 80px);
+
+//	&.bg-gray {
+//		background-color: rgba(255,0,0,0.3);
+//
+////		@include rem(padding-bottom, 80px);
+//	}
+
+	&.bg-white {
+		background-color: $bg-white;
+
+	//	@include rem(padding-bottom, 80px);
+	}
+	
+}
+
