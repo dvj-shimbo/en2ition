@@ -1,8 +1,48 @@
 /*************************** Header Styles ****************************/
 
 
+@mixin header ($media-min, $media-max, $padding-min, $padding-max) {
+	/*!!!*/
+	$d: ($padding-max - $padding-min) / 1px;
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+		@include media('>=' + round($min), '<' + round($max)) {
+			$padding: $i + $padding-min;
+			@include rem(padding, $padding 0);
 
-@mixin header-padding ($media-min, $media-max, $padding-min, $padding-max) {
+			.button + ul {
+			
+				&:before,
+				&:after {
+					@include rem(margin-top, round($padding * 1.3 + 4px));
+				}
+			}
+
+		}
+	}
+}
+
+
+@mixin header-img-width ($media-min, $media-max, $width-min, $width-max) {
+	$d: ($width-max - $width-min) / 1px;
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+		@include media('>=' + round($min), '<' + round($max)) {
+			$width: $i + $width-min;
+			@include rem(width, $width);
+		}
+	}
+}
+
+
+
+
+
+@mixin header-li-padding ($media-min, $media-max, $padding-min, $padding-max) {
 	$d: ($padding-max - $padding-min) / 1px;
 	@for $i from 0 through $d {
 		$step: ($media-max - $media-min) / ($d + 1);
@@ -18,8 +58,379 @@
 
 
 
+
+
+/**/
+body {
+	@include media('screen', '<tablet-wide') {
+
+		overflow: hidden;
+
+
+
+		section,
+		.group,
+		footer {
+			display: none;
+		}
+
+
+
+//		&:before,
+//		&:after {
+//			background-color: #1c1c1c;
+//			background-color: rgba(255,0,0,0.8);
+//
+//			content: "";
+//			position: absolute;
+//			right: 5%;
+//			z-index: 2;
+//			
+//			@include rem(width, 23px);
+//			@include rem(height, 2px);
+//		}
+//		&:before {
+//			@include rem(top, 50px);
+//		}
+//		&:after {
+//			@include rem(top, 64px);
+//		}
+//
+		&:not(.menu-active) {
+
+			overflow-y: scroll;
+
+			header {
+
+
+//				&:before {
+//					@include rem(top, 50px);
+//				}
+//				&:after {
+//					@include rem(top, 64px);
+//				}
+
+
+
+				.button,
+				li {
+					display: none;
+				}
+
+				.button + ul {
+
+//					&:before,
+//					&:after {
+//						@include rem(margin-top, 14px);
+//					}
+
+					&:before {
+						top: 0;
+					}
+					&:after {
+						@include rem(top, 14px);
+					}
+				}
+			}
+
+		}
+
+		&.menu-active {
+
+			overflow-y: hidden;
+
+			header {
+
+//				background-color: rgba(255,255,255,0.7);
+
+
+/*
+				position: fixed;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				z-index: 1;
+				overflow-y: scroll;
+
+				&:before,
+				&:after {
+					background-color: #1c1c1c;
+					background-color: rgba(255,0,0,0.8);
+		
+					content: "";
+					position: absolute;
+					right: 5%;
+					
+					@include rem(width, 23px);
+					@include rem(height, 2px);
+					@include rem(top, 57px);
+				}
+*/
+
+
+				.button {
+					display: none;
+				}
+
+				.button + ul {
+
+					background-color: rgba(255,0,0,0.2);
+
+					position: fixed;
+					top: 0;
+					right: 0;
+					left: 0;
+					bottom: 0;
+					z-index: -100;
+					overflow-y: scroll;
+
+					&:before,
+					&:after {
+						@include rem(top, 7px);
+					}
+
+					&:before {
+						@include rotate (45);
+					}
+					&:after {
+						@include rotate (-45);
+					}
+
+//					&:before,
+//					&:after {
+//						background-color: #1c1c1c;
+//						background-color: rgba(255,0,0,0.8);
+//			
+//						content: "";
+//						position: absolute;
+//						right: 5%;
+////						z-index: 2;
+//						
+//						@include rem(width, 23px);
+//						@include rem(height, 2px);
+//						
+//					}
+
+					li {
+						margin-top: 100px;
+					}
+
+
+				}
+
+			}
+
+//			&:before,
+//			&:after {
+//				@include rem(top, 57px);
+//			}
+//			&:before {
+//				@include rotate (45);
+//			}
+//			&:after {
+//				@include rotate (-45);
+//			}
+//
+//			header {
+//
+//				.button {
+//					display: none;
+//				}
+//
+//				ul {
+//
+//					background-color: rgba(255,0,255,0.2);
+//		
+//					position: fixed;
+//					top: 0;
+//					right: 0;
+//					left: 0;
+//					bottom: 0;
+//					z-index: 1;
+//					overflow-y: scroll;
+//		
+//	//				padding-top: 80px; // <-- ScrollTop
+//
+//
+//					li {
+//						display: none;
+//					}
+//				}
+//
+//			}
+
+
+		}
+
+
+		header {
+
+//			background-color: rgba(0,255,0,0.9);
+
+			position: fixed;
+			left: 0;
+			right: 0;
+
+			z-index: 0;
+
+
+		.button + ul {
+			&:before,
+			&:after {
+				background-color: #1c1c1c;
+				background-color: rgba(255,0,0,0.8);
+	
+				content: "";
+				position: absolute;
+				right: 5%;
+//				z-index: 2;
+				
+				@include rem(width, 23px);
+				@include rem(height, 2px);
+			}
+		}
+
+
+//
+//			pointer-events: none;
+//			cursor: pointer;
+//
+//			&:before {
+//				background-color: rgba(0,255,0,0.4);
+//				pointer-events: auto;
+//				
+//				content: "";
+//				position: absolute;
+//				z-index: 1;
+//				right: 5%;
+//				@include rem(top, 47px);
+//				@include rem(width, 23px);
+//				@include rem(height, 22px);
+//			}
+//
+//			a {
+//				pointer-events: auto;
+//			}
+		}
+
+
+
+
+
+//		&:before,
+//		&:after {
+//			background-color: #1c1c1c;
+//			background-color: rgba(255,0,0,0.8);
+//
+//			content: "";
+//			position: absolute;
+//			right: 5%;
+//			
+//			@include rem(width, 23px);
+//			@include rem(height, 2px);
+//		}
+//
+//		&:not(.menu-active) {
+//
+//			overflow-y: scroll;
+//
+//			&:before {
+//				@include rem(top, 50px);
+//			}
+//			&:after {
+//				@include rem(top, 64px);
+//			}
+//
+//			header {	
+//				.button,
+//				ul {
+//					display: none;
+//				}
+//			}
+//
+//		}
+//
+//		&.menu-active {
+//
+//			overflow-y: hidden;
+//
+//			&:before,
+//			&:after {
+//				@include rem(top, 57px);
+//			}
+//			&:before {
+//				@include rotate (45);
+//			}
+//			&:after {
+//				@include rotate (-45);
+//			}
+//
+//			header {
+//
+//				.button {
+//					display: none;
+//				}
+//
+//				ul {
+//
+//					background-color: rgba(255,0,255,0.2);
+//		
+//					position: fixed;
+//					top: 0;
+//					right: 0;
+//					left: 0;
+//					bottom: 0;
+//					z-index: 1;
+//					overflow-y: scroll;
+//		
+//	//				padding-top: 80px; // <-- ScrollTop
+//
+//
+//					li {
+//						display: none;
+//					}
+//				}
+//
+//			}
+//
+//
+//		}
+//
+//
+//		header {
+//
+//			pointer-events: none;
+//			cursor: pointer;
+//
+//			&:before {
+//				background-color: rgba(0,255,0,0.4);
+//				pointer-events: auto;
+//				
+//				content: "";
+//				position: absolute;
+//				z-index: 1;
+//				right: 5%;
+//				@include rem(top, 47px);
+//				@include rem(width, 23px);
+//				@include rem(height, 22px);
+//			}
+//
+//			a {
+//				pointer-events: auto;
+//			}
+//		}
+//		
+	}
+
+
+}
+/**/
+
+
+
 header {
-//	background-color: rgba(255,0,0,0.2);
+	background-color: rgba(255,255,0,0.7);
 
 //	margin: 0 auto;
 
@@ -34,13 +445,39 @@ header {
 
 
 //	@include rem(margin, 44px auto);
-	@include rem(margin, 40px auto);
+//	@include rem(margin, 40px auto);
+
+
+	margin: 0 auto;
+//	@include rem(padding, 40px 0);
+	@include media('screen', '<320px') {
+		@include rem(padding, 7px 0);
+		.button + ul {
+			&:before,
+			&:after {
+				@include rem(margin-top, 13px);
+			}
+		}
+	}
+
+	@include header (320px, 1024px, 8px, 20px);
+
+	@include media('screen', '>=1024px') {
+		@include rem(padding, 40px 0);
+	}
+
+
+//	@include rem(padding, 16px 0);
+//	padding: 3% 0;
+
+
 ///	@include rem(padding, 0 72px);
 
 //	margin: 0 auto;
 
 
 //	@include rem(max-width, 1226px);
+//	width: 100%;
 	@include rem(max-width, 1368px);
 
 
@@ -48,7 +485,17 @@ header {
 	img {
 //		background-color: rgba(0,255,0,0.4);
 
-		@include rem(width, 170px);
+//		@include rem(width, 170px);
+//		@include rem(width, 120px);
+
+		@include media('screen', '<320px') {
+			@include rem(width, 119px);
+		}
+		@include header-img-width (320px, 1024px, 120px, 169px);
+		@include media('screen', '>=1024px') {
+			@include rem(width, 170px);
+		}
+
 
 //		width: 12.4%;
 
@@ -62,228 +509,670 @@ header {
 	}
 
 
-	ul {
 
-//		background-color: rgba(255,0,0,0.2);
-
-		cursor: default;
-
-		display: inline-block;
-
-//		position: relative;
-
-		float: right;
-
-		color: $font-color-header;
+	@include media('screen', '<tablet-wide') {
 
 
-/**/
-		@include rem(margin, 18px 42px 0);
-/**/
-
-//		@include rem(margin, 18px 36px 0);
 /**
-		@include rem(margin-top, 18px);
-		margin-right: 3%;
+		ul {
+			background-color: rgba(255,0,255,0.2);
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			z-index: 1;
+			overflow-y: scroll;
+		}
 /**/
 
-		li {
-
-//			background-color: rgba(0,0,255,0.2);
-
-			display: inline-block;
-
-			position: relative;
-
-			
 
 
-			@include rem(font-size, 18px);
 
-/**			
-			@include rem(padding, 0 22px 8px);
+
+
+//		&:before,
+//		&:after {
+//			background-color: rgba(255,0,0,0.8);
+//
+//			content: "";
+//			position: absolute;
+//			right: 5%;
+//			
+//			@include rem(width, 23px);
+//			@include rem(height, 2px);
+//		}
+//
+//
+//		&:not(.menu-active) {
+//			
+//		}
+//
+
+/**
+		background-color: rgba(255,0,255,0.2);
+		position: fixed;
+		top: 0; // <-- ScrollTop
+		right: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 1;
+		overflow-y: scroll;
 /**/
-			@include header-padding (1024px, 1248px, 16px, 21px);
 
-			@include media('screen', '>=1248px') {
-				@include rem(padding, 0 22px 8px);
+
+
+
+
+
+
+/**
+
+//		&:before {
+//
+//			cursor: pointer;
+//
+//			background-color: rgba(0,255,0,0.4);
+//
+//			content: "";
+//			position: absolute;
+//			z-index: 1;
+//			right: 5%;
+//			@include rem(top, 47px);
+//			@include rem(width, 23px);
+//			@include rem(height, 22px);
+//		}
+
+//
+//		&:after {
+//			top: 65px;
+//		}
+
+
+
+
+		ul {
+
+
+			&:before,
+			&:after {
+
+				background-color: #1c1c1c;
+				background-color: rgba(255,0,0,0.8);
+	
+				content: "";
+				position: absolute;
+				right: 5%;
+				
+				@include rem(width, 23px);
+				@include rem(height, 2px);
 			}
-
-/**		
-			padding-left: 16px;
-			padding-right: 16px;
-			padding-bottom: 8px;
-/**/
-
-
-//			@include rem(padding-bottom, 8px);
-
-
-//			@include rem(margin, 0 22px 8px);
-
-			
-
+	
+	
 			&:not(.active) {
-
-//				cursor: pointer;
-
-//				&:hover {
-//					border-bottom: 3px solid $purple;
-//				}
-
-				ul {
-					&.active {
-						@include rem(top, 6px);
-					}
+				&:before {
+					@include rem(top, 50px);
 				}
+		
+				&:after {
+					@include rem(top, 64px);
+				}
+
+				li {
+					display: none;
+				}
+
+
 			}
+
+
 
 			&.active {
-				border-bottom: 3px solid $purple;
-				ul {
-					&.active {
-						@include rem(top, 12px);
-					}
+
+				background-color: rgba(255,0,255,0.2);
+				position: fixed;
+				top: 0; //<----- ScrollTop
+				right: 0;
+				left: 0;
+				bottom: 0;
+				z-index: 1;
+
+				overflow-y: scroll;
+
+
+				&:before,
+				&:after {
+					@include rem(top, 57px);
+				}
+
+				&:before {
+					@include rotate (45);
+				}
+
+				&:after {
+					@include rotate (-45);
+				}
+
+				
+
+
+			}			
+
+
+			li {
+				display: none;
+			}
+
+		}
+/**/
+
+/**
+		&:before,
+		&:after {
+			background-color: #1c1c1c;
+			background-color: rgba(255,0,0,0.8);
+
+			content: "";
+			position: absolute;
+			right: 5%;
+			
+			@include rem(width, 23px);
+			@include rem(height, 2px);
+		}
+
+
+
+		&:not(.menu-active) {
+
+			&:before {
+				@include rem(top, 50px);
+			}
+			&:after {
+				@include rem(top, 64px);
+			}
+
+			.button {
+				display: none;
+			}
+
+			ul {
+				pointer-events: none;
+				cursor: pointer;
+
+//				&:before {
+//
+//					background-color: rgba(0,255,0,0.4);
+//
+//					pointer-events: auto;
+//
+//					
+//					content: "";
+//					position: absolute;
+//					z-index: 1;
+//					right: 5%;
+//					@include rem(top, 47px);
+//					@include rem(width, 23px);
+//					@include rem(height, 22px);
+//				}
+
+				li {
+					display: none;
 				}
 			}
 
-			a {
-				color: $font-color-header;
-				text-decoration: none;
+			
 
-				&:hover {
-					color: $purple;
-				}
 
+		}
+
+		&.menu-active {
+
+//			background-color: rgba(255,255,255,0.9);
+//	
+//			position: fixed;
+//			top: 0;
+//			right: 0;
+//			left: 0;
+//			bottom: 40%;
+//			z-index: 1;
+//			overflow-y: scroll;
+
+
+			&:before,
+			&:after {
+				@include rem(top, 57px);
+			}
+			&:before {
+				@include rotate (45);
+			}
+			&:after {
+				@include rotate (-45);
+			}
+
+
+
+
+
+			.button {
+				position: absolute;
+				top: 120px;
+				left: 5%;
+				z-index: 1;
 
 			}
 
 			ul {
 
-//				background-color: rgba(0,255,0,0.8);
-
-				position: absolute;
-
-				overflow: hidden;
-
+				background-color: rgba(255,0,255,0.2);
+	
+				position: fixed;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
 				z-index: 1;
-				
-
-				@include rem(padding-top, 14px);
+				overflow-y: scroll;
 
 
-
-				&:not(.active) {
-					cursor: pointer;			
-					@include rem(top, -18px);
-					@include rem(left, -42px);
-					width: 100%;
-
-					li {
-						display: none;
-					}
+				li {
+					margin-top: 80px;
 				}
+			}
 
 			
 
-				&.active {
-					@include rem(left, -42px);
-//					cursor: default;
-//					@include rem(top, 9px);
-					width: 170%;
 
-					li {
+
+		}
 /**/
-//						opacity: 0;
-//						top: -200px;
+
+
+		
+
+
+
+/**/		
+
+/**
+//		ul {
+//
+//			&.active {
+//				background-color: rgba(255,0,255,0.2);
+//	
+//				position: fixed;
+//				top: 0;
+//				right: 0;
+//				left: 0;
+//				bottom: 0;
+//				z-index: 1;
+//				overflow-y: scroll;
+//	
+////				padding-top: 80px; // <-- ScrollTop
+//			}
+//
+//		}
+
+
+		li {
+//			height: 300px;
+			display: none;
+		}
 /**/
-					}
+
+
+
+
+
+
+
+
+/**
+
+
+		&:not(.menu-active) {
+			.button + ul {
+				&:before {
+					@include rem(top, 50px);
 				}
-				
-
-
-
-
-				
+		
+				&:after {
+					@include rem(top, 64px);
+				}
 
 				li {
-
-//					cursor: default;
-
-					
-
-//					background-color: rgba(255,255,0,0.5);
-					background-color: $purple;
-
-					color: $font-color;
-
-					@include rem(font-size, 16px);
-
-
-					&:first-child {
-
-						@include rem(padding-top, 14px);
-
-						&:before {
-							position: absolute;
-							content: "";
-							@include rem(top, -13px);
-							width: 0;
-							height: 0;
-							border-style: solid;
-//							border-width: 0 14px 14px 14px;
-							@include rem(border-width, 0 14px 14px 14px);
-//							border-color: transparent transparent #007bff transparent;
-							border-color: transparent transparent $purple transparent;
-
-						}
-					}
-
-					&:not(:first-child) {
-						&:before {
-							content: "";
-							position: relative;
-							display: block;
-							background-color: $white;
-							opacity: 0.3;
-
-							@include rem(height, 1px);
-							@include rem(top, -8px);
-						}
-
-					}
-					&:not(:first-child) {
-						@include rem(padding-top, 8px);
-					}
-
-					&:last-child {
-						@include rem(padding-bottom, 14px);
-					}
-
-
-					
-					a {
-						color: $white;
-						&:hover {
-							color: $font-color;
-						}
-					}
-					
-
-										
-
+					display: none;
 				}
 			}
 		}
 
+		&.menu-active {
+			.button + ul {
+
+				overflow-y: scroll;
+
+				&:before,
+				&:after {
+					@include rem(top, 57px);
+				}
+
+				&:before {
+					@include rotate (45);
+				}
+
+				&:after {
+					@include rotate (-45);
+				}
+			}
+		}
+
+
+		.button + ul {
+
+
+			&:before,
+			&:after {
+
+				background-color: #1c1c1c;
+				background-color: rgba(255,0,0,0.8);
+	
+				content: "";
+				position: absolute;
+				right: 5%;
+				
+				@include rem(width, 23px);
+				@include rem(height, 2px);
+			}
+	
+	
+//			&:not(.active) {
+//				&:before {
+//					@include rem(top, 50px);
+//				}
+//		
+//				&:after {
+//					@include rem(top, 64px);
+//				}
+//
+//				li {
+//					display: none;
+//				}
+//
+//
+//			}
+
+
+
+//			&.active {
+//				&:before,
+//				&:after {
+//					@include rem(top, 57px);
+//				}
+//
+//				&:before {
+//					@include rotate (45);
+//				}
+//
+//				&:after {
+//					@include rotate (-45);
+//				}
+//
+//
+//			}
+
+		}
+
 		
+
+
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+	
+
+
+	@include media('screen', '>=tablet-wide') {
+	
+	
+		ul {
+	
+	//		background-color: rgba(255,0,0,0.2);
+	
+			cursor: default;
+	
+			display: inline-block;
+	
+	//		position: relative;
+	
+			float: right;
+	
+			color: $font-color-header;
+	
+	
+			@include rem(margin, 18px 42px 0);
+	
+			li {
+	
+	//			background-color: rgba(0,0,255,0.2);
+	
+				display: inline-block;
+	
+				position: relative;
+	
+				
+	
+	
+				@include rem(font-size, 18px);
+	
+	
+	//			@include header-padding (1024px, 1248px, 16px, 21px);
+	//
+	//			@include media('screen', '>=1248px') {
+	//				@include rem(padding, 0 22px 8px);
+	//			}
+	
+	
+	
+	//			@include rem(padding-bottom, 8px);
+	
+	
+	//			@include rem(margin, 0 22px 8px);
+	
+				
+	
+				&:not(.active) {
+	
+	//				cursor: pointer;
+	
+	//				&:hover {
+	//					border-bottom: 3px solid $purple;
+	//				}
+	
+					ul {
+						&.active {
+							@include rem(top, 6px);
+						}
+					}
+				}
+	
+				&.active {
+					border-bottom: 3px solid $purple;
+					ul {
+						&.active {
+							@include rem(top, 12px);
+						}
+					}
+				}
+	
+				a {
+					color: $font-color-header;
+					text-decoration: none;
+	
+					&:hover {
+						color: $purple;
+					}
+	
+	
+				}
+	
+				ul {
+	
+	//				background-color: rgba(0,255,0,0.8);
+	
+					position: absolute;
+	
+					overflow: hidden;
+	
+					z-index: 1;
+					
+	
+					@include rem(padding-top, 14px);
+	
+	
+	
+					&:not(.active) {
+						cursor: pointer;			
+						@include rem(top, -18px);
+						@include rem(left, -42px);
+						width: 100%;
+	
+						li {
+							display: none;
+						}
+					}
+	
+				
+	
+					&.active {
+						@include rem(left, -42px);
+	//					cursor: default;
+	//					@include rem(top, 9px);
+						width: 170%;
+	
+	//---------------------------------------------------
+	//					li {
+	//
+	////						opacity: 0;
+	////						top: -200px;
+	//
+	//					}
+	//---------------------------------------------------
+					}
+					
+	
+	
+	
+	
+					
+	
+					li {
+	
+	//					cursor: default;
+	
+						
+	
+	//					background-color: rgba(255,255,0,0.5);
+						background-color: $purple;
+	
+						color: $font-color;
+	
+						@include rem(font-size, 16px);
+	
+	
+						&:first-child {
+	
+							@include rem(padding-top, 14px);
+	
+							&:before {
+								position: absolute;
+								content: "";
+								@include rem(top, -13px);
+								width: 0;
+								height: 0;
+								border-style: solid;
+	//							border-width: 0 14px 14px 14px;
+								@include rem(border-width, 0 14px 14px 14px);
+	//							border-color: transparent transparent #007bff transparent;
+								border-color: transparent transparent $purple transparent;
+	
+							}
+						}
+	
+						&:not(:first-child) {
+							&:before {
+								content: "";
+								position: relative;
+								display: block;
+								background-color: $white;
+								opacity: 0.3;
+	
+								@include rem(height, 1px);
+								@include rem(top, -8px);
+							}
+	
+						}
+						&:not(:first-child) {
+							@include rem(padding-top, 8px);
+						}
+	
+						&:last-child {
+							@include rem(padding-bottom, 14px);
+						}
+	
+	
+						
+						a {
+							color: $white;
+							&:hover {
+								color: $font-color;
+							}
+						}
+						
+	
+											
+	
+					}
+				}
+			}
+	
+			
+		}
+	
+	
+	
+	
+	
+		.button {
+			float: right;
+	
+			margin-right: 5%;
+		}
+
 	}
 
 
-	.button {
-		float: right;
 
-		margin-right: 5%;
+	ul {
+		li {
+			@include header-li-padding (1024px, 1248px, 16px, 21px);
+			@include media('screen', '>=1248px') {
+				@include rem(padding, 0 22px 8px);
+			}
+		}
 	}
+
+
+
 
 }
