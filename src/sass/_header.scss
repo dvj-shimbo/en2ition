@@ -9,17 +9,34 @@
 		$min: $i * $step + $media-min;
 		$max: $min + $step;
 		@include media('>=' + round($min), '<' + round($max)) {
+
 			$padding: $i + $padding-min;
 			@include rem(padding, $padding 0);
 
+
+			&:before,
+			&:after {
+				@include rem(margin-top, round($padding * 1.3 + 4px));
+			}
+
+			.button {
+				@include rem(margin-top, round($padding * 3 + $d - $i));
+			}
+
 			.button + ul {
-			
+				&:before {
+					@include rem(top, round($padding * 3 + 20px));
+				}
+			}
+
+/*
+			.button + ul {
 				&:before,
 				&:after {
 					@include rem(margin-top, round($padding * 1.3 + 4px));
 				}
 			}
-
+*/
 		}
 	}
 }
@@ -64,8 +81,6 @@
 body {
 	@include media('screen', '<tablet-wide') {
 
-		overflow: hidden;
-
 
 
 		section,
@@ -75,27 +90,6 @@ body {
 		}
 
 
-
-//		&:before,
-//		&:after {
-//			background-color: #1c1c1c;
-//			background-color: rgba(255,0,0,0.8);
-//
-//			content: "";
-//			position: absolute;
-//			right: 5%;
-//			z-index: 2;
-//			
-//			@include rem(width, 23px);
-//			@include rem(height, 2px);
-//		}
-//		&:before {
-//			@include rem(top, 50px);
-//		}
-//		&:after {
-//			@include rem(top, 64px);
-//		}
-//
 		&:not(.menu-active) {
 
 			overflow-y: scroll;
@@ -103,12 +97,153 @@ body {
 			header {
 
 
-//				&:before {
-//					@include rem(top, 50px);
+/**/
+				&:before {
+					top: 0;
+				}
+				&:after {
+					@include rem(top, 14px);
+				}
+/**/
+				.button,
+				ul {
+					display: none;
+				}
+			}
+
+		}
+
+		&.menu-active {
+
+			overflow-y: hidden;
+
+			header {
+
+				overflow-y: scroll;
+
+				
+				bottom: 0;
+//				bottom: auto;
+
+
+/**/
+				&:before,
+				&:after {
+					@include rem(top, 7px);
+				}
+				&:before {
+					@include rotate (45);
+				}
+				&:after {
+					@include rotate (-45);
+				}
+/**/
+
+//				.button,
+//				ul {
+//					display: none;
 //				}
-//				&:after {
-//					@include rem(top, 64px);
+
+				.button {
+					display: table;
+					margin-left: 5%;
+				}
+
+				.button + ul {
+//					background-color: rgba(255,0,0,0.2);
+
+					padding-left: 5%;
+
+					&:before {
+						background-color: rgba(0,0,255,0.2);
+						content: "";
+
+						position: absolute;
+
+//						top: 30px;
+
+						left: 0;
+						right: 0;
+						bottom: 0;
+						z-index: -1;
+					}
+
+					li {
+
+//						margin-top: 100px;
+
+//						margin-left: 5%;
+
+//						ul,
+//						li {
+//							margin-left: 0;
+//						}
+					}
+				}
+
+
+
+//				li {
+//					margin-top: 100px;
 //				}
+
+
+			}
+
+		}
+
+
+
+
+
+		header {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+
+/**/
+			&:before,
+			&:after {
+				background-color: #1c1c1c;
+				background-color: rgba(255,0,0,0.8);
+	
+				content: "";
+				position: absolute;
+//				position: fixed;
+				right: 5%;
+				
+				@include rem(width, 23px);
+				@include rem(height, 2px);
+
+//				margin-top: 10px;
+			}
+/**/
+
+
+//			.burger-menu {
+//				background-color: rgba(0,0,255,0.8);
+//
+//				position: fixed;
+//
+//				right: 5%;
+//
+//				@include rem(width, 23px);
+//				@include rem(height, 23px);
+//
+//
+//			}
+
+		}
+
+
+
+/*
+		&:not(.menu-active) {
+
+			overflow-y: scroll;
+
+			header {
 
 
 
@@ -119,10 +254,6 @@ body {
 
 				.button + ul {
 
-//					&:before,
-//					&:after {
-//						@include rem(margin-top, 14px);
-//					}
 
 					&:before {
 						top: 0;
@@ -141,36 +272,32 @@ body {
 
 			header {
 
+
+
 //				background-color: rgba(255,255,255,0.7);
 
 
-/*
-				position: fixed;
+
+
 				top: 0;
-				right: 0;
-				left: 0;
 				bottom: 0;
-				z-index: 1;
-				overflow-y: scroll;
-
-				&:before,
-				&:after {
-					background-color: #1c1c1c;
-					background-color: rgba(255,0,0,0.8);
-		
-					content: "";
-					position: absolute;
-					right: 5%;
-					
-					@include rem(width, 23px);
-					@include rem(height, 2px);
-					@include rem(top, 57px);
-				}
-*/
-
 
 				.button {
-					display: none;
+					background-color: red;
+
+					display: table;
+					margin-left: 5%;
+
+					&:before {
+						background-color: rgba(0,0,255,0.2);
+						content: "AAA";
+						position: absolute;
+						left: 0;
+						right: 0;
+//						bottom: 0;
+//						top: 0;
+					}
+
 				}
 
 				.button + ul {
@@ -182,7 +309,7 @@ body {
 					right: 0;
 					left: 0;
 					bottom: 0;
-					z-index: -100;
+					z-index: -1;
 					overflow-y: scroll;
 
 					&:before,
@@ -196,21 +323,6 @@ body {
 					&:after {
 						@include rotate (-45);
 					}
-
-//					&:before,
-//					&:after {
-//						background-color: #1c1c1c;
-//						background-color: rgba(255,0,0,0.8);
-//			
-//						content: "";
-//						position: absolute;
-//						right: 5%;
-////						z-index: 2;
-//						
-//						@include rem(width, 23px);
-//						@include rem(height, 2px);
-//						
-//					}
 
 					li {
 						margin-top: 100px;
@@ -275,21 +387,29 @@ body {
 			z-index: 0;
 
 
-		.button + ul {
-			&:before,
-			&:after {
-				background-color: #1c1c1c;
-				background-color: rgba(255,0,0,0.8);
-	
-				content: "";
-				position: absolute;
-				right: 5%;
-//				z-index: 2;
-				
-				@include rem(width, 23px);
-				@include rem(height, 2px);
+
+
+			img {
+				background-color: rgba(0,255,0,0.8);
 			}
-		}
+
+
+			.button + ul {
+				&:before,
+				&:after {
+					background-color: #1c1c1c;
+					background-color: rgba(255,0,0,0.8);
+		
+					content: "";
+//					position: absolute;
+					position: fixed;
+					right: 5%;
+//					z-index: 2;
+					
+					@include rem(width, 23px);
+					@include rem(height, 2px);
+				}
+			}
 
 
 //
@@ -314,118 +434,12 @@ body {
 //			}
 		}
 
-
-
-
-
-//		&:before,
-//		&:after {
-//			background-color: #1c1c1c;
-//			background-color: rgba(255,0,0,0.8);
-//
-//			content: "";
-//			position: absolute;
-//			right: 5%;
-//			
-//			@include rem(width, 23px);
-//			@include rem(height, 2px);
-//		}
-//
-//		&:not(.menu-active) {
-//
-//			overflow-y: scroll;
-//
-//			&:before {
-//				@include rem(top, 50px);
-//			}
-//			&:after {
-//				@include rem(top, 64px);
-//			}
-//
-//			header {	
-//				.button,
-//				ul {
-//					display: none;
-//				}
-//			}
-//
-//		}
-//
-//		&.menu-active {
-//
-//			overflow-y: hidden;
-//
-//			&:before,
-//			&:after {
-//				@include rem(top, 57px);
-//			}
-//			&:before {
-//				@include rotate (45);
-//			}
-//			&:after {
-//				@include rotate (-45);
-//			}
-//
-//			header {
-//
-//				.button {
-//					display: none;
-//				}
-//
-//				ul {
-//
-//					background-color: rgba(255,0,255,0.2);
-//		
-//					position: fixed;
-//					top: 0;
-//					right: 0;
-//					left: 0;
-//					bottom: 0;
-//					z-index: 1;
-//					overflow-y: scroll;
-//		
-//	//				padding-top: 80px; // <-- ScrollTop
-//
-//
-//					li {
-//						display: none;
-//					}
-//				}
-//
-//			}
-//
-//
-//		}
-//
-//
-//		header {
-//
-//			pointer-events: none;
-//			cursor: pointer;
-//
-//			&:before {
-//				background-color: rgba(0,255,0,0.4);
-//				pointer-events: auto;
-//				
-//				content: "";
-//				position: absolute;
-//				z-index: 1;
-//				right: 5%;
-//				@include rem(top, 47px);
-//				@include rem(width, 23px);
-//				@include rem(height, 22px);
-//			}
-//
-//			a {
-//				pointer-events: auto;
-//			}
-//		}
-//		
-	}
-
-
-}
 /**/
+
+
+	}
+}
+
 
 
 
@@ -452,12 +466,29 @@ header {
 //	@include rem(padding, 40px 0);
 	@include media('screen', '<320px') {
 		@include rem(padding, 7px 0);
+
+		&:before,
+		&:after {
+			@include rem(margin-top, 13px);
+		}
+
+		.button {
+			@include rem(margin-top, 22px);
+		}
+		.button + ul {
+			&:before {
+				@include rem(top, 41px);
+			}
+		}
+
+/**
 		.button + ul {
 			&:before,
 			&:after {
 				@include rem(margin-top, 13px);
 			}
 		}
+/**/
 	}
 
 	@include header (320px, 1024px, 8px, 20px);
