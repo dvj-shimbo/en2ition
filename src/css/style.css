@@ -798,7 +798,7 @@ header {
   }
   /* line 93, src/sass/_header.scss */
   body:not(.menu-active) header {
-    background-color: rgba(0, 0, 255, 0.9);
+    background-color: #f2f3f3;
     /**/
     /**/
   }
