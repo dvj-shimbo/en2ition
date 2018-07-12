@@ -9,6 +9,11 @@ body {
 /**/
 
 
+
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
 //html,
 body {
 	background-color: $light-gray;
@@ -42,6 +47,8 @@ body {
 //	color: red;
 
 
+
+
 }
 
 
@@ -49,6 +56,22 @@ body {
 b, strong { font-weight: bold; }
 
 i, em { font-style: italic; }
+
+
+//* {
+//	-webkit-touch-callout: none;
+//	-webkit-user-select: none;
+//	-khtml-user-select: none;
+//	-moz-user-select: none;
+//	-ms-user-select: none;
+//	user-select: none;
+//
+//	-webkit-tap-highlight-color: transparent;
+//}
+
+//:focus {
+//    outline: none !important;
+//}
 
 
 

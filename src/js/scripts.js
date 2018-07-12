@@ -10,11 +10,11 @@ $(window).on("load", function() {
 			var posX = e.pageX;
 			var posY = e.pageY - $(window).scrollTop() + $(this).scrollTop();
 
-			var w = $(this).width() * 0.95;
+			var w = $(this).width() * 0.94;
 
-			var h = parseInt($(this).css("padding-top")) * 1.3;
+			var h = Math.round(parseInt($(this).css("padding-top")) * 1.3) - 1;
 
-			if (posX  > w - 23 && posX < w && posY > h && posY < h + 24) {
+			if (posX  > w - 24 && posX < w && posY > h && posY < h + 24) {
 				if ($("body").hasClass("menu-active")) {
 					$(this).scrollTop(0);
 					$("body").removeClass("menu-active");

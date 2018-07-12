@@ -77,13 +77,14 @@ body {
 	@include media('screen', '<tablet-wide') {
 
 
-/**
+/**/
 		section,
 		.group,
 		footer {
 			display: none;
 		}
 /**/
+
 
 
 		&:not(.menu-active) {
@@ -96,7 +97,7 @@ body {
 
 			header {
 
-				background-color: rgba(0,0,255,0.5);
+//				background-color: rgba(0,0,255,0.5);
 //				background-color: $light-gray;
 
 
@@ -136,7 +137,7 @@ body {
 
 			header {
 
-//				background-color: rgba(0,255,0,0.7);
+//				background-color: rgba(0,255,0,0.3);
 				background-color: $purple;
 
 				overflow-y: scroll;
@@ -182,44 +183,6 @@ body {
 					padding-right: 5%;
 /**/
 				}
-
-
-/**
-				.button + ul {
-//					background-color: rgba(255,0,0,0.2);
-
-					padding-left: 5%;
-
-					&:before {
-//						background-color: rgba(0,0,255,0.2);
-						background-color: $purple;
-
-						content: "";
-
-						position: absolute;
-
-//						top: 30px;
-
-						left: 0;
-						right: 0;
-//						bottom: 0;
-						height: 100%;
-						z-index: -1;
-					}
-
-//					li {
-//
-////						margin-top: 100px;
-//
-////						margin-left: 5%;
-//
-////						ul,
-////						li {
-////							margin-left: 0;
-////						}
-//					}
-				}
-/**/
 
 			}
 
@@ -350,42 +313,7 @@ header {
 
 	.button + ul {
 
-/**
-		&:before {
-			background-color: rgba(0,255,255,0.9);
-//			background-color: $light-gray;
 
-			content: "";
-			position: absolute;
-
-			top: 0;
-			left: 0;
-			right: 0;
-//			bottom: 30px;
-//			height: 100px;
-			z-index: -1;
-		}
-
-		&:after {
-			background-color: rgba(255,0,255,0.5);
-
-			content: "";
-			position: absolute;
-
-			width: 22px;
-			height: 22px;
-
-			top: 26px;
-			right: 5%;
-
-//			top: 0;
-//			left: 0;
-//			right: 0;
-//			bottom: 30px;
-//			height: 100px;
-			z-index: 1;
-		}
-/**/
 
 		a {
 			text-decoration: none;
@@ -431,7 +359,7 @@ header {
 			content: "";
 			position: absolute;
 //			position: fixed;
-			right: 5%;
+			right: 6%;
 			
 			@include rem(width, 23px);
 			@include rem(height, 2px);
@@ -471,8 +399,10 @@ header {
 
 
 
+
+
 			&:before {
-//				background-color: rgba(0,255,255,0.9);
+//				background-color: rgba(0,255,255,0.5);
 				background-color: $light-gray;
 	
 				content: "";
@@ -485,7 +415,7 @@ header {
 //				height: 100px;
 				z-index: -1;
 			}
-	
+/**/
 			&:after {
 //				background-color: rgba(255,0,255,0.5);
 
@@ -498,7 +428,7 @@ header {
 				@include rem(height, 24px);
 	
 //				top: 25px;
-				right: 5%;
+				right: 6%;
 	
 //				top: 0;
 //				left: 0;
@@ -507,7 +437,7 @@ header {
 //				height: 100px;
 				z-index: 1;
 			}		
-
+/**/
 			a {
 //				background-color: red;
 				color: $white;
@@ -556,7 +486,8 @@ header {
 
 //						background-color: rgba(0,255,0,0.3);
 
-						@include rem(padding-top, 16px);
+//						@include rem(padding-top, 16px);
+						@include rem(margin-top, 16px);
 
 
 						li {
@@ -564,6 +495,7 @@ header {
 							border-top: 1px solid rgba(255,255,255,0.3);
 
 							@include rem(padding-left, 16px);
+							@include rem(padding-right, 16px);
 
 							&:last-child {
 //								border-bottom: 1px solid red;
