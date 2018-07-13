@@ -11,27 +11,36 @@
 		@include media('>=' + round($min), '<' + round($max)) {
 
 			$padding: $i + $padding-min;
-			@include rem(padding, $padding 0);
 
 
-			&:before,
-			&:after {
-				@include rem(margin-top, round($padding * 1.3 + 4px));
-			}
+			@include rem(padding-top, round($padding * 3 + 20px));
 
-			.button {
-				@include rem(margin-top, round($padding * 3 + $d - $i));
-			}
 
-			.button + ul {
-				&:before {
-					@include rem(height, round($padding * 3 + 20px));
-				}
-
+			header {			
+				@include rem(padding, $padding 0);
+	
+	
+				&:before,
 				&:after {
-					@include rem(top, round($padding * 1.3));
+					@include rem(margin-top, round($padding * 1.3 + 4px));
+				}
+	
+				.button {
+					@include rem(margin-top, round($padding * 3 + $d - $i));
+				}
+	
+				.button + ul {
+					&:before {
+						@include rem(height, round($padding * 3 + 20px));
+					}
+	
+					&:after {
+						@include rem(top, round($padding * 1.3));
+					}
 				}
 			}
+
+
 		}
 	}
 }
@@ -86,13 +95,47 @@ body {
 
 
 
+	@include media('screen', '<320px') {
+
+		@include rem(padding-top, 41px);
+
+		header {
+			@include rem(padding, 7px 0);
+	
+			&:before,
+			&:after {
+				@include rem(margin-top, 13px);
+			}
+	
+			.button {
+				@include rem(margin-top, 35px);
+			}
+	
+			.button + ul {
+				&:before {
+					@include rem(height, 41px);
+				}
+	
+				&:after {
+					@include rem(top, 9px);
+				}
+			}
+		}
+
+		
+
+	}
+
+	@include header (320px, 1024px, 8px, 20px);
+
 
 	@include media('screen', '<tablet-wide') {
 
 
 /**/
-		section,
+//		section,
 		.group,
+		.banner-bottom,
 		footer {
 			display: none;
 		}
@@ -220,7 +263,7 @@ header {
 	@include rem(max-width, 1368px);
 
 
-
+/**
 	@include media('screen', '<320px') {
 		@include rem(padding, 7px 0);
 
@@ -246,10 +289,12 @@ header {
 	}
 
 	@include header (320px, 1024px, 8px, 20px);
+/**/
 
-	@include media('screen', '>=1024px') {
-		@include rem(padding, 40px 0);
-	}
+
+//	@include media('screen', '>=1024px') {
+//		@include rem(padding, 40px 0);
+//	}
 
 
 
@@ -374,8 +419,8 @@ header {
 
 
 			&:before {
-//				background-color: rgba(0,255,255,0.5);
-				background-color: $light-gray;
+				background-color: rgba(0,255,255,0.5);
+//				background-color: $light-gray;
 	
 				content: "";
 				position: absolute;
@@ -492,15 +537,14 @@ header {
 
 	@include media('screen', '>=tablet-wide') {
 
-//		position: relative;
-
-		background-color: rgba(255,255,0,0.5);
+//		background-color: rgba(255,255,0,0.5);
 //		background-color: $light-gray;
+
+		@include rem(padding, 40px 0);
 
 
 		img {
 			float: left;
-
 		}
 
 
@@ -521,7 +565,7 @@ header {
 	
 		ul {
 	
-			background-color: rgba(255,0,0,0.2);
+//			background-color: rgba(255,0,0,0.2);
 	
 			cursor: default;
 	
