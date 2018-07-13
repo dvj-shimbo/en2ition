@@ -1,31 +1,123 @@
 /*************************** Banner-Top Section Styles ****************************/
 
-%banner-top-pos {
-	position: relative;
+@mixin banner-top ($media-min, $media-max, $padding-min, $padding-max) {
 
+	$d: ($padding-max - $padding-min) / 1px;
 
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+		@include media('>=' + round($min), '<' + round($max)) {
+			$padding: $i + $padding-min;
 
+			@include rem(padding-bottom, $padding);
 
-//	width: 50%;
-//	width: 45%;
-//	width: 48%;
-
-
-	@include rem(max-width, 684px);
-//	left: 50%;
-//	left: 55%;
-	left: 58%;
-	@include translate (-100%, 0);
-
-
+		}
+	}
 }
 
 
 
 
+@mixin banner-top-h1 ($media-min, $media-max, $font-size-min, $font-size-max) {
+
+	/*!!!*/
+
+	$d: ($font-size-max - $font-size-min) / 1px;
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+		@include media('>=' + round($min), '<' + round($max)) {
+			$font-size: $i + $font-size-min;
+
+			@include rem(font-size, $font-size);
+
+			@include rem(line-height, round($font-size * 1.24));
+
+			@include rem(margin-top, round($font-size * 1.31));
+
+		}
+	}
+}
+
+
+@mixin banner-top-h3 ($media-min, $media-max, $font-size-min, $font-size-max) {
+
+	$d: ($font-size-max - $font-size-min) / 1px;
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+		@include media('>=' + round($min), '<' + round($max)) {
+			$font-size: $i + $font-size-min;
+
+			@include rem(font-size, $font-size);
+
+			@include rem(line-height, round($font-size * 1.52));
+
+//			@include rem(margin-top, $font-size + 5px);
+			@include rem(margin-top, round($font-size * 1.24));
+
+		}
+	}
+}
+
+
+
+
+
+@mixin banner-top-button ($media-min, $media-max, $margin-min, $margin-max) {
+
+	$d: ($margin-max - $margin-min) / 1px;
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+		@include media('>=' + round($min), '<' + round($max)) {
+			$margin: $i + $margin-min;
+
+			@include rem(margin-top, $margin);
+
+		}
+	}
+}
+
+
+
+
+
+//%banner-top-pos {
+//
+//
+////	@include media('screen', '>=tablet-wide') {
+//	position: relative;
+//
+//
+//
+//
+////	width: 50%;
+////	width: 45%;
+////	width: 48%;
+//
+//
+//	@include rem(max-width, 684px);
+////	left: 50%;
+////	left: 55%;
+////	left: 58%;
+//	@include translate (-100%, 0);
+////	}
+//
+//
+//}
+
+
+
+
 .banner-top {
-	background-color: rgba(255,0,0,0.2);
-//	background-color: rgba($light-gray, 0.75);
+//	background-color: rgba(255,0,0,0.2);
+	background-color: rgba($light-gray, 0.75);
 
 	clear: both;
 
@@ -33,13 +125,44 @@
 
 	overflow: hidden;
 
-	@include rem(padding-bottom, 176px);
+
+
+//	@include media('screen', '<tablet-wide') {
+//		text-align: center;
+//	}
+
+
+
+//	@include rem(padding-bottom, 176px);
+
+
+//	padding-left: 5%;
+//	padding-right: 5%;
+
+	@include media('screen', '<320px') {
+		@include rem(padding-bottom, 100px);
+	}
+
+	@include banner-top (320px, 768px, 101px, 175px);
+
+	@include media('>=768px', '<1024px') {
+		@include rem(padding-bottom, 176px);
+	}
+
+
+	@include banner-top (1024px, 1368px, 130px, 175px);
+
+	@include media('screen', '>=1368px') {
+		@include rem(padding-bottom, 176px);
+	}
+
+
 
 	&:before {
 
 //		background-color: red;
-		@include linear-gradient(red, yellow);
-//		@include linear-gradient(rgba($light-gray, 1), rgba($light-gray, 0));
+//		@include linear-gradient(red, yellow);
+		@include linear-gradient(rgba($light-gray, 1), rgba($light-gray, 0));
 
 		content: "";
 		
@@ -53,20 +176,77 @@
 
 	h1 {
 
-		background-color: rgba(255,255,0,0.2);
+//		background-color: rgba(255,255,0,0.4);
 
-		@extend %banner-top-pos;
+
+		@include rem(max-width, 684px);
+		position: relative;
+
+		
+
+//		@extend %banner-top-pos;
 
 		color: $font-color;
 
 		font-family: "Source-Sans-Pro-Light";
-		@include rem(font-size, 58px);
 
-		@include rem(line-height, 72px);
 
-		@include rem(margin-top, 76px);
+//		@include rem(font-size, 58px);
+////		@include rem(font-size, 43px);
+//
+//		@include rem(line-height, 72px);
+////		@include rem(line-height, 53px);
+//
+//		@include rem(margin-top, 76px);
 
-		width: 48%;
+		
+		@include media('screen', '<320px') {
+			@include rem(font-size, 43px);
+			@include rem(line-height, 54px);
+			@include rem(margin-top, 57px);
+		}
+
+		@include banner-top-h1 (320px, 768px, 44px, 57px);
+
+		@include media('>=768px', '<1024px') {
+			@include rem(font-size, 58px);
+			@include rem(line-height, 72px);
+			@include rem(margin-top, 76px);
+		}
+
+		@include banner-top-h1 (1024px, 1368px, 44px, 57px);
+
+		@include media('screen', '>=1368px') {
+			@include rem(font-size, 58px);
+			@include rem(line-height, 72px);
+			@include rem(margin-top, 76px);
+		}
+
+
+
+
+		@include media('screen', '<tablet-wide') {
+
+//			padding-top: 8%;
+			padding-left: 5%;
+			padding-right: 5%;
+
+//			position: relative;
+//			@include rem(max-width, 684px);
+			left: 50%;
+			@include translate (-50%, 0);
+
+		}
+
+		@include media('screen', '>=tablet-wide') {
+
+//			position: relative;
+			width: 48%;
+//			@include rem(max-width, 684px);
+			left: 58%;
+			@include translate (-100%, 0);
+
+		}
 
 		
 
@@ -74,44 +254,128 @@
 
 	h3 {
 
-		@extend %banner-top-pos;
+//		@extend %banner-top-pos;
 
-		background-color: rgba(255,0,255,0.2);
+//		background-color: rgba(255,0,255,0.2);
+
+
+		@include rem(max-width, 684px);
+		position: relative;
+
+
+
+
 
 		color: $gray;
 
-		@include rem(font-size, 21px);
+//		@include rem(font-size, 21px);
+////		@include rem(font-size, 18px);
+////
+//		@include rem(line-height, 32px);
+////		@include rem(line-height, 27px);
 
-		@include rem(line-height, 32px);
 
-		@include rem(margin-top, 26px);
+		@include media('screen', '<480px') {
+			display: none;
+		}
 
-		width: 48%;
+		@include banner-top-h3 (480px, 768px, 18px, 20px);
+
+		@include media('>=768px', '<1024px') {
+			@include rem(font-size, 21px);
+			@include rem(line-height, 32px);
+			@include rem(margin-top, 26px);
+		}
+
+		@include banner-top-h3 (1024px, 1368px, 18px, 20px);
+
+		@include media('screen', '>=1368px') {
+			@include rem(font-size, 21px);
+			@include rem(line-height, 32px);
+			@include rem(margin-top, 26px);
+		}
+
+//		@include rem(margin-top, 26px);
+
+
+		@include media('screen', '<tablet-wide') {
+			padding-left: 5%;
+			padding-right: 5%;
+			left: 50%;
+			@include translate (-50%, 0);
+		}
+
+		@include media('screen', '>=tablet-wide') {
+//			position: relative;
+			width: 48%;
+//			@include rem(max-width, 684px);
+			left: 58%;
+			@include translate (-100%, 0);
+		}
 
 		
 
 	}
 
 	.button {
-		@extend %banner-top-pos;
+
+//		@extend %banner-top-pos;
+
+		position: relative;
 
 		display: table;
 
-		@include rem(margin-top, 76px);
+//		@include rem(margin-top, 76px);
+
+		@include media('screen', '<320px') {
+			@include rem(margin-top, 47px);
+		}
+
+		@include banner-top-button (320px, 768px, 48px, 75px);
+
+		@include media('>=768px', '<1024px') {
+			@include rem(margin-top, 76px);
+		}
+
+		@include banner-top-button (1024px, 1368px, 48px, 75px);
+
+		@include media('screen', '>=1368px') {
+			@include rem(margin-top, 76px);
+		}
+
+
+		@include media('screen', '<tablet-wide') {
+			left: 50%;
+			@include translate (-50%, 0);
+		}
+
+		@include media('screen', '>=tablet-wide') {
+//			position: relative;
+			left: 58%;
+			@include translate (-100%, 0);
+		}
+
 	}
 
 
 	img {
 		width: 100%;
-//		opacity: 0.5;
+		opacity: 0.5;
 
 		position: absolute;
 		display: block;
 //		bottom: 0;
 		z-index: -1;
 
+
 		top: 50%;
 		@include translate (0, -50%);
+
+
+		@include media('screen', '<740px') {
+			right: 0;
+			@include rem(min-width, 720px);
+		}
 
 
 	}

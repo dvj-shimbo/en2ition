@@ -795,7 +795,6 @@ body {
 		display: none;
 	}
 /**/
-  /*!!!*/
 }
 
 @media screen and (max-width: 319px) {
@@ -1879,7 +1878,7 @@ header .button + ul li ul li {
   }
   /* line 421, src/sass/_header.scss */
   header .button + ul:before {
-    background-color: rgba(0, 255, 255, 0.5);
+    background-color: #f2f3f3;
     content: "";
     position: absolute;
     top: 0;
@@ -2149,35 +2148,1012 @@ header .button + ul li ul li {
 }
 
 /*************************** Banner-Top Section Styles ****************************/
-/* line 3, src/sass/sections/_banner-top.scss */
-.banner-top h1, .banner-top h3, .banner-top .button {
-  position: relative;
-  max-width: 684px;
-  max-width: 42.75rem;
-  left: 58%;
-  -moz-transform: translate(-100%, 0);
-  -o-transform: translate(-100%, 0);
-  -ms-transform: translate(-100%, 0);
-  -webkit-transform: translate(-100%, 0);
-  transform: translate(-100%, 0);
-}
-
-/* line 26, src/sass/sections/_banner-top.scss */
+/* line 118, src/sass/sections/_banner-top.scss */
 .banner-top {
-  background-color: rgba(255, 0, 0, 0.2);
+  background-color: rgba(242, 243, 243, 0.75);
   clear: both;
   position: relative;
   overflow: hidden;
-  padding-bottom: 176px;
-  padding-bottom: 11rem;
 }
 
-/* line 38, src/sass/sections/_banner-top.scss */
+@media screen and (max-width: 319px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 325px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 101px;
+    padding-bottom: 6.3125rem;
+  }
+}
+
+@media (min-width: 326px) and (max-width: 331px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 102px;
+    padding-bottom: 6.375rem;
+  }
+}
+
+@media (min-width: 332px) and (max-width: 337px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 103px;
+    padding-bottom: 6.4375rem;
+  }
+}
+
+@media (min-width: 338px) and (max-width: 343px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 104px;
+    padding-bottom: 6.5rem;
+  }
+}
+
+@media (min-width: 344px) and (max-width: 349px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 105px;
+    padding-bottom: 6.5625rem;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 355px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 106px;
+    padding-bottom: 6.625rem;
+  }
+}
+
+@media (min-width: 356px) and (max-width: 361px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 107px;
+    padding-bottom: 6.6875rem;
+  }
+}
+
+@media (min-width: 362px) and (max-width: 367px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 108px;
+    padding-bottom: 6.75rem;
+  }
+}
+
+@media (min-width: 368px) and (max-width: 373px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 109px;
+    padding-bottom: 6.8125rem;
+  }
+}
+
+@media (min-width: 374px) and (max-width: 379px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 110px;
+    padding-bottom: 6.875rem;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 385px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 111px;
+    padding-bottom: 6.9375rem;
+  }
+}
+
+@media (min-width: 386px) and (max-width: 391px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 112px;
+    padding-bottom: 7rem;
+  }
+}
+
+@media (min-width: 392px) and (max-width: 397px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 113px;
+    padding-bottom: 7.0625rem;
+  }
+}
+
+@media (min-width: 398px) and (max-width: 403px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 114px;
+    padding-bottom: 7.125rem;
+  }
+}
+
+@media (min-width: 404px) and (max-width: 409px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 115px;
+    padding-bottom: 7.1875rem;
+  }
+}
+
+@media (min-width: 410px) and (max-width: 415px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 116px;
+    padding-bottom: 7.25rem;
+  }
+}
+
+@media (min-width: 416px) and (max-width: 421px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 117px;
+    padding-bottom: 7.3125rem;
+  }
+}
+
+@media (min-width: 422px) and (max-width: 427px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 118px;
+    padding-bottom: 7.375rem;
+  }
+}
+
+@media (min-width: 428px) and (max-width: 432px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 119px;
+    padding-bottom: 7.4375rem;
+  }
+}
+
+@media (min-width: 433px) and (max-width: 438px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 120px;
+    padding-bottom: 7.5rem;
+  }
+}
+
+@media (min-width: 439px) and (max-width: 444px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 121px;
+    padding-bottom: 7.5625rem;
+  }
+}
+
+@media (min-width: 445px) and (max-width: 450px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 122px;
+    padding-bottom: 7.625rem;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 456px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 123px;
+    padding-bottom: 7.6875rem;
+  }
+}
+
+@media (min-width: 457px) and (max-width: 462px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 124px;
+    padding-bottom: 7.75rem;
+  }
+}
+
+@media (min-width: 463px) and (max-width: 468px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 125px;
+    padding-bottom: 7.8125rem;
+  }
+}
+
+@media (min-width: 469px) and (max-width: 474px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 126px;
+    padding-bottom: 7.875rem;
+  }
+}
+
+@media (min-width: 475px) and (max-width: 480px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 127px;
+    padding-bottom: 7.9375rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 486px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 128px;
+    padding-bottom: 8rem;
+  }
+}
+
+@media (min-width: 487px) and (max-width: 492px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 129px;
+    padding-bottom: 8.0625rem;
+  }
+}
+
+@media (min-width: 493px) and (max-width: 498px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 130px;
+    padding-bottom: 8.125rem;
+  }
+}
+
+@media (min-width: 499px) and (max-width: 504px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 131px;
+    padding-bottom: 8.1875rem;
+  }
+}
+
+@media (min-width: 505px) and (max-width: 510px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 132px;
+    padding-bottom: 8.25rem;
+  }
+}
+
+@media (min-width: 511px) and (max-width: 516px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 133px;
+    padding-bottom: 8.3125rem;
+  }
+}
+
+@media (min-width: 517px) and (max-width: 522px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 134px;
+    padding-bottom: 8.375rem;
+  }
+}
+
+@media (min-width: 523px) and (max-width: 528px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 135px;
+    padding-bottom: 8.4375rem;
+  }
+}
+
+@media (min-width: 529px) and (max-width: 534px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 136px;
+    padding-bottom: 8.5rem;
+  }
+}
+
+@media (min-width: 535px) and (max-width: 540px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 137px;
+    padding-bottom: 8.5625rem;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 546px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 138px;
+    padding-bottom: 8.625rem;
+  }
+}
+
+@media (min-width: 547px) and (max-width: 552px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 139px;
+    padding-bottom: 8.6875rem;
+  }
+}
+
+@media (min-width: 553px) and (max-width: 558px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 140px;
+    padding-bottom: 8.75rem;
+  }
+}
+
+@media (min-width: 559px) and (max-width: 564px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 141px;
+    padding-bottom: 8.8125rem;
+  }
+}
+
+@media (min-width: 565px) and (max-width: 570px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 142px;
+    padding-bottom: 8.875rem;
+  }
+}
+
+@media (min-width: 571px) and (max-width: 576px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 143px;
+    padding-bottom: 8.9375rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 582px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 144px;
+    padding-bottom: 9rem;
+  }
+}
+
+@media (min-width: 583px) and (max-width: 588px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 145px;
+    padding-bottom: 9.0625rem;
+  }
+}
+
+@media (min-width: 589px) and (max-width: 594px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 146px;
+    padding-bottom: 9.125rem;
+  }
+}
+
+@media (min-width: 595px) and (max-width: 600px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 147px;
+    padding-bottom: 9.1875rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 606px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 148px;
+    padding-bottom: 9.25rem;
+  }
+}
+
+@media (min-width: 607px) and (max-width: 612px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 149px;
+    padding-bottom: 9.3125rem;
+  }
+}
+
+@media (min-width: 613px) and (max-width: 618px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 150px;
+    padding-bottom: 9.375rem;
+  }
+}
+
+@media (min-width: 619px) and (max-width: 624px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 151px;
+    padding-bottom: 9.4375rem;
+  }
+}
+
+@media (min-width: 625px) and (max-width: 630px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 152px;
+    padding-bottom: 9.5rem;
+  }
+}
+
+@media (min-width: 631px) and (max-width: 636px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 153px;
+    padding-bottom: 9.5625rem;
+  }
+}
+
+@media (min-width: 637px) and (max-width: 642px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 154px;
+    padding-bottom: 9.625rem;
+  }
+}
+
+@media (min-width: 643px) and (max-width: 648px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 155px;
+    padding-bottom: 9.6875rem;
+  }
+}
+
+@media (min-width: 649px) and (max-width: 654px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 156px;
+    padding-bottom: 9.75rem;
+  }
+}
+
+@media (min-width: 655px) and (max-width: 659px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 157px;
+    padding-bottom: 9.8125rem;
+  }
+}
+
+@media (min-width: 660px) and (max-width: 665px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 158px;
+    padding-bottom: 9.875rem;
+  }
+}
+
+@media (min-width: 666px) and (max-width: 671px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 159px;
+    padding-bottom: 9.9375rem;
+  }
+}
+
+@media (min-width: 672px) and (max-width: 677px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 160px;
+    padding-bottom: 10rem;
+  }
+}
+
+@media (min-width: 678px) and (max-width: 683px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 161px;
+    padding-bottom: 10.0625rem;
+  }
+}
+
+@media (min-width: 684px) and (max-width: 689px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 162px;
+    padding-bottom: 10.125rem;
+  }
+}
+
+@media (min-width: 690px) and (max-width: 695px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 163px;
+    padding-bottom: 10.1875rem;
+  }
+}
+
+@media (min-width: 696px) and (max-width: 701px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 164px;
+    padding-bottom: 10.25rem;
+  }
+}
+
+@media (min-width: 702px) and (max-width: 707px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 165px;
+    padding-bottom: 10.3125rem;
+  }
+}
+
+@media (min-width: 708px) and (max-width: 713px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 166px;
+    padding-bottom: 10.375rem;
+  }
+}
+
+@media (min-width: 714px) and (max-width: 719px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 167px;
+    padding-bottom: 10.4375rem;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 725px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 168px;
+    padding-bottom: 10.5rem;
+  }
+}
+
+@media (min-width: 726px) and (max-width: 731px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 169px;
+    padding-bottom: 10.5625rem;
+  }
+}
+
+@media (min-width: 732px) and (max-width: 737px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 170px;
+    padding-bottom: 10.625rem;
+  }
+}
+
+@media (min-width: 738px) and (max-width: 743px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 171px;
+    padding-bottom: 10.6875rem;
+  }
+}
+
+@media (min-width: 744px) and (max-width: 749px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 172px;
+    padding-bottom: 10.75rem;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 755px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 173px;
+    padding-bottom: 10.8125rem;
+  }
+}
+
+@media (min-width: 756px) and (max-width: 761px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 174px;
+    padding-bottom: 10.875rem;
+  }
+}
+
+@media (min-width: 762px) and (max-width: 767px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 175px;
+    padding-bottom: 10.9375rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 176px;
+    padding-bottom: 11rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1030px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 130px;
+    padding-bottom: 8.125rem;
+  }
+}
+
+@media (min-width: 1031px) and (max-width: 1038px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 131px;
+    padding-bottom: 8.1875rem;
+  }
+}
+
+@media (min-width: 1039px) and (max-width: 1045px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 132px;
+    padding-bottom: 8.25rem;
+  }
+}
+
+@media (min-width: 1046px) and (max-width: 1053px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 133px;
+    padding-bottom: 8.3125rem;
+  }
+}
+
+@media (min-width: 1054px) and (max-width: 1060px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 134px;
+    padding-bottom: 8.375rem;
+  }
+}
+
+@media (min-width: 1061px) and (max-width: 1068px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 135px;
+    padding-bottom: 8.4375rem;
+  }
+}
+
+@media (min-width: 1069px) and (max-width: 1075px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 136px;
+    padding-bottom: 8.5rem;
+  }
+}
+
+@media (min-width: 1076px) and (max-width: 1083px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 137px;
+    padding-bottom: 8.5625rem;
+  }
+}
+
+@media (min-width: 1084px) and (max-width: 1090px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 138px;
+    padding-bottom: 8.625rem;
+  }
+}
+
+@media (min-width: 1091px) and (max-width: 1098px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 139px;
+    padding-bottom: 8.6875rem;
+  }
+}
+
+@media (min-width: 1099px) and (max-width: 1105px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 140px;
+    padding-bottom: 8.75rem;
+  }
+}
+
+@media (min-width: 1106px) and (max-width: 1113px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 141px;
+    padding-bottom: 8.8125rem;
+  }
+}
+
+@media (min-width: 1114px) and (max-width: 1120px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 142px;
+    padding-bottom: 8.875rem;
+  }
+}
+
+@media (min-width: 1121px) and (max-width: 1128px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 143px;
+    padding-bottom: 8.9375rem;
+  }
+}
+
+@media (min-width: 1129px) and (max-width: 1135px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 144px;
+    padding-bottom: 9rem;
+  }
+}
+
+@media (min-width: 1136px) and (max-width: 1143px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 145px;
+    padding-bottom: 9.0625rem;
+  }
+}
+
+@media (min-width: 1144px) and (max-width: 1150px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 146px;
+    padding-bottom: 9.125rem;
+  }
+}
+
+@media (min-width: 1151px) and (max-width: 1158px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 147px;
+    padding-bottom: 9.1875rem;
+  }
+}
+
+@media (min-width: 1159px) and (max-width: 1165px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 148px;
+    padding-bottom: 9.25rem;
+  }
+}
+
+@media (min-width: 1166px) and (max-width: 1173px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 149px;
+    padding-bottom: 9.3125rem;
+  }
+}
+
+@media (min-width: 1174px) and (max-width: 1180px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 150px;
+    padding-bottom: 9.375rem;
+  }
+}
+
+@media (min-width: 1181px) and (max-width: 1188px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 151px;
+    padding-bottom: 9.4375rem;
+  }
+}
+
+@media (min-width: 1189px) and (max-width: 1195px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 152px;
+    padding-bottom: 9.5rem;
+  }
+}
+
+@media (min-width: 1196px) and (max-width: 1202px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 153px;
+    padding-bottom: 9.5625rem;
+  }
+}
+
+@media (min-width: 1203px) and (max-width: 1210px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 154px;
+    padding-bottom: 9.625rem;
+  }
+}
+
+@media (min-width: 1211px) and (max-width: 1217px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 155px;
+    padding-bottom: 9.6875rem;
+  }
+}
+
+@media (min-width: 1218px) and (max-width: 1225px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 156px;
+    padding-bottom: 9.75rem;
+  }
+}
+
+@media (min-width: 1226px) and (max-width: 1232px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 157px;
+    padding-bottom: 9.8125rem;
+  }
+}
+
+@media (min-width: 1233px) and (max-width: 1240px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 158px;
+    padding-bottom: 9.875rem;
+  }
+}
+
+@media (min-width: 1241px) and (max-width: 1247px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 159px;
+    padding-bottom: 9.9375rem;
+  }
+}
+
+@media (min-width: 1248px) and (max-width: 1255px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 160px;
+    padding-bottom: 10rem;
+  }
+}
+
+@media (min-width: 1256px) and (max-width: 1262px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 161px;
+    padding-bottom: 10.0625rem;
+  }
+}
+
+@media (min-width: 1263px) and (max-width: 1270px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 162px;
+    padding-bottom: 10.125rem;
+  }
+}
+
+@media (min-width: 1271px) and (max-width: 1277px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 163px;
+    padding-bottom: 10.1875rem;
+  }
+}
+
+@media (min-width: 1278px) and (max-width: 1285px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 164px;
+    padding-bottom: 10.25rem;
+  }
+}
+
+@media (min-width: 1286px) and (max-width: 1292px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 165px;
+    padding-bottom: 10.3125rem;
+  }
+}
+
+@media (min-width: 1293px) and (max-width: 1300px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 166px;
+    padding-bottom: 10.375rem;
+  }
+}
+
+@media (min-width: 1301px) and (max-width: 1307px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 167px;
+    padding-bottom: 10.4375rem;
+  }
+}
+
+@media (min-width: 1308px) and (max-width: 1315px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 168px;
+    padding-bottom: 10.5rem;
+  }
+}
+
+@media (min-width: 1316px) and (max-width: 1322px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 169px;
+    padding-bottom: 10.5625rem;
+  }
+}
+
+@media (min-width: 1323px) and (max-width: 1330px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 170px;
+    padding-bottom: 10.625rem;
+  }
+}
+
+@media (min-width: 1331px) and (max-width: 1337px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 171px;
+    padding-bottom: 10.6875rem;
+  }
+}
+
+@media (min-width: 1338px) and (max-width: 1345px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 172px;
+    padding-bottom: 10.75rem;
+  }
+}
+
+@media (min-width: 1346px) and (max-width: 1352px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 173px;
+    padding-bottom: 10.8125rem;
+  }
+}
+
+@media (min-width: 1353px) and (max-width: 1360px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 174px;
+    padding-bottom: 10.875rem;
+  }
+}
+
+@media (min-width: 1361px) and (max-width: 1367px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 175px;
+    padding-bottom: 10.9375rem;
+  }
+}
+
+@media screen and (min-width: 1368px) {
+  /* line 118, src/sass/sections/_banner-top.scss */
+  .banner-top {
+    padding-bottom: 176px;
+    padding-bottom: 11rem;
+  }
+}
+
+/* line 161, src/sass/sections/_banner-top.scss */
 .banner-top:before {
-  background-image: -o-linear-gradient(red, yellow);
-  background-image: -moz-linear-gradient(red, yellow);
-  background-image: -webkit-linear-gradient(red, yellow);
-  background-image: linear-gradient(red, yellow);
+  background-image: -o-linear-gradient(#f2f3f3, rgba(242, 243, 243, 0));
+  background-image: -moz-linear-gradient(#f2f3f3, rgba(242, 243, 243, 0));
+  background-image: -webkit-linear-gradient(#f2f3f3, rgba(242, 243, 243, 0));
+  background-image: linear-gradient(#f2f3f3, rgba(242, 243, 243, 0));
   content: "";
   position: absolute;
   top: 0;
@@ -2186,43 +3162,1060 @@ header .button + ul li ul li {
   height: 5%;
 }
 
-/* line 54, src/sass/sections/_banner-top.scss */
+/* line 177, src/sass/sections/_banner-top.scss */
 .banner-top h1 {
-  background-color: rgba(255, 255, 0, 0.2);
+  max-width: 684px;
+  max-width: 42.75rem;
+  position: relative;
   color: #161d28;
   font-family: "Source-Sans-Pro-Light";
-  font-size: 58px;
-  font-size: 3.625rem;
-  line-height: 72px;
-  line-height: 4.5rem;
-  margin-top: 76px;
-  margin-top: 4.75rem;
-  width: 48%;
+  /*!!!*/
+  /*!!!*/
 }
 
-/* line 75, src/sass/sections/_banner-top.scss */
+@media screen and (max-width: 319px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 43px;
+    font-size: 2.6875rem;
+    line-height: 54px;
+    line-height: 3.375rem;
+    margin-top: 57px;
+    margin-top: 3.5625rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 351px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 44px;
+    font-size: 2.75rem;
+    line-height: 55px;
+    line-height: 3.4375rem;
+    margin-top: 58px;
+    margin-top: 3.625rem;
+  }
+}
+
+@media (min-width: 352px) and (max-width: 383px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 45px;
+    font-size: 2.8125rem;
+    line-height: 56px;
+    line-height: 3.5rem;
+    margin-top: 59px;
+    margin-top: 3.6875rem;
+  }
+}
+
+@media (min-width: 384px) and (max-width: 415px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 46px;
+    font-size: 2.875rem;
+    line-height: 57px;
+    line-height: 3.5625rem;
+    margin-top: 60px;
+    margin-top: 3.75rem;
+  }
+}
+
+@media (min-width: 416px) and (max-width: 447px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 47px;
+    font-size: 2.9375rem;
+    line-height: 58px;
+    line-height: 3.625rem;
+    margin-top: 62px;
+    margin-top: 3.875rem;
+  }
+}
+
+@media (min-width: 448px) and (max-width: 479px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 60px;
+    line-height: 3.75rem;
+    margin-top: 63px;
+    margin-top: 3.9375rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 511px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 49px;
+    font-size: 3.0625rem;
+    line-height: 61px;
+    line-height: 3.8125rem;
+    margin-top: 64px;
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 512px) and (max-width: 543px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 50px;
+    font-size: 3.125rem;
+    line-height: 62px;
+    line-height: 3.875rem;
+    margin-top: 66px;
+    margin-top: 4.125rem;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 575px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 51px;
+    font-size: 3.1875rem;
+    line-height: 63px;
+    line-height: 3.9375rem;
+    margin-top: 67px;
+    margin-top: 4.1875rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 607px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 52px;
+    font-size: 3.25rem;
+    line-height: 64px;
+    line-height: 4rem;
+    margin-top: 68px;
+    margin-top: 4.25rem;
+  }
+}
+
+@media (min-width: 608px) and (max-width: 639px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 53px;
+    font-size: 3.3125rem;
+    line-height: 66px;
+    line-height: 4.125rem;
+    margin-top: 69px;
+    margin-top: 4.3125rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 671px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 54px;
+    font-size: 3.375rem;
+    line-height: 67px;
+    line-height: 4.1875rem;
+    margin-top: 71px;
+    margin-top: 4.4375rem;
+  }
+}
+
+@media (min-width: 672px) and (max-width: 703px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 55px;
+    font-size: 3.4375rem;
+    line-height: 68px;
+    line-height: 4.25rem;
+    margin-top: 72px;
+    margin-top: 4.5rem;
+  }
+}
+
+@media (min-width: 704px) and (max-width: 735px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 56px;
+    font-size: 3.5rem;
+    line-height: 69px;
+    line-height: 4.3125rem;
+    margin-top: 73px;
+    margin-top: 4.5625rem;
+  }
+}
+
+@media (min-width: 736px) and (max-width: 767px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 57px;
+    font-size: 3.5625rem;
+    line-height: 71px;
+    line-height: 4.4375rem;
+    margin-top: 75px;
+    margin-top: 4.6875rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 58px;
+    font-size: 3.625rem;
+    line-height: 72px;
+    line-height: 4.5rem;
+    margin-top: 76px;
+    margin-top: 4.75rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1048px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 44px;
+    font-size: 2.75rem;
+    line-height: 55px;
+    line-height: 3.4375rem;
+    margin-top: 58px;
+    margin-top: 3.625rem;
+  }
+}
+
+@media (min-width: 1049px) and (max-width: 1072px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 45px;
+    font-size: 2.8125rem;
+    line-height: 56px;
+    line-height: 3.5rem;
+    margin-top: 59px;
+    margin-top: 3.6875rem;
+  }
+}
+
+@media (min-width: 1073px) and (max-width: 1097px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 46px;
+    font-size: 2.875rem;
+    line-height: 57px;
+    line-height: 3.5625rem;
+    margin-top: 60px;
+    margin-top: 3.75rem;
+  }
+}
+
+@media (min-width: 1098px) and (max-width: 1121px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 47px;
+    font-size: 2.9375rem;
+    line-height: 58px;
+    line-height: 3.625rem;
+    margin-top: 62px;
+    margin-top: 3.875rem;
+  }
+}
+
+@media (min-width: 1122px) and (max-width: 1146px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 60px;
+    line-height: 3.75rem;
+    margin-top: 63px;
+    margin-top: 3.9375rem;
+  }
+}
+
+@media (min-width: 1147px) and (max-width: 1170px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 49px;
+    font-size: 3.0625rem;
+    line-height: 61px;
+    line-height: 3.8125rem;
+    margin-top: 64px;
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 1171px) and (max-width: 1195px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 50px;
+    font-size: 3.125rem;
+    line-height: 62px;
+    line-height: 3.875rem;
+    margin-top: 66px;
+    margin-top: 4.125rem;
+  }
+}
+
+@media (min-width: 1196px) and (max-width: 1220px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 51px;
+    font-size: 3.1875rem;
+    line-height: 63px;
+    line-height: 3.9375rem;
+    margin-top: 67px;
+    margin-top: 4.1875rem;
+  }
+}
+
+@media (min-width: 1221px) and (max-width: 1244px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 52px;
+    font-size: 3.25rem;
+    line-height: 64px;
+    line-height: 4rem;
+    margin-top: 68px;
+    margin-top: 4.25rem;
+  }
+}
+
+@media (min-width: 1245px) and (max-width: 1269px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 53px;
+    font-size: 3.3125rem;
+    line-height: 66px;
+    line-height: 4.125rem;
+    margin-top: 69px;
+    margin-top: 4.3125rem;
+  }
+}
+
+@media (min-width: 1270px) and (max-width: 1293px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 54px;
+    font-size: 3.375rem;
+    line-height: 67px;
+    line-height: 4.1875rem;
+    margin-top: 71px;
+    margin-top: 4.4375rem;
+  }
+}
+
+@media (min-width: 1294px) and (max-width: 1318px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 55px;
+    font-size: 3.4375rem;
+    line-height: 68px;
+    line-height: 4.25rem;
+    margin-top: 72px;
+    margin-top: 4.5rem;
+  }
+}
+
+@media (min-width: 1319px) and (max-width: 1342px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 56px;
+    font-size: 3.5rem;
+    line-height: 69px;
+    line-height: 4.3125rem;
+    margin-top: 73px;
+    margin-top: 4.5625rem;
+  }
+}
+
+@media (min-width: 1343px) and (max-width: 1367px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 57px;
+    font-size: 3.5625rem;
+    line-height: 71px;
+    line-height: 4.4375rem;
+    margin-top: 75px;
+    margin-top: 4.6875rem;
+  }
+}
+
+@media screen and (min-width: 1368px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    font-size: 58px;
+    font-size: 3.625rem;
+    line-height: 72px;
+    line-height: 4.5rem;
+    margin-top: 76px;
+    margin-top: 4.75rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    padding-left: 5%;
+    padding-right: 5%;
+    left: 50%;
+    -moz-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 177, src/sass/sections/_banner-top.scss */
+  .banner-top h1 {
+    width: 48%;
+    left: 58%;
+    -moz-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+}
+
+/* line 255, src/sass/sections/_banner-top.scss */
 .banner-top h3 {
-  background-color: rgba(255, 0, 255, 0.2);
+  max-width: 684px;
+  max-width: 42.75rem;
+  position: relative;
   color: #5c666f;
-  font-size: 21px;
-  font-size: 1.3125rem;
-  line-height: 32px;
-  line-height: 2rem;
-  margin-top: 26px;
-  margin-top: 1.625rem;
-  width: 48%;
 }
 
-/* line 95, src/sass/sections/_banner-top.scss */
+@media screen and (max-width: 479px) {
+  /* line 255, src/sass/sections/_banner-top.scss */
+  .banner-top h3 {
+    display: none;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+  /* line 255, src/sass/sections/_banner-top.scss */
+  .banner-top h3 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 27px;
+    line-height: 1.6875rem;
+    margin-top: 22px;
+    margin-top: 1.375rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 671px) {
+  /* line 255, src/sass/sections/_banner-top.scss */
+  .banner-top h3 {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 29px;
+    line-height: 1.8125rem;
+    margin-top: 24px;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 672px) and (max-width: 767px) {
+  /* line 255, src/sass/sections/_banner-top.scss */
+  .banner-top h3 {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+    margin-top: 25px;
+    margin-top: 1.5625rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 255, src/sass/sections/_banner-top.scss */
+  .banner-top h3 {
+    font-size: 21px;
+    font-size: 1.3125rem;
+    line-height: 32px;
+    line-height: 2rem;
+    margin-top: 26px;
+    margin-top: 1.625rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1138px) {
+  /* line 255, src/sass/sections/_banner-top.scss */
+  .banner-top h3 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 27px;
+    line-height: 1.6875rem;
+    margin-top: 22px;
+    margin-top: 1.375rem;
+  }
+}
+
+@media (min-width: 1139px) and (max-width: 1252px) {
+  /* line 255, src/sass/sections/_banner-top.scss */
+  .banner-top h3 {
+    font-size: 19px;
+    font-size: 1.1875rem;
+    line-height: 29px;
+    line-height: 1.8125rem;
+    margin-top: 24px;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (min-width: 1253px) and (max-width: 1367px) {
+  /* line 255, src/sass/sections/_banner-top.scss */
+  .banner-top h3 {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+    margin-top: 25px;
+    margin-top: 1.5625rem;
+  }
+}
+
+@media screen and (min-width: 1368px) {
+  /* line 255, src/sass/sections/_banner-top.scss */
+  .banner-top h3 {
+    font-size: 21px;
+    font-size: 1.3125rem;
+    line-height: 32px;
+    line-height: 2rem;
+    margin-top: 26px;
+    margin-top: 1.625rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 255, src/sass/sections/_banner-top.scss */
+  .banner-top h3 {
+    padding-left: 5%;
+    padding-right: 5%;
+    left: 50%;
+    -moz-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 255, src/sass/sections/_banner-top.scss */
+  .banner-top h3 {
+    width: 48%;
+    left: 58%;
+    -moz-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+}
+
+/* line 320, src/sass/sections/_banner-top.scss */
 .banner-top .button {
+  position: relative;
   display: table;
-  margin-top: 76px;
-  margin-top: 4.75rem;
 }
 
-/* line 104, src/sass/sections/_banner-top.scss */
+@media screen and (max-width: 319px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 47px;
+    margin-top: 2.9375rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 335px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 48px;
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 336px) and (max-width: 351px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 49px;
+    margin-top: 3.0625rem;
+  }
+}
+
+@media (min-width: 352px) and (max-width: 367px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 50px;
+    margin-top: 3.125rem;
+  }
+}
+
+@media (min-width: 368px) and (max-width: 383px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 51px;
+    margin-top: 3.1875rem;
+  }
+}
+
+@media (min-width: 384px) and (max-width: 399px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 52px;
+    margin-top: 3.25rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 415px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 53px;
+    margin-top: 3.3125rem;
+  }
+}
+
+@media (min-width: 416px) and (max-width: 431px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 54px;
+    margin-top: 3.375rem;
+  }
+}
+
+@media (min-width: 432px) and (max-width: 447px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 55px;
+    margin-top: 3.4375rem;
+  }
+}
+
+@media (min-width: 448px) and (max-width: 463px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 56px;
+    margin-top: 3.5rem;
+  }
+}
+
+@media (min-width: 464px) and (max-width: 479px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 57px;
+    margin-top: 3.5625rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 495px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 58px;
+    margin-top: 3.625rem;
+  }
+}
+
+@media (min-width: 496px) and (max-width: 511px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 59px;
+    margin-top: 3.6875rem;
+  }
+}
+
+@media (min-width: 512px) and (max-width: 527px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 60px;
+    margin-top: 3.75rem;
+  }
+}
+
+@media (min-width: 528px) and (max-width: 543px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 61px;
+    margin-top: 3.8125rem;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 559px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 62px;
+    margin-top: 3.875rem;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 575px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 63px;
+    margin-top: 3.9375rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 591px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 64px;
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 592px) and (max-width: 607px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 65px;
+    margin-top: 4.0625rem;
+  }
+}
+
+@media (min-width: 608px) and (max-width: 623px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 66px;
+    margin-top: 4.125rem;
+  }
+}
+
+@media (min-width: 624px) and (max-width: 639px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 67px;
+    margin-top: 4.1875rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 655px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 68px;
+    margin-top: 4.25rem;
+  }
+}
+
+@media (min-width: 656px) and (max-width: 671px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 69px;
+    margin-top: 4.3125rem;
+  }
+}
+
+@media (min-width: 672px) and (max-width: 687px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 70px;
+    margin-top: 4.375rem;
+  }
+}
+
+@media (min-width: 688px) and (max-width: 703px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 71px;
+    margin-top: 4.4375rem;
+  }
+}
+
+@media (min-width: 704px) and (max-width: 719px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 72px;
+    margin-top: 4.5rem;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 735px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 73px;
+    margin-top: 4.5625rem;
+  }
+}
+
+@media (min-width: 736px) and (max-width: 751px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 74px;
+    margin-top: 4.625rem;
+  }
+}
+
+@media (min-width: 752px) and (max-width: 767px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 75px;
+    margin-top: 4.6875rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 76px;
+    margin-top: 4.75rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1035px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 48px;
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 1036px) and (max-width: 1048px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 49px;
+    margin-top: 3.0625rem;
+  }
+}
+
+@media (min-width: 1049px) and (max-width: 1060px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 50px;
+    margin-top: 3.125rem;
+  }
+}
+
+@media (min-width: 1061px) and (max-width: 1072px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 51px;
+    margin-top: 3.1875rem;
+  }
+}
+
+@media (min-width: 1073px) and (max-width: 1084px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 52px;
+    margin-top: 3.25rem;
+  }
+}
+
+@media (min-width: 1085px) and (max-width: 1097px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 53px;
+    margin-top: 3.3125rem;
+  }
+}
+
+@media (min-width: 1098px) and (max-width: 1109px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 54px;
+    margin-top: 3.375rem;
+  }
+}
+
+@media (min-width: 1110px) and (max-width: 1121px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 55px;
+    margin-top: 3.4375rem;
+  }
+}
+
+@media (min-width: 1122px) and (max-width: 1134px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 56px;
+    margin-top: 3.5rem;
+  }
+}
+
+@media (min-width: 1135px) and (max-width: 1146px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 57px;
+    margin-top: 3.5625rem;
+  }
+}
+
+@media (min-width: 1147px) and (max-width: 1158px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 58px;
+    margin-top: 3.625rem;
+  }
+}
+
+@media (min-width: 1159px) and (max-width: 1170px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 59px;
+    margin-top: 3.6875rem;
+  }
+}
+
+@media (min-width: 1171px) and (max-width: 1183px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 60px;
+    margin-top: 3.75rem;
+  }
+}
+
+@media (min-width: 1184px) and (max-width: 1195px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 61px;
+    margin-top: 3.8125rem;
+  }
+}
+
+@media (min-width: 1196px) and (max-width: 1207px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 62px;
+    margin-top: 3.875rem;
+  }
+}
+
+@media (min-width: 1208px) and (max-width: 1220px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 63px;
+    margin-top: 3.9375rem;
+  }
+}
+
+@media (min-width: 1221px) and (max-width: 1232px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 64px;
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 1233px) and (max-width: 1244px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 65px;
+    margin-top: 4.0625rem;
+  }
+}
+
+@media (min-width: 1245px) and (max-width: 1256px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 66px;
+    margin-top: 4.125rem;
+  }
+}
+
+@media (min-width: 1257px) and (max-width: 1269px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 67px;
+    margin-top: 4.1875rem;
+  }
+}
+
+@media (min-width: 1270px) and (max-width: 1281px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 68px;
+    margin-top: 4.25rem;
+  }
+}
+
+@media (min-width: 1282px) and (max-width: 1293px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 69px;
+    margin-top: 4.3125rem;
+  }
+}
+
+@media (min-width: 1294px) and (max-width: 1306px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 70px;
+    margin-top: 4.375rem;
+  }
+}
+
+@media (min-width: 1307px) and (max-width: 1318px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 71px;
+    margin-top: 4.4375rem;
+  }
+}
+
+@media (min-width: 1319px) and (max-width: 1330px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 72px;
+    margin-top: 4.5rem;
+  }
+}
+
+@media (min-width: 1331px) and (max-width: 1342px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 73px;
+    margin-top: 4.5625rem;
+  }
+}
+
+@media (min-width: 1343px) and (max-width: 1355px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 74px;
+    margin-top: 4.625rem;
+  }
+}
+
+@media (min-width: 1356px) and (max-width: 1367px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 75px;
+    margin-top: 4.6875rem;
+  }
+}
+
+@media screen and (min-width: 1368px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    margin-top: 76px;
+    margin-top: 4.75rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    left: 50%;
+    -moz-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 320, src/sass/sections/_banner-top.scss */
+  .banner-top .button {
+    left: 58%;
+    -moz-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+}
+
+/* line 361, src/sass/sections/_banner-top.scss */
 .banner-top img {
   width: 100%;
+  opacity: 0.5;
   position: absolute;
   display: block;
   z-index: -1;
@@ -2232,6 +4225,15 @@ header .button + ul li ul li {
   -ms-transform: translate(0, -50%);
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
+}
+
+@media screen and (max-width: 739px) {
+  /* line 361, src/sass/sections/_banner-top.scss */
+  .banner-top img {
+    right: 0;
+    min-width: 720px;
+    min-width: 45rem;
+  }
 }
 
 /*************************** Announcement Section Styles ****************************/
