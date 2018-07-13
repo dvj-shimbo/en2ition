@@ -74,6 +74,19 @@
 
 /**/
 body {
+
+
+/**
+	section,
+	.group,
+	footer {
+		display: none;
+	}
+/**/
+
+
+
+
 	@include media('screen', '<tablet-wide') {
 
 
@@ -198,40 +211,12 @@ body {
 
 header {
 //	background-color: rgba(255,255,0,0.7);
-//	background-color: $light-gray;
-
-//	margin: 0 auto;
-
-//margin: 43px 0 0 70px;
-//margin: 40px 0 0 70px;
-//margin: 40px auto;
-
-//display: inline-block;
-
-//padding: 0 5%;
 
 
-
-//	@include rem(margin, 44px auto);
-//	@include rem(margin, 40px auto);
 
 
 	margin: 0 auto;
-//	@include rem(padding, 40px 0);
 
-
-
-//	@include rem(padding, 16px 0);
-//	padding: 3% 0;
-
-
-///	@include rem(padding, 0 72px);
-
-//	margin: 0 auto;
-
-
-//	@include rem(max-width, 1226px);
-//	width: 100%;
 	@include rem(max-width, 1368px);
 
 
@@ -271,8 +256,6 @@ header {
 	img {
 //		background-color: rgba(0,255,0,0.4);
 
-//		@include rem(width, 170px);
-//		@include rem(width, 120px);
 
 		@include media('screen', '<320px') {
 			@include rem(width, 119px);
@@ -282,14 +265,9 @@ header {
 			@include rem(width, 170px);
 		}
 
-
-//		width: 12.4%;
-
 		@include rem(margin-top, 3px);
 
 		margin-left: 5%;
-
-//		display: none;
 
 //		opacity: 0.5;
 	}
@@ -302,12 +280,6 @@ header {
 //		color: $purple;
 
 		background-color: transparent;
-
-//		&:hover {
-//			color: $white;
-//			border-color: $purple;
-//			background-color: $purple;;
-//		}
 	}
 
 
@@ -520,11 +492,22 @@ header {
 
 	@include media('screen', '>=tablet-wide') {
 
-//		background-color: rgba(255,255,0,0.7);
-		background-color: $light-gray;
+//		position: relative;
+
+		background-color: rgba(255,255,0,0.5);
+//		background-color: $light-gray;
+
+
+		img {
+			float: left;
+
+		}
 
 
 		.button {
+
+
+
 			color: $purple;
 
 			&:hover {
@@ -538,7 +521,7 @@ header {
 	
 		ul {
 	
-	//		background-color: rgba(255,0,0,0.2);
+			background-color: rgba(255,0,0,0.2);
 	
 			cursor: default;
 	
@@ -551,7 +534,10 @@ header {
 			color: $font-color-header;
 	
 	
-			@include rem(margin, 18px 42px 0);
+//			@include rem(margin, 18px 42px 0);
+			@include rem(margin, 18px 42px 30px);
+
+
 	
 			li {
 	
