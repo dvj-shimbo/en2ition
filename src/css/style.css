@@ -2164,7 +2164,7 @@ header .button + ul li ul li {
 
 /* line 26, src/sass/sections/_banner-top.scss */
 .banner-top {
-  background-color: rgba(242, 243, 243, 0.75);
+  background-color: rgba(255, 0, 0, 0.2);
   clear: both;
   position: relative;
   overflow: hidden;
@@ -2188,6 +2188,7 @@ header .button + ul li ul li {
 
 /* line 54, src/sass/sections/_banner-top.scss */
 .banner-top h1 {
+  background-color: rgba(255, 255, 0, 0.2);
   color: #161d28;
   font-family: "Source-Sans-Pro-Light";
   font-size: 58px;
@@ -2201,6 +2202,7 @@ header .button + ul li ul li {
 
 /* line 75, src/sass/sections/_banner-top.scss */
 .banner-top h3 {
+  background-color: rgba(255, 0, 255, 0.2);
   color: #5c666f;
   font-size: 21px;
   font-size: 1.3125rem;
@@ -2213,11 +2215,12 @@ header .button + ul li ul li {
 
 /* line 95, src/sass/sections/_banner-top.scss */
 .banner-top .button {
+  display: table;
   margin-top: 76px;
   margin-top: 4.75rem;
 }
 
-/* line 102, src/sass/sections/_banner-top.scss */
+/* line 104, src/sass/sections/_banner-top.scss */
 .banner-top img {
   width: 100%;
   position: absolute;

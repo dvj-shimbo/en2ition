@@ -24,8 +24,8 @@
 
 
 .banner-top {
-//	background-color: rgba(255,0,0,0.2);
-	background-color: rgba($light-gray, 0.75);
+	background-color: rgba(255,0,0,0.2);
+//	background-color: rgba($light-gray, 0.75);
 
 	clear: both;
 
@@ -53,7 +53,7 @@
 
 	h1 {
 
-//		background-color: rgba(255,255,0,0.2);
+		background-color: rgba(255,255,0,0.2);
 
 		@extend %banner-top-pos;
 
@@ -76,7 +76,7 @@
 
 		@extend %banner-top-pos;
 
-//		background-color: rgba(255,0,255,0.2);
+		background-color: rgba(255,0,255,0.2);
 
 		color: $gray;
 
@@ -94,6 +94,8 @@
 
 	.button {
 		@extend %banner-top-pos;
+
+		display: table;
 
 		@include rem(margin-top, 76px);
 	}
