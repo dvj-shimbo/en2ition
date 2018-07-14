@@ -3,9 +3,11 @@
 
 .announcement {
 
-//	background-color: rgba(255,0,255,0.2);
+	background-color: rgba(255,0,255,0.2);
 
 	position: relative;
+
+	clear: both;
 
 	@include rem(max-width, 1368px);
 	margin: 0 auto;
@@ -31,7 +33,9 @@
 
 	img {
 
-//		opacity: 0.5;
+		opacity: 0.5;
+
+//		width: 40%;
 
 		margin-left: 5%;
 		@include rem(margin-top, 88px);
