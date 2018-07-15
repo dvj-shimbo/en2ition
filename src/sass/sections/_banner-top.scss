@@ -114,8 +114,8 @@
 
 
 .banner-top {
-	background-color: rgba(255,0,0,0.2);
-//	background-color: rgba($light-gray, 0.75);
+//	background-color: rgba(255,0,0,0.2);
+	background-color: rgba($light-gray, 0.75);
 
 	clear: both;
 
@@ -159,8 +159,8 @@
 	&:before {
 
 //		background-color: red;
-		@include linear-gradient(red, yellow);
-//		@include linear-gradient(rgba($light-gray, 1), rgba($light-gray, 0));
+//		@include linear-gradient(red, yellow);
+		@include linear-gradient(rgba($light-gray, 1), rgba($light-gray, 0));
 
 		content: "";
 		

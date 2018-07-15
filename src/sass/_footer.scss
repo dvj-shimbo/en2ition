@@ -4,6 +4,8 @@ footer {
 
 //	background-color: rgba(0,255,255,0.2);
 
+	clear: both;
+
 	@include rem(max-width, 1368px);
 
 	margin: 0 auto;
@@ -36,21 +38,57 @@ footer {
 
 	h4 {
 
+//		background-color: rgba(255,0,0,0.3);
+
 		color: $gray;
 
-		@include rem(margin-top, 90px);
+//		@include rem(margin-top, 90px);
 
-		@include rem(margin-bottom, 30px);
+//		@include rem(margin-bottom, 30px);
 
 
-		&:not(:last-child) {
+
+/**
+		&:last-child {
 			float: left;
 		}
-		&:last-child {
+		&:not(:last-child) {
 //			background-color: rgba(0,0,255,0.2);
 			float: right;
 			@include rem(padding-right, 50px);
 		}
+/**/
+
+		@include media('screen', '<phablet') {
+
+			&:not(:last-child) {
+				@include rem(margin-top, 60px);
+			}
+
+			&:last-child {
+				@include rem(margin-top, 10px);
+				@include rem(margin-bottom, 60px);
+			}
+		}
+		
+		@include media('screen', '>=phablet') {
+
+			@include rem(margin-top, 90px);
+			@include rem(margin-bottom, 60px);
+
+			&:not(:last-child) {
+				float: right;
+				@include rem(padding-right, 50px);
+			}
+
+			&:last-child {
+				float: left;
+			}
+			
+		}
+
+
+
 
 		b {
 			color: $font-color;
@@ -76,13 +114,18 @@ footer {
 
 
 
-		.col {
+//		.col {
+//		[class*="col"] {
+		.col-tablet-wide-4 {
+
+//			border: solid green 1px;
 
 			vertical-align: top;
 
 //			padding-left: 5%;
 //			padding-right: 5%;
-	
+
+/**	
 			&:first-child {
 //				padding-left: 5%;
 				padding-right: 8%;
@@ -96,8 +139,53 @@ footer {
 				padding-left: 9%;
 //				padding-right: 5%;
 			}
-	
+
 			@include rem(padding-top, 40px);
+
+/**/
+
+//			@include media('screen', '<phablet') {
+//				@include rem(padding-top, 30px);
+//			}
+
+
+			@include media('>=phablet', '<tablet-wide') {
+				padding-right: 10%;
+			}
+
+
+			@include media('screen', '<tablet-wide') {
+				@include rem(padding-top, 30px);
+
+				p {
+//					background-color: rgba(255,0,0,0.3);
+					@include rem(max-width, 300px);
+				}
+			}
+
+
+
+			@include media('screen', '>=tablet-wide') {
+
+				@include rem(padding-top, 40px);
+
+				&:first-child {
+					padding-right: 8%;
+				}
+		
+				&:nth-child(2) {
+					padding-left: 8%;
+				}
+		
+				&:last-child {
+					padding-left: 9%;
+				}
+			}
+
+
+
+	
+
 	
 			img {
 				width: 100%;
@@ -106,7 +194,9 @@ footer {
 			}
 
 			h3 {
+				font-family: "Source-Sans-Pro-Semibold";
 				color: $font-color;
+
 				@include rem(font-size, 18px);
 				@include rem(padding-top, 12px);
 				@include rem(padding-bottom, 12px);
