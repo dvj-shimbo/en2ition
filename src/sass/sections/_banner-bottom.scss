@@ -1,34 +1,111 @@
 /*************************** Banner-Bottom Section Styles ****************************/
 
 
+
+
+
+@mixin banner-bottom-padding ($media-min, $media-max, $padding-min, $padding-max) {
+
+	
+
+	$d: ($padding-max - $padding-min) / 1px;
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+		@include media('>=' + round($min), '<' + round($max)) {
+			$padding: $i + $padding-min;
+
+			@include rem(padding, $padding 0);
+
+		}
+	}
+}
+
+
+
+@mixin banner-bottom-h2 ($media-min, $media-max, $font-size-min, $font-size-max) {
+
+
+	/*!!!*/
+	
+
+	$d: ($font-size-max - $font-size-min) / 1px;
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+		@include media('>=' + round($min), '<' + round($max)) {
+			$font-size: $i + $font-size-min;
+
+			@include rem(font-size, $font-size);
+
+			@include rem(line-height, round($font-size * 1.25));
+			@include rem(margin-bottom, round($font-size * 1.44));
+
+		}
+	}
+}
+
+
+
+
+
+
+
 .banner-bottom {
 //	background-color: rgba(255,0,0,0.2);
+
+	clear: both;
 
 	@include rem(max-width, 1368px);
 	margin: 0 auto;
 
 	text-align: center;
 
-//	margin-top: 90px; //<-- убрать, заглушка!
 
-//	padding: 108px 0;
-	@include rem(padding, 108px 0);
+//	@include rem(padding, 108px 0);
+
+	@include media('screen', '<320px') {
+		@include rem(padding, 59px 0);
+	}
+
+	@include banner-bottom-padding (320px, 1024px, 60px, 107px);
+
+	@include media('screen', '>=1024px') {
+		@include rem(padding, 108px 0);
+	}
+
+
+
 
 	h2 {
 
 //		background-color: rgba(0,255,255,0.2);
+
 		color: $font-color;
 
 		font-family: "Source-Sans-Pro-Light";
-		@include rem(font-size, 36px);
-		@include rem(line-height, 45px);
 
-//		padding-top: 80px;
 
-//		margin: 80px 7%;
-//		@include rem(margin-top, 80px);
+//		@include rem(font-size, 36px);
+//		@include rem(line-height, 45px);
+//		@include rem(margin-bottom, 52px);
 
-		@include rem(margin-bottom, 52px);
+
+		@include media('screen', '<320px') {
+			@include rem(font-size, 23px);
+			@include rem(line-height, 29px);
+			@include rem(margin-bottom, 34px);
+		}
+
+		@include banner-bottom-h2 (320px, 1024px, 24px, 36px);
+
+		@include media('screen', '>=1024px') {
+			@include rem(font-size, 36px);
+			@include rem(line-height, 45px);
+			@include rem(margin-bottom, 52px);
+		}
 
 
 		margin-left: 7%;
