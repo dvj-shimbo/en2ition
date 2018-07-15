@@ -43,6 +43,51 @@ $(window).on("load", function() {
 		$(this).addClass("active");
 	});
 
+//==========================================================================================
+	
+	function redraw() {
+
+//==========================================================================================
+		$(".announcement").each(function() {
+			var panel = $(this).find(".panel");
+			if (panel.length) {
+				var img = panel.prev();
+				if (img.css("max-width") === "768px") {
+
+//					var paddingPottom = panel.height() / 2;
+					var paddingPottom = panel.outerHeight() / 2;
+
+					if (paddingPottom > img.height() / 2) {
+						paddingPottom += paddingPottom - img.height() / 2;
+					}
+
+//					console.log (img.height());
+					
+//					console.log (panel.height() + "   " + panel.outerHeight());
+
+					$(this).css("padding-bottom", paddingPottom);
+
+				} else {
+					$(this).css("padding-bottom", 0);
+				}
+			}
+		});
+//==========================================================================================
+	}
+
+//==========================================================================================	
+
+	$(window).resize(function(){
+		redraw();
+	});
+	redraw();
+
+	
+
+	
+
+
+
 
 
 

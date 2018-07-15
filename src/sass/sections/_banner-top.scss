@@ -22,8 +22,6 @@
 
 @mixin banner-top-h1 ($media-min, $media-max, $font-size-min, $font-size-max) {
 
-	/*!!!*/
-
 	$d: ($font-size-max - $font-size-min) / 1px;
 	@for $i from 0 through $d {
 		$step: ($media-max - $media-min) / ($d + 1);

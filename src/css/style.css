@@ -792,8 +792,8 @@ body {
   /**/
 }
 
-/* line 92, src/sass/_header.scss */
-body footer {
+/* line 89, src/sass/_header.scss */
+body .banner-top {
   display: none;
 }
 
@@ -803,27 +803,27 @@ body footer {
     padding-top: 41px;
     padding-top: 2.5625rem;
   }
-  /* line 105, src/sass/_header.scss */
+  /* line 106, src/sass/_header.scss */
   body header {
     padding: 7px 0;
     padding: 0.4375rem 0;
   }
-  /* line 108, src/sass/_header.scss */
+  /* line 109, src/sass/_header.scss */
   body header:before, body header:after {
     margin-top: 13px;
     margin-top: 0.8125rem;
   }
-  /* line 113, src/sass/_header.scss */
+  /* line 114, src/sass/_header.scss */
   body header .button {
     margin-top: 35px;
     margin-top: 2.1875rem;
   }
-  /* line 118, src/sass/_header.scss */
+  /* line 119, src/sass/_header.scss */
   body header .button + ul:before {
     height: 41px;
     height: 2.5625rem;
   }
-  /* line 122, src/sass/_header.scss */
+  /* line 123, src/sass/_header.scss */
   body header .button + ul:after {
     top: 9px;
     top: 0.5625rem;
@@ -1265,12 +1265,11 @@ body footer {
     /**/
     /**/
   }
-  /* line 142, src/sass/_header.scss */
-  body .banner-bottom,
+  /* line 144, src/sass/_header.scss */
   body footer {
     display: none;
   }
-  /* line 150, src/sass/_header.scss */
+  /* line 152, src/sass/_header.scss */
   body:before {
     background-image: -o-linear-gradient(#f2f3f3, rgba(242, 243, 243, 0));
     background-image: -moz-linear-gradient(#f2f3f3, rgba(242, 243, 243, 0));
@@ -1284,37 +1283,37 @@ body footer {
     height: 16px;
     height: 1rem;
   }
-  /* line 171, src/sass/_header.scss */
+  /* line 173, src/sass/_header.scss */
   body:not(.menu-active) {
     overflow-y: scroll;
   }
-  /* line 179, src/sass/_header.scss */
+  /* line 181, src/sass/_header.scss */
   body:not(.menu-active) header {
     /**/
     /**/
   }
-  /* line 187, src/sass/_header.scss */
+  /* line 189, src/sass/_header.scss */
   body:not(.menu-active) header:before {
     top: 0;
   }
-  /* line 190, src/sass/_header.scss */
+  /* line 192, src/sass/_header.scss */
   body:not(.menu-active) header:after {
     top: 14px;
     top: 0.875rem;
   }
-  /* line 194, src/sass/_header.scss */
+  /* line 196, src/sass/_header.scss */
   body:not(.menu-active) header .button {
     display: none;
   }
-  /* line 205, src/sass/_header.scss */
+  /* line 207, src/sass/_header.scss */
   body:not(.menu-active) header .button + ul li {
     display: none;
   }
-  /* line 215, src/sass/_header.scss */
+  /* line 217, src/sass/_header.scss */
   body.menu-active {
     overflow-y: hidden;
   }
-  /* line 219, src/sass/_header.scss */
+  /* line 221, src/sass/_header.scss */
   body.menu-active header {
     background-color: #894ea2;
     overflow-y: scroll;
@@ -1322,12 +1321,12 @@ body footer {
     /**/
     /**/
   }
-  /* line 234, src/sass/_header.scss */
+  /* line 236, src/sass/_header.scss */
   body.menu-active header:before, body.menu-active header:after {
     top: 7px;
     top: 0.4375rem;
   }
-  /* line 238, src/sass/_header.scss */
+  /* line 240, src/sass/_header.scss */
   body.menu-active header:before {
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -1335,7 +1334,7 @@ body footer {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
-  /* line 241, src/sass/_header.scss */
+  /* line 243, src/sass/_header.scss */
   body.menu-active header:after {
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -1343,12 +1342,12 @@ body footer {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  /* line 251, src/sass/_header.scss */
+  /* line 253, src/sass/_header.scss */
   body.menu-active header .button {
     display: table;
     margin-left: 5%;
   }
-  /* line 256, src/sass/_header.scss */
+  /* line 258, src/sass/_header.scss */
   body.menu-active header .button + ul {
     /**/
     padding-top: 14px;
@@ -1361,7 +1360,7 @@ body footer {
   }
 }
 
-/* line 280, src/sass/_header.scss */
+/* line 282, src/sass/_header.scss */
 header {
   margin: 0 auto;
   max-width: 1368px;
@@ -1395,7 +1394,7 @@ header {
 /**/
 }
 
-/* line 326, src/sass/_header.scss */
+/* line 328, src/sass/_header.scss */
 header img {
   margin-top: 3px;
   margin-top: 0.1875rem;
@@ -1403,7 +1402,7 @@ header img {
 }
 
 @media screen and (max-width: 319px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 119px;
     width: 7.4375rem;
@@ -1411,7 +1410,7 @@ header img {
 }
 
 @media (min-width: 320px) and (max-width: 333px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 120px;
     width: 7.5rem;
@@ -1419,7 +1418,7 @@ header img {
 }
 
 @media (min-width: 334px) and (max-width: 347px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 121px;
     width: 7.5625rem;
@@ -1427,7 +1426,7 @@ header img {
 }
 
 @media (min-width: 348px) and (max-width: 361px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 122px;
     width: 7.625rem;
@@ -1435,7 +1434,7 @@ header img {
 }
 
 @media (min-width: 362px) and (max-width: 375px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 123px;
     width: 7.6875rem;
@@ -1443,7 +1442,7 @@ header img {
 }
 
 @media (min-width: 376px) and (max-width: 389px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 124px;
     width: 7.75rem;
@@ -1451,7 +1450,7 @@ header img {
 }
 
 @media (min-width: 390px) and (max-width: 403px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 125px;
     width: 7.8125rem;
@@ -1459,7 +1458,7 @@ header img {
 }
 
 @media (min-width: 404px) and (max-width: 418px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 126px;
     width: 7.875rem;
@@ -1467,7 +1466,7 @@ header img {
 }
 
 @media (min-width: 419px) and (max-width: 432px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 127px;
     width: 7.9375rem;
@@ -1475,7 +1474,7 @@ header img {
 }
 
 @media (min-width: 433px) and (max-width: 446px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 128px;
     width: 8rem;
@@ -1483,7 +1482,7 @@ header img {
 }
 
 @media (min-width: 447px) and (max-width: 460px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 129px;
     width: 8.0625rem;
@@ -1491,7 +1490,7 @@ header img {
 }
 
 @media (min-width: 461px) and (max-width: 474px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 130px;
     width: 8.125rem;
@@ -1499,7 +1498,7 @@ header img {
 }
 
 @media (min-width: 475px) and (max-width: 488px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 131px;
     width: 8.1875rem;
@@ -1507,7 +1506,7 @@ header img {
 }
 
 @media (min-width: 489px) and (max-width: 502px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 132px;
     width: 8.25rem;
@@ -1515,7 +1514,7 @@ header img {
 }
 
 @media (min-width: 503px) and (max-width: 516px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 133px;
     width: 8.3125rem;
@@ -1523,7 +1522,7 @@ header img {
 }
 
 @media (min-width: 517px) and (max-width: 530px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 134px;
     width: 8.375rem;
@@ -1531,7 +1530,7 @@ header img {
 }
 
 @media (min-width: 531px) and (max-width: 544px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 135px;
     width: 8.4375rem;
@@ -1539,7 +1538,7 @@ header img {
 }
 
 @media (min-width: 545px) and (max-width: 558px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 136px;
     width: 8.5rem;
@@ -1547,7 +1546,7 @@ header img {
 }
 
 @media (min-width: 559px) and (max-width: 572px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 137px;
     width: 8.5625rem;
@@ -1555,7 +1554,7 @@ header img {
 }
 
 @media (min-width: 573px) and (max-width: 587px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 138px;
     width: 8.625rem;
@@ -1563,7 +1562,7 @@ header img {
 }
 
 @media (min-width: 588px) and (max-width: 601px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 139px;
     width: 8.6875rem;
@@ -1571,7 +1570,7 @@ header img {
 }
 
 @media (min-width: 602px) and (max-width: 615px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 140px;
     width: 8.75rem;
@@ -1579,7 +1578,7 @@ header img {
 }
 
 @media (min-width: 616px) and (max-width: 629px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 141px;
     width: 8.8125rem;
@@ -1587,7 +1586,7 @@ header img {
 }
 
 @media (min-width: 630px) and (max-width: 643px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 142px;
     width: 8.875rem;
@@ -1595,7 +1594,7 @@ header img {
 }
 
 @media (min-width: 644px) and (max-width: 657px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 143px;
     width: 8.9375rem;
@@ -1603,7 +1602,7 @@ header img {
 }
 
 @media (min-width: 658px) and (max-width: 671px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 144px;
     width: 9rem;
@@ -1611,7 +1610,7 @@ header img {
 }
 
 @media (min-width: 672px) and (max-width: 685px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 145px;
     width: 9.0625rem;
@@ -1619,7 +1618,7 @@ header img {
 }
 
 @media (min-width: 686px) and (max-width: 699px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 146px;
     width: 9.125rem;
@@ -1627,7 +1626,7 @@ header img {
 }
 
 @media (min-width: 700px) and (max-width: 713px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 147px;
     width: 9.1875rem;
@@ -1635,7 +1634,7 @@ header img {
 }
 
 @media (min-width: 714px) and (max-width: 727px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 148px;
     width: 9.25rem;
@@ -1643,7 +1642,7 @@ header img {
 }
 
 @media (min-width: 728px) and (max-width: 741px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 149px;
     width: 9.3125rem;
@@ -1651,7 +1650,7 @@ header img {
 }
 
 @media (min-width: 742px) and (max-width: 755px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 150px;
     width: 9.375rem;
@@ -1659,7 +1658,7 @@ header img {
 }
 
 @media (min-width: 756px) and (max-width: 770px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 151px;
     width: 9.4375rem;
@@ -1667,7 +1666,7 @@ header img {
 }
 
 @media (min-width: 771px) and (max-width: 784px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 152px;
     width: 9.5rem;
@@ -1675,7 +1674,7 @@ header img {
 }
 
 @media (min-width: 785px) and (max-width: 798px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 153px;
     width: 9.5625rem;
@@ -1683,7 +1682,7 @@ header img {
 }
 
 @media (min-width: 799px) and (max-width: 812px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 154px;
     width: 9.625rem;
@@ -1691,7 +1690,7 @@ header img {
 }
 
 @media (min-width: 813px) and (max-width: 826px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 155px;
     width: 9.6875rem;
@@ -1699,7 +1698,7 @@ header img {
 }
 
 @media (min-width: 827px) and (max-width: 840px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 156px;
     width: 9.75rem;
@@ -1707,7 +1706,7 @@ header img {
 }
 
 @media (min-width: 841px) and (max-width: 854px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 157px;
     width: 9.8125rem;
@@ -1715,7 +1714,7 @@ header img {
 }
 
 @media (min-width: 855px) and (max-width: 868px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 158px;
     width: 9.875rem;
@@ -1723,7 +1722,7 @@ header img {
 }
 
 @media (min-width: 869px) and (max-width: 882px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 159px;
     width: 9.9375rem;
@@ -1731,7 +1730,7 @@ header img {
 }
 
 @media (min-width: 883px) and (max-width: 896px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 160px;
     width: 10rem;
@@ -1739,7 +1738,7 @@ header img {
 }
 
 @media (min-width: 897px) and (max-width: 910px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 161px;
     width: 10.0625rem;
@@ -1747,7 +1746,7 @@ header img {
 }
 
 @media (min-width: 911px) and (max-width: 924px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 162px;
     width: 10.125rem;
@@ -1755,7 +1754,7 @@ header img {
 }
 
 @media (min-width: 925px) and (max-width: 939px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 163px;
     width: 10.1875rem;
@@ -1763,7 +1762,7 @@ header img {
 }
 
 @media (min-width: 940px) and (max-width: 953px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 164px;
     width: 10.25rem;
@@ -1771,7 +1770,7 @@ header img {
 }
 
 @media (min-width: 954px) and (max-width: 967px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 165px;
     width: 10.3125rem;
@@ -1779,7 +1778,7 @@ header img {
 }
 
 @media (min-width: 968px) and (max-width: 981px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 166px;
     width: 10.375rem;
@@ -1787,7 +1786,7 @@ header img {
 }
 
 @media (min-width: 982px) and (max-width: 995px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 167px;
     width: 10.4375rem;
@@ -1795,7 +1794,7 @@ header img {
 }
 
 @media (min-width: 996px) and (max-width: 1009px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 168px;
     width: 10.5rem;
@@ -1803,7 +1802,7 @@ header img {
 }
 
 @media (min-width: 1010px) and (max-width: 1023px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 169px;
     width: 10.5625rem;
@@ -1811,14 +1810,14 @@ header img {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 326, src/sass/_header.scss */
+  /* line 328, src/sass/_header.scss */
   header img {
     width: 170px;
     width: 10.625rem;
   }
 }
 
-/* line 346, src/sass/_header.scss */
+/* line 348, src/sass/_header.scss */
 header .button {
   font-weight: bold;
   font-size: 13px;
@@ -1826,18 +1825,18 @@ header .button {
   background-color: transparent;
 }
 
-/* line 360, src/sass/_header.scss */
+/* line 362, src/sass/_header.scss */
 header .button + ul a {
   text-decoration: none;
 }
 
-/* line 364, src/sass/_header.scss */
+/* line 366, src/sass/_header.scss */
 header .button + ul li {
   font-size: 18px;
   font-size: 1.125rem;
 }
 
-/* line 371, src/sass/_header.scss */
+/* line 373, src/sass/_header.scss */
 header .button + ul li ul li {
   font-size: 16px;
   font-size: 1rem;
@@ -1846,7 +1845,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 280, src/sass/_header.scss */
+  /* line 282, src/sass/_header.scss */
   header {
     position: fixed;
     top: 0;
@@ -1854,7 +1853,7 @@ header .button + ul li ul li {
     left: 0;
     z-index: 1;
   }
-  /* line 396, src/sass/_header.scss */
+  /* line 398, src/sass/_header.scss */
   header:before, header:after {
     background-color: #1c1c1c;
     content: "";
@@ -1865,17 +1864,17 @@ header .button + ul li ul li {
     height: 2px;
     height: 0.125rem;
   }
-  /* line 411, src/sass/_header.scss */
+  /* line 413, src/sass/_header.scss */
   header .button {
     border-color: #ffffff;
   }
-  /* line 415, src/sass/_header.scss */
+  /* line 417, src/sass/_header.scss */
   header .button:hover {
     color: #894ea2;
     border-color: #ffffff;
     background-color: #ffffff;
   }
-  /* line 423, src/sass/_header.scss */
+  /* line 425, src/sass/_header.scss */
   header .button + ul {
     color: #ffffff;
     /**
@@ -1889,7 +1888,7 @@ header .button + ul li ul li {
     /**/
     /**/
   }
-  /* line 446, src/sass/_header.scss */
+  /* line 448, src/sass/_header.scss */
   header .button + ul:before {
     background-color: #f2f3f3;
     content: "";
@@ -1899,7 +1898,7 @@ header .button + ul li ul li {
     right: 0;
     z-index: -1;
   }
-  /* line 461, src/sass/_header.scss */
+  /* line 463, src/sass/_header.scss */
   header .button + ul:after {
     pointer-events: auto;
     content: "";
@@ -1911,11 +1910,11 @@ header .button + ul li ul li {
     right: 6%;
     z-index: 1;
   }
-  /* line 483, src/sass/_header.scss */
+  /* line 485, src/sass/_header.scss */
   header .button + ul a {
     color: #ffffff;
   }
-  /* line 488, src/sass/_header.scss */
+  /* line 490, src/sass/_header.scss */
   header .button + ul li {
     cursor: default;
     pointer-events: auto;
@@ -1925,11 +1924,11 @@ header .button + ul li ul li {
     padding-bottom: 1rem;
     position: relative;
   }
-  /* line 501, src/sass/_header.scss */
+  /* line 503, src/sass/_header.scss */
   header .button + ul li ul {
     overflow: hidden;
   }
-  /* line 510, src/sass/_header.scss */
+  /* line 512, src/sass/_header.scss */
   header .button + ul li ul:not(.active) {
     position: absolute;
     top: 0;
@@ -1938,16 +1937,16 @@ header .button + ul li ul li {
     right: 0;
     cursor: pointer;
   }
-  /* line 522, src/sass/_header.scss */
+  /* line 524, src/sass/_header.scss */
   header .button + ul li ul:not(.active) li {
     display: none;
   }
-  /* line 527, src/sass/_header.scss */
+  /* line 529, src/sass/_header.scss */
   header .button + ul li ul.active {
     margin-top: 16px;
     margin-top: 1rem;
   }
-  /* line 535, src/sass/_header.scss */
+  /* line 537, src/sass/_header.scss */
   header .button + ul li ul.active li {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     padding-left: 16px;
@@ -1955,33 +1954,33 @@ header .button + ul li ul li {
     padding-right: 16px;
     padding-right: 1rem;
   }
-  /* line 542, src/sass/_header.scss */
+  /* line 544, src/sass/_header.scss */
   header .button + ul li ul.active li:last-child {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 280, src/sass/_header.scss */
+  /* line 282, src/sass/_header.scss */
   header {
     padding: 40px 0;
     padding: 2.5rem 0;
   }
-  /* line 571, src/sass/_header.scss */
+  /* line 573, src/sass/_header.scss */
   header img {
     float: left;
   }
-  /* line 576, src/sass/_header.scss */
+  /* line 578, src/sass/_header.scss */
   header .button {
     color: #894ea2;
   }
-  /* line 582, src/sass/_header.scss */
+  /* line 584, src/sass/_header.scss */
   header .button:hover {
     color: #ffffff;
     border-color: #894ea2;
     background-color: #894ea2;
   }
-  /* line 591, src/sass/_header.scss */
+  /* line 593, src/sass/_header.scss */
   header ul {
     cursor: default;
     display: inline-block;
@@ -1990,34 +1989,34 @@ header .button + ul li ul li {
     margin: 18px 42px 30px;
     margin: 1.125rem 2.625rem 1.875rem;
   }
-  /* line 611, src/sass/_header.scss */
+  /* line 613, src/sass/_header.scss */
   header ul li {
     display: inline-block;
     position: relative;
   }
-  /* line 629, src/sass/_header.scss */
+  /* line 631, src/sass/_header.scss */
   header ul li:not(.active) ul.active {
     top: 6px;
     top: 0.375rem;
   }
-  /* line 635, src/sass/_header.scss */
+  /* line 637, src/sass/_header.scss */
   header ul li.active {
     border-bottom: 3px solid #894ea2;
   }
-  /* line 638, src/sass/_header.scss */
+  /* line 640, src/sass/_header.scss */
   header ul li.active ul.active {
     top: 12px;
     top: 0.75rem;
   }
-  /* line 644, src/sass/_header.scss */
+  /* line 646, src/sass/_header.scss */
   header ul li a {
     color: #455a64;
   }
-  /* line 648, src/sass/_header.scss */
+  /* line 650, src/sass/_header.scss */
   header ul li a:hover {
     color: #894ea2;
   }
-  /* line 655, src/sass/_header.scss */
+  /* line 657, src/sass/_header.scss */
   header ul li ul {
     position: absolute;
     overflow: hidden;
@@ -2025,7 +2024,7 @@ header .button + ul li ul li {
     padding-top: 14px;
     padding-top: 0.875rem;
   }
-  /* line 670, src/sass/_header.scss */
+  /* line 672, src/sass/_header.scss */
   header ul li ul:not(.active) {
     cursor: pointer;
     top: -18px;
@@ -2034,27 +2033,27 @@ header .button + ul li ul li {
     left: -2.625rem;
     width: 100%;
   }
-  /* line 676, src/sass/_header.scss */
+  /* line 678, src/sass/_header.scss */
   header ul li ul:not(.active) li {
     display: none;
   }
-  /* line 683, src/sass/_header.scss */
+  /* line 685, src/sass/_header.scss */
   header ul li ul.active {
     left: -42px;
     left: -2.625rem;
     width: 170%;
   }
-  /* line 705, src/sass/_header.scss */
+  /* line 707, src/sass/_header.scss */
   header ul li ul li {
     background-color: #894ea2;
     color: #161d28;
   }
-  /* line 719, src/sass/_header.scss */
+  /* line 721, src/sass/_header.scss */
   header ul li ul li:first-child {
     padding-top: 14px;
     padding-top: 0.875rem;
   }
-  /* line 723, src/sass/_header.scss */
+  /* line 725, src/sass/_header.scss */
   header ul li ul li:first-child:before {
     position: absolute;
     content: "";
@@ -2067,7 +2066,7 @@ header .button + ul li ul li {
     border-width: 0 0.875rem 0.875rem 0.875rem;
     border-color: transparent transparent #894ea2 transparent;
   }
-  /* line 739, src/sass/_header.scss */
+  /* line 741, src/sass/_header.scss */
   header ul li ul li:not(:first-child):before {
     content: "";
     position: relative;
@@ -2079,25 +2078,25 @@ header .button + ul li ul li {
     top: -8px;
     top: -0.5rem;
   }
-  /* line 751, src/sass/_header.scss */
+  /* line 753, src/sass/_header.scss */
   header ul li ul li:not(:first-child) {
     padding-top: 8px;
     padding-top: 0.5rem;
   }
-  /* line 755, src/sass/_header.scss */
+  /* line 757, src/sass/_header.scss */
   header ul li ul li:last-child {
     padding-bottom: 14px;
     padding-bottom: 0.875rem;
   }
-  /* line 761, src/sass/_header.scss */
+  /* line 763, src/sass/_header.scss */
   header ul li ul li a {
     color: #ffffff;
   }
-  /* line 763, src/sass/_header.scss */
+  /* line 765, src/sass/_header.scss */
   header ul li ul li a:hover {
     color: #161d28;
   }
-  /* line 782, src/sass/_header.scss */
+  /* line 784, src/sass/_header.scss */
   header .button {
     float: right;
     margin-right: 5%;
@@ -2105,7 +2104,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1024px) and (max-width: 1060px) {
-  /* line 793, src/sass/_header.scss */
+  /* line 795, src/sass/_header.scss */
   header ul li {
     padding: 0 16px 8px;
     padding: 0 1rem 0.5rem;
@@ -2113,7 +2112,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1061px) and (max-width: 1098px) {
-  /* line 793, src/sass/_header.scss */
+  /* line 795, src/sass/_header.scss */
   header ul li {
     padding: 0 17px 8px;
     padding: 0 1.0625rem 0.5rem;
@@ -2121,7 +2120,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1099px) and (max-width: 1135px) {
-  /* line 793, src/sass/_header.scss */
+  /* line 795, src/sass/_header.scss */
   header ul li {
     padding: 0 18px 8px;
     padding: 0 1.125rem 0.5rem;
@@ -2129,7 +2128,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1136px) and (max-width: 1172px) {
-  /* line 793, src/sass/_header.scss */
+  /* line 795, src/sass/_header.scss */
   header ul li {
     padding: 0 19px 8px;
     padding: 0 1.1875rem 0.5rem;
@@ -2137,7 +2136,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1173px) and (max-width: 1210px) {
-  /* line 793, src/sass/_header.scss */
+  /* line 795, src/sass/_header.scss */
   header ul li {
     padding: 0 20px 8px;
     padding: 0 1.25rem 0.5rem;
@@ -2145,7 +2144,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1211px) and (max-width: 1247px) {
-  /* line 793, src/sass/_header.scss */
+  /* line 795, src/sass/_header.scss */
   header ul li {
     padding: 0 21px 8px;
     padding: 0 1.3125rem 0.5rem;
@@ -2153,7 +2152,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1248px) {
-  /* line 793, src/sass/_header.scss */
+  /* line 795, src/sass/_header.scss */
   header ul li {
     padding: 0 22px 8px;
     padding: 0 1.375rem 0.5rem;
@@ -2161,7 +2160,7 @@ header .button + ul li ul li {
 }
 
 /*************************** Banner-Top Section Styles ****************************/
-/* line 118, src/sass/sections/_banner-top.scss */
+/* line 116, src/sass/sections/_banner-top.scss */
 .banner-top {
   background-color: rgba(255, 0, 0, 0.2);
   clear: both;
@@ -2170,7 +2169,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (max-width: 319px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 100px;
     padding-bottom: 6.25rem;
@@ -2178,7 +2177,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 320px) and (max-width: 325px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 101px;
     padding-bottom: 6.3125rem;
@@ -2186,7 +2185,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 326px) and (max-width: 331px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 102px;
     padding-bottom: 6.375rem;
@@ -2194,7 +2193,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 332px) and (max-width: 337px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 103px;
     padding-bottom: 6.4375rem;
@@ -2202,7 +2201,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 338px) and (max-width: 343px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 104px;
     padding-bottom: 6.5rem;
@@ -2210,7 +2209,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 344px) and (max-width: 349px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 105px;
     padding-bottom: 6.5625rem;
@@ -2218,7 +2217,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 350px) and (max-width: 355px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 106px;
     padding-bottom: 6.625rem;
@@ -2226,7 +2225,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 356px) and (max-width: 361px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 107px;
     padding-bottom: 6.6875rem;
@@ -2234,7 +2233,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 362px) and (max-width: 367px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 108px;
     padding-bottom: 6.75rem;
@@ -2242,7 +2241,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 368px) and (max-width: 373px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 109px;
     padding-bottom: 6.8125rem;
@@ -2250,7 +2249,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 374px) and (max-width: 379px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 110px;
     padding-bottom: 6.875rem;
@@ -2258,7 +2257,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 380px) and (max-width: 385px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 111px;
     padding-bottom: 6.9375rem;
@@ -2266,7 +2265,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 386px) and (max-width: 391px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 112px;
     padding-bottom: 7rem;
@@ -2274,7 +2273,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 392px) and (max-width: 397px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 113px;
     padding-bottom: 7.0625rem;
@@ -2282,7 +2281,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 398px) and (max-width: 403px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 114px;
     padding-bottom: 7.125rem;
@@ -2290,7 +2289,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 404px) and (max-width: 409px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 115px;
     padding-bottom: 7.1875rem;
@@ -2298,7 +2297,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 410px) and (max-width: 415px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 116px;
     padding-bottom: 7.25rem;
@@ -2306,7 +2305,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 416px) and (max-width: 421px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 117px;
     padding-bottom: 7.3125rem;
@@ -2314,7 +2313,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 422px) and (max-width: 427px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 118px;
     padding-bottom: 7.375rem;
@@ -2322,7 +2321,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 428px) and (max-width: 432px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 119px;
     padding-bottom: 7.4375rem;
@@ -2330,7 +2329,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 433px) and (max-width: 438px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 120px;
     padding-bottom: 7.5rem;
@@ -2338,7 +2337,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 439px) and (max-width: 444px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 121px;
     padding-bottom: 7.5625rem;
@@ -2346,7 +2345,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 445px) and (max-width: 450px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 122px;
     padding-bottom: 7.625rem;
@@ -2354,7 +2353,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 451px) and (max-width: 456px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 123px;
     padding-bottom: 7.6875rem;
@@ -2362,7 +2361,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 457px) and (max-width: 462px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 124px;
     padding-bottom: 7.75rem;
@@ -2370,7 +2369,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 463px) and (max-width: 468px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 125px;
     padding-bottom: 7.8125rem;
@@ -2378,7 +2377,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 469px) and (max-width: 474px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 126px;
     padding-bottom: 7.875rem;
@@ -2386,7 +2385,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 475px) and (max-width: 480px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 127px;
     padding-bottom: 7.9375rem;
@@ -2394,7 +2393,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 481px) and (max-width: 486px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 128px;
     padding-bottom: 8rem;
@@ -2402,7 +2401,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 487px) and (max-width: 492px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 129px;
     padding-bottom: 8.0625rem;
@@ -2410,7 +2409,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 493px) and (max-width: 498px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 130px;
     padding-bottom: 8.125rem;
@@ -2418,7 +2417,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 499px) and (max-width: 504px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 131px;
     padding-bottom: 8.1875rem;
@@ -2426,7 +2425,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 505px) and (max-width: 510px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 132px;
     padding-bottom: 8.25rem;
@@ -2434,7 +2433,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 511px) and (max-width: 516px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 133px;
     padding-bottom: 8.3125rem;
@@ -2442,7 +2441,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 517px) and (max-width: 522px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 134px;
     padding-bottom: 8.375rem;
@@ -2450,7 +2449,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 523px) and (max-width: 528px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 135px;
     padding-bottom: 8.4375rem;
@@ -2458,7 +2457,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 529px) and (max-width: 534px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 136px;
     padding-bottom: 8.5rem;
@@ -2466,7 +2465,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 535px) and (max-width: 540px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 137px;
     padding-bottom: 8.5625rem;
@@ -2474,7 +2473,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 541px) and (max-width: 546px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 138px;
     padding-bottom: 8.625rem;
@@ -2482,7 +2481,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 547px) and (max-width: 552px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 139px;
     padding-bottom: 8.6875rem;
@@ -2490,7 +2489,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 553px) and (max-width: 558px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 140px;
     padding-bottom: 8.75rem;
@@ -2498,7 +2497,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 559px) and (max-width: 564px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 141px;
     padding-bottom: 8.8125rem;
@@ -2506,7 +2505,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 565px) and (max-width: 570px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 142px;
     padding-bottom: 8.875rem;
@@ -2514,7 +2513,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 571px) and (max-width: 576px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 143px;
     padding-bottom: 8.9375rem;
@@ -2522,7 +2521,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 577px) and (max-width: 582px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 144px;
     padding-bottom: 9rem;
@@ -2530,7 +2529,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 583px) and (max-width: 588px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 145px;
     padding-bottom: 9.0625rem;
@@ -2538,7 +2537,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 589px) and (max-width: 594px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 146px;
     padding-bottom: 9.125rem;
@@ -2546,7 +2545,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 595px) and (max-width: 600px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 147px;
     padding-bottom: 9.1875rem;
@@ -2554,7 +2553,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 601px) and (max-width: 606px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 148px;
     padding-bottom: 9.25rem;
@@ -2562,7 +2561,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 607px) and (max-width: 612px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 149px;
     padding-bottom: 9.3125rem;
@@ -2570,7 +2569,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 613px) and (max-width: 618px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 150px;
     padding-bottom: 9.375rem;
@@ -2578,7 +2577,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 619px) and (max-width: 624px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 151px;
     padding-bottom: 9.4375rem;
@@ -2586,7 +2585,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 625px) and (max-width: 630px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 152px;
     padding-bottom: 9.5rem;
@@ -2594,7 +2593,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 631px) and (max-width: 636px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 153px;
     padding-bottom: 9.5625rem;
@@ -2602,7 +2601,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 637px) and (max-width: 642px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 154px;
     padding-bottom: 9.625rem;
@@ -2610,7 +2609,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 643px) and (max-width: 648px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 155px;
     padding-bottom: 9.6875rem;
@@ -2618,7 +2617,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 649px) and (max-width: 654px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 156px;
     padding-bottom: 9.75rem;
@@ -2626,7 +2625,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 655px) and (max-width: 659px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 157px;
     padding-bottom: 9.8125rem;
@@ -2634,7 +2633,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 660px) and (max-width: 665px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 158px;
     padding-bottom: 9.875rem;
@@ -2642,7 +2641,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 666px) and (max-width: 671px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 159px;
     padding-bottom: 9.9375rem;
@@ -2650,7 +2649,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 672px) and (max-width: 677px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 160px;
     padding-bottom: 10rem;
@@ -2658,7 +2657,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 678px) and (max-width: 683px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 161px;
     padding-bottom: 10.0625rem;
@@ -2666,7 +2665,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 684px) and (max-width: 689px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 162px;
     padding-bottom: 10.125rem;
@@ -2674,7 +2673,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 690px) and (max-width: 695px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 163px;
     padding-bottom: 10.1875rem;
@@ -2682,7 +2681,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 696px) and (max-width: 701px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 164px;
     padding-bottom: 10.25rem;
@@ -2690,7 +2689,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 702px) and (max-width: 707px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 165px;
     padding-bottom: 10.3125rem;
@@ -2698,7 +2697,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 708px) and (max-width: 713px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 166px;
     padding-bottom: 10.375rem;
@@ -2706,7 +2705,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 714px) and (max-width: 719px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 167px;
     padding-bottom: 10.4375rem;
@@ -2714,7 +2713,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 720px) and (max-width: 725px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 168px;
     padding-bottom: 10.5rem;
@@ -2722,7 +2721,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 726px) and (max-width: 731px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 169px;
     padding-bottom: 10.5625rem;
@@ -2730,7 +2729,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 732px) and (max-width: 737px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 170px;
     padding-bottom: 10.625rem;
@@ -2738,7 +2737,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 738px) and (max-width: 743px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 171px;
     padding-bottom: 10.6875rem;
@@ -2746,7 +2745,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 744px) and (max-width: 749px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 172px;
     padding-bottom: 10.75rem;
@@ -2754,7 +2753,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 750px) and (max-width: 755px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 173px;
     padding-bottom: 10.8125rem;
@@ -2762,7 +2761,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 756px) and (max-width: 761px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 174px;
     padding-bottom: 10.875rem;
@@ -2770,7 +2769,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 762px) and (max-width: 767px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 175px;
     padding-bottom: 10.9375rem;
@@ -2778,7 +2777,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 176px;
     padding-bottom: 11rem;
@@ -2786,7 +2785,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1024px) and (max-width: 1030px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 130px;
     padding-bottom: 8.125rem;
@@ -2794,7 +2793,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1031px) and (max-width: 1038px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 131px;
     padding-bottom: 8.1875rem;
@@ -2802,7 +2801,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1039px) and (max-width: 1045px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 132px;
     padding-bottom: 8.25rem;
@@ -2810,7 +2809,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1046px) and (max-width: 1053px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 133px;
     padding-bottom: 8.3125rem;
@@ -2818,7 +2817,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1054px) and (max-width: 1060px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 134px;
     padding-bottom: 8.375rem;
@@ -2826,7 +2825,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1061px) and (max-width: 1068px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 135px;
     padding-bottom: 8.4375rem;
@@ -2834,7 +2833,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1069px) and (max-width: 1075px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 136px;
     padding-bottom: 8.5rem;
@@ -2842,7 +2841,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1076px) and (max-width: 1083px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 137px;
     padding-bottom: 8.5625rem;
@@ -2850,7 +2849,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1084px) and (max-width: 1090px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 138px;
     padding-bottom: 8.625rem;
@@ -2858,7 +2857,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1091px) and (max-width: 1098px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 139px;
     padding-bottom: 8.6875rem;
@@ -2866,7 +2865,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1099px) and (max-width: 1105px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 140px;
     padding-bottom: 8.75rem;
@@ -2874,7 +2873,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1106px) and (max-width: 1113px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 141px;
     padding-bottom: 8.8125rem;
@@ -2882,7 +2881,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1114px) and (max-width: 1120px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 142px;
     padding-bottom: 8.875rem;
@@ -2890,7 +2889,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1121px) and (max-width: 1128px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 143px;
     padding-bottom: 8.9375rem;
@@ -2898,7 +2897,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1129px) and (max-width: 1135px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 144px;
     padding-bottom: 9rem;
@@ -2906,7 +2905,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1136px) and (max-width: 1143px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 145px;
     padding-bottom: 9.0625rem;
@@ -2914,7 +2913,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1144px) and (max-width: 1150px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 146px;
     padding-bottom: 9.125rem;
@@ -2922,7 +2921,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1151px) and (max-width: 1158px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 147px;
     padding-bottom: 9.1875rem;
@@ -2930,7 +2929,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1159px) and (max-width: 1165px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 148px;
     padding-bottom: 9.25rem;
@@ -2938,7 +2937,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1166px) and (max-width: 1173px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 149px;
     padding-bottom: 9.3125rem;
@@ -2946,7 +2945,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1174px) and (max-width: 1180px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 150px;
     padding-bottom: 9.375rem;
@@ -2954,7 +2953,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1181px) and (max-width: 1188px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 151px;
     padding-bottom: 9.4375rem;
@@ -2962,7 +2961,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1189px) and (max-width: 1195px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 152px;
     padding-bottom: 9.5rem;
@@ -2970,7 +2969,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1196px) and (max-width: 1202px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 153px;
     padding-bottom: 9.5625rem;
@@ -2978,7 +2977,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1203px) and (max-width: 1210px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 154px;
     padding-bottom: 9.625rem;
@@ -2986,7 +2985,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1211px) and (max-width: 1217px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 155px;
     padding-bottom: 9.6875rem;
@@ -2994,7 +2993,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1218px) and (max-width: 1225px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 156px;
     padding-bottom: 9.75rem;
@@ -3002,7 +3001,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1226px) and (max-width: 1232px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 157px;
     padding-bottom: 9.8125rem;
@@ -3010,7 +3009,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1233px) and (max-width: 1240px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 158px;
     padding-bottom: 9.875rem;
@@ -3018,7 +3017,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1241px) and (max-width: 1247px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 159px;
     padding-bottom: 9.9375rem;
@@ -3026,7 +3025,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1248px) and (max-width: 1255px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 160px;
     padding-bottom: 10rem;
@@ -3034,7 +3033,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1256px) and (max-width: 1262px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 161px;
     padding-bottom: 10.0625rem;
@@ -3042,7 +3041,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1263px) and (max-width: 1270px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 162px;
     padding-bottom: 10.125rem;
@@ -3050,7 +3049,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1271px) and (max-width: 1277px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 163px;
     padding-bottom: 10.1875rem;
@@ -3058,7 +3057,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1278px) and (max-width: 1285px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 164px;
     padding-bottom: 10.25rem;
@@ -3066,7 +3065,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1286px) and (max-width: 1292px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 165px;
     padding-bottom: 10.3125rem;
@@ -3074,7 +3073,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1293px) and (max-width: 1300px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 166px;
     padding-bottom: 10.375rem;
@@ -3082,7 +3081,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1301px) and (max-width: 1307px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 167px;
     padding-bottom: 10.4375rem;
@@ -3090,7 +3089,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1308px) and (max-width: 1315px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 168px;
     padding-bottom: 10.5rem;
@@ -3098,7 +3097,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1316px) and (max-width: 1322px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 169px;
     padding-bottom: 10.5625rem;
@@ -3106,7 +3105,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1323px) and (max-width: 1330px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 170px;
     padding-bottom: 10.625rem;
@@ -3114,7 +3113,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1331px) and (max-width: 1337px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 171px;
     padding-bottom: 10.6875rem;
@@ -3122,7 +3121,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1338px) and (max-width: 1345px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 172px;
     padding-bottom: 10.75rem;
@@ -3130,7 +3129,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1346px) and (max-width: 1352px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 173px;
     padding-bottom: 10.8125rem;
@@ -3138,7 +3137,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1353px) and (max-width: 1360px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 174px;
     padding-bottom: 10.875rem;
@@ -3146,7 +3145,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1361px) and (max-width: 1367px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 175px;
     padding-bottom: 10.9375rem;
@@ -3154,14 +3153,14 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1368px) {
-  /* line 118, src/sass/sections/_banner-top.scss */
+  /* line 116, src/sass/sections/_banner-top.scss */
   .banner-top {
     padding-bottom: 176px;
     padding-bottom: 11rem;
   }
 }
 
-/* line 161, src/sass/sections/_banner-top.scss */
+/* line 159, src/sass/sections/_banner-top.scss */
 .banner-top:before {
   background-image: -o-linear-gradient(red, yellow);
   background-image: -moz-linear-gradient(red, yellow);
@@ -3175,19 +3174,17 @@ header .button + ul li ul li {
   height: 5%;
 }
 
-/* line 177, src/sass/sections/_banner-top.scss */
+/* line 175, src/sass/sections/_banner-top.scss */
 .banner-top h1 {
   max-width: 684px;
   max-width: 42.75rem;
   position: relative;
   color: #161d28;
   font-family: "Source-Sans-Pro-Light";
-  /*!!!*/
-  /*!!!*/
 }
 
 @media screen and (max-width: 319px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 43px;
     font-size: 2.6875rem;
@@ -3199,7 +3196,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 320px) and (max-width: 351px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 44px;
     font-size: 2.75rem;
@@ -3211,7 +3208,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 352px) and (max-width: 383px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 45px;
     font-size: 2.8125rem;
@@ -3223,7 +3220,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 384px) and (max-width: 415px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 46px;
     font-size: 2.875rem;
@@ -3235,7 +3232,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 416px) and (max-width: 447px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 47px;
     font-size: 2.9375rem;
@@ -3247,7 +3244,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 448px) and (max-width: 479px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 48px;
     font-size: 3rem;
@@ -3259,7 +3256,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 480px) and (max-width: 511px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 49px;
     font-size: 3.0625rem;
@@ -3271,7 +3268,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 512px) and (max-width: 543px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 50px;
     font-size: 3.125rem;
@@ -3283,7 +3280,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 544px) and (max-width: 575px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 51px;
     font-size: 3.1875rem;
@@ -3295,7 +3292,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 576px) and (max-width: 607px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 52px;
     font-size: 3.25rem;
@@ -3307,7 +3304,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 608px) and (max-width: 639px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 53px;
     font-size: 3.3125rem;
@@ -3319,7 +3316,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 640px) and (max-width: 671px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 54px;
     font-size: 3.375rem;
@@ -3331,7 +3328,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 672px) and (max-width: 703px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 55px;
     font-size: 3.4375rem;
@@ -3343,7 +3340,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 704px) and (max-width: 735px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 56px;
     font-size: 3.5rem;
@@ -3355,7 +3352,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 736px) and (max-width: 767px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 57px;
     font-size: 3.5625rem;
@@ -3367,7 +3364,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 58px;
     font-size: 3.625rem;
@@ -3379,7 +3376,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1024px) and (max-width: 1048px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 44px;
     font-size: 2.75rem;
@@ -3391,7 +3388,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1049px) and (max-width: 1072px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 45px;
     font-size: 2.8125rem;
@@ -3403,7 +3400,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1073px) and (max-width: 1097px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 46px;
     font-size: 2.875rem;
@@ -3415,7 +3412,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1098px) and (max-width: 1121px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 47px;
     font-size: 2.9375rem;
@@ -3427,7 +3424,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1122px) and (max-width: 1146px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 48px;
     font-size: 3rem;
@@ -3439,7 +3436,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1147px) and (max-width: 1170px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 49px;
     font-size: 3.0625rem;
@@ -3451,7 +3448,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1171px) and (max-width: 1195px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 50px;
     font-size: 3.125rem;
@@ -3463,7 +3460,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1196px) and (max-width: 1220px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 51px;
     font-size: 3.1875rem;
@@ -3475,7 +3472,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1221px) and (max-width: 1244px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 52px;
     font-size: 3.25rem;
@@ -3487,7 +3484,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1245px) and (max-width: 1269px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 53px;
     font-size: 3.3125rem;
@@ -3499,7 +3496,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1270px) and (max-width: 1293px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 54px;
     font-size: 3.375rem;
@@ -3511,7 +3508,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1294px) and (max-width: 1318px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 55px;
     font-size: 3.4375rem;
@@ -3523,7 +3520,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1319px) and (max-width: 1342px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 56px;
     font-size: 3.5rem;
@@ -3535,7 +3532,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1343px) and (max-width: 1367px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 57px;
     font-size: 3.5625rem;
@@ -3547,7 +3544,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1368px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     font-size: 58px;
     font-size: 3.625rem;
@@ -3559,7 +3556,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     padding-left: 5%;
     padding-right: 5%;
@@ -3573,7 +3570,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 177, src/sass/sections/_banner-top.scss */
+  /* line 175, src/sass/sections/_banner-top.scss */
   .banner-top h1 {
     width: 48%;
     left: 58%;
@@ -3585,7 +3582,7 @@ header .button + ul li ul li {
   }
 }
 
-/* line 255, src/sass/sections/_banner-top.scss */
+/* line 253, src/sass/sections/_banner-top.scss */
 .banner-top h3 {
   max-width: 684px;
   max-width: 42.75rem;
@@ -3594,14 +3591,14 @@ header .button + ul li ul li {
 }
 
 @media screen and (max-width: 479px) {
-  /* line 255, src/sass/sections/_banner-top.scss */
+  /* line 253, src/sass/sections/_banner-top.scss */
   .banner-top h3 {
     display: none;
   }
 }
 
 @media (min-width: 480px) and (max-width: 575px) {
-  /* line 255, src/sass/sections/_banner-top.scss */
+  /* line 253, src/sass/sections/_banner-top.scss */
   .banner-top h3 {
     font-size: 18px;
     font-size: 1.125rem;
@@ -3613,7 +3610,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 576px) and (max-width: 671px) {
-  /* line 255, src/sass/sections/_banner-top.scss */
+  /* line 253, src/sass/sections/_banner-top.scss */
   .banner-top h3 {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -3625,7 +3622,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 672px) and (max-width: 767px) {
-  /* line 255, src/sass/sections/_banner-top.scss */
+  /* line 253, src/sass/sections/_banner-top.scss */
   .banner-top h3 {
     font-size: 20px;
     font-size: 1.25rem;
@@ -3637,7 +3634,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 255, src/sass/sections/_banner-top.scss */
+  /* line 253, src/sass/sections/_banner-top.scss */
   .banner-top h3 {
     font-size: 21px;
     font-size: 1.3125rem;
@@ -3649,7 +3646,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1024px) and (max-width: 1138px) {
-  /* line 255, src/sass/sections/_banner-top.scss */
+  /* line 253, src/sass/sections/_banner-top.scss */
   .banner-top h3 {
     font-size: 18px;
     font-size: 1.125rem;
@@ -3661,7 +3658,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1139px) and (max-width: 1252px) {
-  /* line 255, src/sass/sections/_banner-top.scss */
+  /* line 253, src/sass/sections/_banner-top.scss */
   .banner-top h3 {
     font-size: 19px;
     font-size: 1.1875rem;
@@ -3673,7 +3670,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1253px) and (max-width: 1367px) {
-  /* line 255, src/sass/sections/_banner-top.scss */
+  /* line 253, src/sass/sections/_banner-top.scss */
   .banner-top h3 {
     font-size: 20px;
     font-size: 1.25rem;
@@ -3685,7 +3682,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1368px) {
-  /* line 255, src/sass/sections/_banner-top.scss */
+  /* line 253, src/sass/sections/_banner-top.scss */
   .banner-top h3 {
     font-size: 21px;
     font-size: 1.3125rem;
@@ -3697,7 +3694,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 255, src/sass/sections/_banner-top.scss */
+  /* line 253, src/sass/sections/_banner-top.scss */
   .banner-top h3 {
     padding-left: 5%;
     padding-right: 5%;
@@ -3711,7 +3708,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 255, src/sass/sections/_banner-top.scss */
+  /* line 253, src/sass/sections/_banner-top.scss */
   .banner-top h3 {
     width: 48%;
     left: 58%;
@@ -3723,14 +3720,14 @@ header .button + ul li ul li {
   }
 }
 
-/* line 320, src/sass/sections/_banner-top.scss */
+/* line 318, src/sass/sections/_banner-top.scss */
 .banner-top .button {
   position: relative;
   display: table;
 }
 
 @media screen and (max-width: 319px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 47px;
     margin-top: 2.9375rem;
@@ -3738,7 +3735,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 320px) and (max-width: 335px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 48px;
     margin-top: 3rem;
@@ -3746,7 +3743,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 336px) and (max-width: 351px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 49px;
     margin-top: 3.0625rem;
@@ -3754,7 +3751,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 352px) and (max-width: 367px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 50px;
     margin-top: 3.125rem;
@@ -3762,7 +3759,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 368px) and (max-width: 383px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 51px;
     margin-top: 3.1875rem;
@@ -3770,7 +3767,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 384px) and (max-width: 399px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 52px;
     margin-top: 3.25rem;
@@ -3778,7 +3775,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 400px) and (max-width: 415px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 53px;
     margin-top: 3.3125rem;
@@ -3786,7 +3783,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 416px) and (max-width: 431px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 54px;
     margin-top: 3.375rem;
@@ -3794,7 +3791,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 432px) and (max-width: 447px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 55px;
     margin-top: 3.4375rem;
@@ -3802,7 +3799,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 448px) and (max-width: 463px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 56px;
     margin-top: 3.5rem;
@@ -3810,7 +3807,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 464px) and (max-width: 479px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 57px;
     margin-top: 3.5625rem;
@@ -3818,7 +3815,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 480px) and (max-width: 495px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 58px;
     margin-top: 3.625rem;
@@ -3826,7 +3823,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 496px) and (max-width: 511px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 59px;
     margin-top: 3.6875rem;
@@ -3834,7 +3831,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 512px) and (max-width: 527px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 60px;
     margin-top: 3.75rem;
@@ -3842,7 +3839,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 528px) and (max-width: 543px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 61px;
     margin-top: 3.8125rem;
@@ -3850,7 +3847,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 544px) and (max-width: 559px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 62px;
     margin-top: 3.875rem;
@@ -3858,7 +3855,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 560px) and (max-width: 575px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 63px;
     margin-top: 3.9375rem;
@@ -3866,7 +3863,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 576px) and (max-width: 591px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 64px;
     margin-top: 4rem;
@@ -3874,7 +3871,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 592px) and (max-width: 607px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 65px;
     margin-top: 4.0625rem;
@@ -3882,7 +3879,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 608px) and (max-width: 623px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 66px;
     margin-top: 4.125rem;
@@ -3890,7 +3887,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 624px) and (max-width: 639px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 67px;
     margin-top: 4.1875rem;
@@ -3898,7 +3895,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 640px) and (max-width: 655px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 68px;
     margin-top: 4.25rem;
@@ -3906,7 +3903,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 656px) and (max-width: 671px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 69px;
     margin-top: 4.3125rem;
@@ -3914,7 +3911,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 672px) and (max-width: 687px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 70px;
     margin-top: 4.375rem;
@@ -3922,7 +3919,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 688px) and (max-width: 703px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 71px;
     margin-top: 4.4375rem;
@@ -3930,7 +3927,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 704px) and (max-width: 719px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 72px;
     margin-top: 4.5rem;
@@ -3938,7 +3935,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 720px) and (max-width: 735px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 73px;
     margin-top: 4.5625rem;
@@ -3946,7 +3943,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 736px) and (max-width: 751px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 74px;
     margin-top: 4.625rem;
@@ -3954,7 +3951,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 752px) and (max-width: 767px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 75px;
     margin-top: 4.6875rem;
@@ -3962,7 +3959,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 76px;
     margin-top: 4.75rem;
@@ -3970,7 +3967,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1024px) and (max-width: 1035px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 48px;
     margin-top: 3rem;
@@ -3978,7 +3975,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1036px) and (max-width: 1048px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 49px;
     margin-top: 3.0625rem;
@@ -3986,7 +3983,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1049px) and (max-width: 1060px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 50px;
     margin-top: 3.125rem;
@@ -3994,7 +3991,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1061px) and (max-width: 1072px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 51px;
     margin-top: 3.1875rem;
@@ -4002,7 +3999,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1073px) and (max-width: 1084px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 52px;
     margin-top: 3.25rem;
@@ -4010,7 +4007,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1085px) and (max-width: 1097px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 53px;
     margin-top: 3.3125rem;
@@ -4018,7 +4015,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1098px) and (max-width: 1109px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 54px;
     margin-top: 3.375rem;
@@ -4026,7 +4023,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1110px) and (max-width: 1121px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 55px;
     margin-top: 3.4375rem;
@@ -4034,7 +4031,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1122px) and (max-width: 1134px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 56px;
     margin-top: 3.5rem;
@@ -4042,7 +4039,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1135px) and (max-width: 1146px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 57px;
     margin-top: 3.5625rem;
@@ -4050,7 +4047,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1147px) and (max-width: 1158px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 58px;
     margin-top: 3.625rem;
@@ -4058,7 +4055,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1159px) and (max-width: 1170px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 59px;
     margin-top: 3.6875rem;
@@ -4066,7 +4063,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1171px) and (max-width: 1183px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 60px;
     margin-top: 3.75rem;
@@ -4074,7 +4071,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1184px) and (max-width: 1195px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 61px;
     margin-top: 3.8125rem;
@@ -4082,7 +4079,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1196px) and (max-width: 1207px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 62px;
     margin-top: 3.875rem;
@@ -4090,7 +4087,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1208px) and (max-width: 1220px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 63px;
     margin-top: 3.9375rem;
@@ -4098,7 +4095,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1221px) and (max-width: 1232px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 64px;
     margin-top: 4rem;
@@ -4106,7 +4103,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1233px) and (max-width: 1244px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 65px;
     margin-top: 4.0625rem;
@@ -4114,7 +4111,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1245px) and (max-width: 1256px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 66px;
     margin-top: 4.125rem;
@@ -4122,7 +4119,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1257px) and (max-width: 1269px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 67px;
     margin-top: 4.1875rem;
@@ -4130,7 +4127,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1270px) and (max-width: 1281px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 68px;
     margin-top: 4.25rem;
@@ -4138,7 +4135,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1282px) and (max-width: 1293px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 69px;
     margin-top: 4.3125rem;
@@ -4146,7 +4143,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1294px) and (max-width: 1306px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 70px;
     margin-top: 4.375rem;
@@ -4154,7 +4151,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1307px) and (max-width: 1318px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 71px;
     margin-top: 4.4375rem;
@@ -4162,7 +4159,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1319px) and (max-width: 1330px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 72px;
     margin-top: 4.5rem;
@@ -4170,7 +4167,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1331px) and (max-width: 1342px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 73px;
     margin-top: 4.5625rem;
@@ -4178,7 +4175,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1343px) and (max-width: 1355px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 74px;
     margin-top: 4.625rem;
@@ -4186,7 +4183,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1356px) and (max-width: 1367px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 75px;
     margin-top: 4.6875rem;
@@ -4194,7 +4191,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1368px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     margin-top: 76px;
     margin-top: 4.75rem;
@@ -4202,7 +4199,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     left: 50%;
     -moz-transform: translate(-50%, 0);
@@ -4214,7 +4211,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 320, src/sass/sections/_banner-top.scss */
+  /* line 318, src/sass/sections/_banner-top.scss */
   .banner-top .button {
     left: 58%;
     -moz-transform: translate(-100%, 0);
@@ -4225,7 +4222,7 @@ header .button + ul li ul li {
   }
 }
 
-/* line 361, src/sass/sections/_banner-top.scss */
+/* line 359, src/sass/sections/_banner-top.scss */
 .banner-top img {
   width: 100%;
   opacity: 0.5;
@@ -4241,7 +4238,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (max-width: 739px) {
-  /* line 361, src/sass/sections/_banner-top.scss */
+  /* line 359, src/sass/sections/_banner-top.scss */
   .banner-top img {
     right: 0;
     min-width: 720px;
@@ -4250,7 +4247,7 @@ header .button + ul li ul li {
 }
 
 /*************************** Announcement Section Styles ****************************/
-/* line 4, src/sass/sections/_announcement.scss */
+/* line 106, src/sass/sections/_announcement.scss */
 .announcement {
   background-color: rgba(255, 0, 255, 0.2);
   position: relative;
@@ -4258,9 +4255,14 @@ header .button + ul li ul li {
   max-width: 1368px;
   max-width: 85.5rem;
   margin: 0 auto;
+  /**
+	@include media('screen', '<tablet-wide') {
+		padding-bottom: 20%;
+	}
+/**/
 }
 
-/* line 15, src/sass/sections/_announcement.scss */
+/* line 125, src/sass/sections/_announcement.scss */
 .announcement h1 {
   color: #161d28;
   font-family: "Source-Sans-Pro-Light";
@@ -4272,53 +4274,667 @@ header .button + ul li ul li {
   margin-right: 7%;
 }
 
-/* line 34, src/sass/sections/_announcement.scss */
+/* line 144, src/sass/sections/_announcement.scss */
 .announcement img {
   opacity: 0.5;
+  vertical-align: top;
   margin-left: 5%;
   margin-top: 88px;
   margin-top: 5.5rem;
-  vertical-align: top;
+  /**/
+  /**/
 }
 
-/* line 45, src/sass/sections/_announcement.scss */
+@media screen and (max-width: 1023px) {
+  /* line 144, src/sass/sections/_announcement.scss */
+  .announcement img {
+    width: 90%;
+    max-width: 768px;
+    max-width: 48rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 144, src/sass/sections/_announcement.scss */
+  .announcement img {
+    width: 52%;
+    min-width: 620px;
+    min-width: 38.75rem;
+  }
+}
+
+/* line 174, src/sass/sections/_announcement.scss */
 .announcement .panel {
   background-color: rgba(0, 0, 255, 0.3);
   color: #f2f3f3;
   position: absolute;
   bottom: 0;
-  left: 47.5%;
-  width: 47.5%;
-  padding-top: 48px;
-  padding-top: 3rem;
   padding-bottom: 4px;
   padding-bottom: 0.25rem;
 }
 
-/* line 59, src/sass/sections/_announcement.scss */
+@media screen and (max-width: 1023px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    width: 80%;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    left: 47.5%;
+    width: 47.5%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 356px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 30px;
+    padding-top: 1.875rem;
+  }
+}
+
+@media (min-width: 357px) and (max-width: 393px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 31px;
+    padding-top: 1.9375rem;
+  }
+}
+
+@media (min-width: 394px) and (max-width: 430px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 32px;
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 467px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 33px;
+    padding-top: 2.0625rem;
+  }
+}
+
+@media (min-width: 468px) and (max-width: 504px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 34px;
+    padding-top: 2.125rem;
+  }
+}
+
+@media (min-width: 505px) and (max-width: 541px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 35px;
+    padding-top: 2.1875rem;
+  }
+}
+
+@media (min-width: 542px) and (max-width: 578px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 36px;
+    padding-top: 2.25rem;
+  }
+}
+
+@media (min-width: 579px) and (max-width: 615px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 37px;
+    padding-top: 2.3125rem;
+  }
+}
+
+@media (min-width: 616px) and (max-width: 652px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 38px;
+    padding-top: 2.375rem;
+  }
+}
+
+@media (min-width: 653px) and (max-width: 690px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 39px;
+    padding-top: 2.4375rem;
+  }
+}
+
+@media (min-width: 691px) and (max-width: 727px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 40px;
+    padding-top: 2.5rem;
+  }
+}
+
+@media (min-width: 728px) and (max-width: 764px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 41px;
+    padding-top: 2.5625rem;
+  }
+}
+
+@media (min-width: 765px) and (max-width: 801px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 42px;
+    padding-top: 2.625rem;
+  }
+}
+
+@media (min-width: 802px) and (max-width: 838px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 43px;
+    padding-top: 2.6875rem;
+  }
+}
+
+@media (min-width: 839px) and (max-width: 875px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 44px;
+    padding-top: 2.75rem;
+  }
+}
+
+@media (min-width: 876px) and (max-width: 912px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 45px;
+    padding-top: 2.8125rem;
+  }
+}
+
+@media (min-width: 913px) and (max-width: 949px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 46px;
+    padding-top: 2.875rem;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 986px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 47px;
+    padding-top: 2.9375rem;
+  }
+}
+
+@media (min-width: 987px) and (max-width: 1023px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 48px;
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1080px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 42px;
+    padding-top: 2.625rem;
+  }
+}
+
+@media (min-width: 1081px) and (max-width: 1138px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 43px;
+    padding-top: 2.6875rem;
+  }
+}
+
+@media (min-width: 1139px) and (max-width: 1195px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 44px;
+    padding-top: 2.75rem;
+  }
+}
+
+@media (min-width: 1196px) and (max-width: 1252px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 45px;
+    padding-top: 2.8125rem;
+  }
+}
+
+@media (min-width: 1253px) and (max-width: 1310px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 46px;
+    padding-top: 2.875rem;
+  }
+}
+
+@media (min-width: 1311px) and (max-width: 1367px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 47px;
+    padding-top: 2.9375rem;
+  }
+}
+
+@media screen and (min-width: 1368px) {
+  /* line 174, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 48px;
+    padding-top: 3rem;
+  }
+}
+
+/* line 217, src/sass/sections/_announcement.scss */
 .announcement .panel h2 {
+  background-color: rgba(0, 0, 255, 0.2);
   font-family: "Source-Sans-Pro-Light";
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 45px;
-  line-height: 2.8125rem;
-  margin-left: 11%;
-  margin-right: 11%;
-  margin-bottom: 27px;
-  margin-bottom: 1.6875rem;
+  /*!!!*/
 }
 
-/* line 73, src/sass/sections/_announcement.scss */
+@media (min-width: 320px) and (max-width: 420px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 520px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 621px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+
+@media (min-width: 622px) and (max-width: 721px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
+
+@media (min-width: 722px) and (max-width: 822px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+
+@media (min-width: 823px) and (max-width: 922px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    margin-left: 9%;
+    margin-right: 9%;
+  }
+}
+
+@media (min-width: 923px) and (max-width: 1023px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    margin-left: 11%;
+    margin-right: 11%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 373px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
+  }
+}
+
+@media (min-width: 374px) and (max-width: 427px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 25px;
+    font-size: 1.5625rem;
+    line-height: 31px;
+    line-height: 1.9375rem;
+    margin-bottom: 19px;
+    margin-bottom: 1.1875rem;
+  }
+}
+
+@media (min-width: 428px) and (max-width: 481px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 33px;
+    line-height: 2.0625rem;
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (min-width: 482px) and (max-width: 536px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 27px;
+    font-size: 1.6875rem;
+    line-height: 34px;
+    line-height: 2.125rem;
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (min-width: 537px) and (max-width: 590px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 35px;
+    line-height: 2.1875rem;
+    margin-bottom: 21px;
+    margin-bottom: 1.3125rem;
+  }
+}
+
+@media (min-width: 591px) and (max-width: 644px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 29px;
+    font-size: 1.8125rem;
+    line-height: 36px;
+    line-height: 2.25rem;
+    margin-bottom: 22px;
+    margin-bottom: 1.375rem;
+  }
+}
+
+@media (min-width: 645px) and (max-width: 698px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 30px;
+    font-size: 1.875rem;
+    line-height: 38px;
+    line-height: 2.375rem;
+    margin-bottom: 23px;
+    margin-bottom: 1.4375rem;
+  }
+}
+
+@media (min-width: 699px) and (max-width: 752px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 31px;
+    font-size: 1.9375rem;
+    line-height: 39px;
+    line-height: 2.4375rem;
+    margin-bottom: 23px;
+    margin-bottom: 1.4375rem;
+  }
+}
+
+@media (min-width: 753px) and (max-width: 806px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 40px;
+    line-height: 2.5rem;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 807px) and (max-width: 861px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 33px;
+    font-size: 2.0625rem;
+    line-height: 41px;
+    line-height: 2.5625rem;
+    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
+  }
+}
+
+@media (min-width: 862px) and (max-width: 915px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 34px;
+    font-size: 2.125rem;
+    line-height: 43px;
+    line-height: 2.6875rem;
+    margin-bottom: 26px;
+    margin-bottom: 1.625rem;
+  }
+}
+
+@media (min-width: 916px) and (max-width: 969px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 35px;
+    font-size: 2.1875rem;
+    line-height: 44px;
+    line-height: 2.75rem;
+    margin-bottom: 26px;
+    margin-bottom: 1.625rem;
+  }
+}
+
+@media (min-width: 970px) and (max-width: 1023px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 45px;
+    line-height: 2.8125rem;
+    margin-bottom: 27px;
+    margin-bottom: 1.6875rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1066px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 35px;
+    line-height: 2.1875rem;
+    margin-bottom: 21px;
+    margin-bottom: 1.3125rem;
+  }
+}
+
+@media (min-width: 1067px) and (max-width: 1109px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 29px;
+    font-size: 1.8125rem;
+    line-height: 36px;
+    line-height: 2.25rem;
+    margin-bottom: 22px;
+    margin-bottom: 1.375rem;
+  }
+}
+
+@media (min-width: 1110px) and (max-width: 1152px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 30px;
+    font-size: 1.875rem;
+    line-height: 38px;
+    line-height: 2.375rem;
+    margin-bottom: 23px;
+    margin-bottom: 1.4375rem;
+  }
+}
+
+@media (min-width: 1153px) and (max-width: 1195px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 31px;
+    font-size: 1.9375rem;
+    line-height: 39px;
+    line-height: 2.4375rem;
+    margin-bottom: 23px;
+    margin-bottom: 1.4375rem;
+  }
+}
+
+@media (min-width: 1196px) and (max-width: 1238px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 40px;
+    line-height: 2.5rem;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 1239px) and (max-width: 1281px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 33px;
+    font-size: 2.0625rem;
+    line-height: 41px;
+    line-height: 2.5625rem;
+    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
+  }
+}
+
+@media (min-width: 1282px) and (max-width: 1324px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 34px;
+    font-size: 2.125rem;
+    line-height: 43px;
+    line-height: 2.6875rem;
+    margin-bottom: 26px;
+    margin-bottom: 1.625rem;
+  }
+}
+
+@media (min-width: 1325px) and (max-width: 1367px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 35px;
+    font-size: 2.1875rem;
+    line-height: 44px;
+    line-height: 2.75rem;
+    margin-bottom: 26px;
+    margin-bottom: 1.625rem;
+  }
+}
+
+@media screen and (min-width: 1368px) {
+  /* line 217, src/sass/sections/_announcement.scss */
+  .announcement .panel h2 {
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 45px;
+    line-height: 2.8125rem;
+    margin-bottom: 27px;
+    margin-bottom: 1.6875rem;
+  }
+}
+
+/* line 257, src/sass/sections/_announcement.scss */
 .announcement .panel p {
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 30px;
-  line-height: 1.875rem;
-  margin-left: 11%;
-  margin-right: 11%;
+  background-color: rgba(0, 255, 255, 0.2);
+  /*!!!*/
 }
 
-/* line 82, src/sass/sections/_announcement.scss */
+@media (min-width: 320px) and (max-width: 436px) {
+  /* line 257, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media (min-width: 437px) and (max-width: 554px) {
+  /* line 257, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+
+@media (min-width: 555px) and (max-width: 671px) {
+  /* line 257, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
+
+@media (min-width: 672px) and (max-width: 788px) {
+  /* line 257, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+
+@media (min-width: 789px) and (max-width: 906px) {
+  /* line 257, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    margin-left: 9%;
+    margin-right: 9%;
+  }
+}
+
+@media (min-width: 907px) and (max-width: 1023px) {
+  /* line 257, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 257, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    margin-left: 11%;
+    margin-right: 11%;
+  }
+}
+
+/* line 274, src/sass/sections/_announcement.scss */
 .announcement .panel p:first-child {
   margin-top: 60px;
   margin-top: 3.75rem;
@@ -4326,19 +4942,103 @@ header .button + ul li ul li {
   margin-bottom: 3.75rem;
 }
 
-/* line 89, src/sass/sections/_announcement.scss */
-.announcement .panel p:not(:first-child) {
-  margin-bottom: 43px;
-  margin-bottom: 2.6875rem;
+@media (min-width: 320px) and (max-width: 554px) {
+  /* line 257, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 27px;
+    line-height: 1.6875rem;
+  }
+  /* line 63, src/sass/sections/_announcement.scss */
+  .announcement .panel p:not(:first-child) {
+    margin-bottom: 38px;
+    margin-bottom: 2.375rem;
+  }
 }
 
-/* line 104, src/sass/sections/_announcement.scss */
+@media (min-width: 555px) and (max-width: 788px) {
+  /* line 257, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    font-size: 17px;
+    font-size: 1.0625rem;
+    line-height: 28px;
+    line-height: 1.75rem;
+  }
+  /* line 63, src/sass/sections/_announcement.scss */
+  .announcement .panel p:not(:first-child) {
+    margin-bottom: 41px;
+    margin-bottom: 2.5625rem;
+  }
+}
+
+@media (min-width: 789px) and (max-width: 1023px) {
+  /* line 257, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+  }
+  /* line 63, src/sass/sections/_announcement.scss */
+  .announcement .panel p:not(:first-child) {
+    margin-bottom: 43px;
+    margin-bottom: 2.6875rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1195px) {
+  /* line 257, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 27px;
+    line-height: 1.6875rem;
+  }
+  /* line 63, src/sass/sections/_announcement.scss */
+  .announcement .panel p:not(:first-child) {
+    margin-bottom: 38px;
+    margin-bottom: 2.375rem;
+  }
+}
+
+@media (min-width: 1196px) and (max-width: 1367px) {
+  /* line 257, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    font-size: 17px;
+    font-size: 1.0625rem;
+    line-height: 28px;
+    line-height: 1.75rem;
+  }
+  /* line 63, src/sass/sections/_announcement.scss */
+  .announcement .panel p:not(:first-child) {
+    margin-bottom: 41px;
+    margin-bottom: 2.5625rem;
+  }
+}
+
+@media screen and (min-width: 1368px) {
+  /* line 257, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 30px;
+    line-height: 1.875rem;
+  }
+  /* line 296, src/sass/sections/_announcement.scss */
+  .announcement .panel p:not(:first-child) {
+    margin-bottom: 43px;
+    margin-bottom: 2.6875rem;
+  }
+}
+
+/* line 304, src/sass/sections/_announcement.scss */
 .announcement .panel p a {
   color: #ffffff;
   text-decoration: none;
 }
 
-/* line 117, src/sass/sections/_announcement.scss */
+/* line 317, src/sass/sections/_announcement.scss */
 .announcement .col {
   padding-top: 70px;
   padding-top: 4.375rem;
@@ -4347,19 +5047,19 @@ header .button + ul li ul li {
   vertical-align: middle;
 }
 
-/* line 126, src/sass/sections/_announcement.scss */
+/* line 326, src/sass/sections/_announcement.scss */
 .announcement .col:first-child {
   padding-left: 10%;
   padding-right: 5%;
 }
 
-/* line 130, src/sass/sections/_announcement.scss */
+/* line 330, src/sass/sections/_announcement.scss */
 .announcement .col:last-child {
   padding-left: 5%;
   padding-right: 10%;
 }
 
-/* line 135, src/sass/sections/_announcement.scss */
+/* line 335, src/sass/sections/_announcement.scss */
 .announcement .col h2 {
   color: #161d28;
   font-family: "Source-Sans-Pro-Light";
@@ -4369,7 +5069,7 @@ header .button + ul li ul li {
   line-height: 2.8125rem;
 }
 
-/* line 142, src/sass/sections/_announcement.scss */
+/* line 342, src/sass/sections/_announcement.scss */
 .announcement .col p,
 .announcement .col ul {
   color: #5c666f;
@@ -4379,33 +5079,33 @@ header .button + ul li ul li {
   line-height: 1.875rem;
 }
 
-/* line 150, src/sass/sections/_announcement.scss */
+/* line 350, src/sass/sections/_announcement.scss */
 .announcement .col p a,
 .announcement .col ul a {
   color: #894ea2;
   text-decoration: none;
 }
 
-/* line 156, src/sass/sections/_announcement.scss */
+/* line 356, src/sass/sections/_announcement.scss */
 .announcement .col p {
   margin-top: 32px;
   margin-top: 2rem;
 }
 
-/* line 161, src/sass/sections/_announcement.scss */
+/* line 361, src/sass/sections/_announcement.scss */
 .announcement .col ul {
   position: relative;
   margin-left: 24px;
   margin-left: 1.5rem;
 }
 
-/* line 170, src/sass/sections/_announcement.scss */
+/* line 370, src/sass/sections/_announcement.scss */
 .announcement .col ul li {
   margin-top: 18px;
   margin-top: 1.125rem;
 }
 
-/* line 173, src/sass/sections/_announcement.scss */
+/* line 373, src/sass/sections/_announcement.scss */
 .announcement .col ul li:before {
   content: "—";
   position: absolute;
@@ -4413,12 +5113,12 @@ header .button + ul li ul li {
   left: -1.5rem;
 }
 
-/* line 181, src/sass/sections/_announcement.scss */
+/* line 381, src/sass/sections/_announcement.scss */
 .announcement .col ul li p {
   margin-top: 0;
 }
 
-/* line 187, src/sass/sections/_announcement.scss */
+/* line 387, src/sass/sections/_announcement.scss */
 .announcement .col img {
   vertical-align: middle;
   margin: 0;
