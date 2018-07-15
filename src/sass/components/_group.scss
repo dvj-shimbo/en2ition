@@ -1,5 +1,25 @@
 /*************************** Background Component Styles ****************************/
 
+@mixin group-padding-bottom ($media-min, $media-max, $padding-min, $padding-max) {
+
+	
+
+	$d: ($padding-max - $padding-min) / 1px;
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+		@include media('>=' + round($min), '<' + round($max)) {
+			$padding: $i + $padding-min;
+
+			@include rem(padding-bottom, $padding);
+
+		}
+	}
+}
+
+
+
 
 //[class*="bg-"] {
 .group {
@@ -7,7 +27,17 @@
 
 	margin: 0 auto;
 	@include rem(max-width, 1368px);
-	@include rem(padding-bottom, 80px);
+//	@include rem(padding-bottom, 80px);
+
+	@include media('screen', '<320px') {
+		@include rem(padding-bottom, 53px);
+	}
+
+	@include group-padding-bottom (320px, 1024px, 54px, 79px);
+
+	@include media('screen', '>=1024px') {
+		@include rem(padding-bottom, 80px);
+	}
 
 //	&.bg-gray {
 //		background-color: rgba(255,0,0,0.3);
