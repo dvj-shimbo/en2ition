@@ -788,13 +788,15 @@ header {
 /**/
 /* line 85, src/sass/_header.scss */
 body {
-  /**/
-  /**/
-}
-
-/* line 89, src/sass/_header.scss */
-body .banner-top {
-  display: none;
+  /**
+	.banner-top,
+//	section,
+//	.group,
+//	footer 
+	{
+		display: none;
+	}
+/**/
 }
 
 @media screen and (max-width: 319px) {
@@ -1262,12 +1264,16 @@ body .banner-top {
 @media screen and (max-width: 1023px) {
   /* line 85, src/sass/_header.scss */
   body {
-    /**/
-    /**/
-  }
-  /* line 144, src/sass/_header.scss */
-  body footer {
-    display: none;
+    /**
+//		section,
+//		.banner-top,
+//		.group,
+//		.banner-bottom,
+		footer 
+		{
+			display: none;
+		}
+/**/
   }
   /* line 152, src/sass/_header.scss */
   body:before {
@@ -4247,7 +4253,7 @@ header .button + ul li ul li {
 }
 
 /*************************** Announcement Section Styles ****************************/
-/* line 106, src/sass/sections/_announcement.scss */
+/* line 148, src/sass/sections/_announcement.scss */
 .announcement {
   background-color: rgba(255, 0, 255, 0.2);
   position: relative;
@@ -4262,31 +4268,680 @@ header .button + ul li ul li {
 /**/
 }
 
-/* line 125, src/sass/sections/_announcement.scss */
+/* line 167, src/sass/sections/_announcement.scss */
 .announcement h1 {
   color: #161d28;
   font-family: "Source-Sans-Pro-Light";
-  font-size: 48px;
-  font-size: 3rem;
-  padding-top: 80px;
-  padding-top: 5rem;
-  margin-left: 7%;
-  margin-right: 7%;
+  /*!!!*/
 }
 
-/* line 144, src/sass/sections/_announcement.scss */
+@media screen and (max-width: 319px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 27px;
+    font-size: 1.6875rem;
+    padding-top: 46px;
+    padding-top: 2.875rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 671px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media (min-width: 672px) and (max-width: 1023px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 354px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 28px;
+    font-size: 1.75rem;
+    padding-top: 47px;
+    padding-top: 2.9375rem;
+  }
+}
+
+@media (min-width: 355px) and (max-width: 389px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 29px;
+    font-size: 1.8125rem;
+    padding-top: 48px;
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 425px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 30px;
+    font-size: 1.875rem;
+    padding-top: 50px;
+    padding-top: 3.125rem;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 460px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 31px;
+    font-size: 1.9375rem;
+    padding-top: 52px;
+    padding-top: 3.25rem;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 495px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 32px;
+    font-size: 2rem;
+    padding-top: 53px;
+    padding-top: 3.3125rem;
+  }
+}
+
+@media (min-width: 496px) and (max-width: 530px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 33px;
+    font-size: 2.0625rem;
+    padding-top: 55px;
+    padding-top: 3.4375rem;
+  }
+}
+
+@media (min-width: 531px) and (max-width: 565px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 34px;
+    font-size: 2.125rem;
+    padding-top: 57px;
+    padding-top: 3.5625rem;
+  }
+}
+
+@media (min-width: 566px) and (max-width: 601px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 35px;
+    font-size: 2.1875rem;
+    padding-top: 58px;
+    padding-top: 3.625rem;
+  }
+}
+
+@media (min-width: 602px) and (max-width: 636px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 36px;
+    font-size: 2.25rem;
+    padding-top: 60px;
+    padding-top: 3.75rem;
+  }
+}
+
+@media (min-width: 637px) and (max-width: 671px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 37px;
+    font-size: 2.3125rem;
+    padding-top: 62px;
+    padding-top: 3.875rem;
+  }
+}
+
+@media (min-width: 672px) and (max-width: 706px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 38px;
+    font-size: 2.375rem;
+    padding-top: 63px;
+    padding-top: 3.9375rem;
+  }
+}
+
+@media (min-width: 707px) and (max-width: 741px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 39px;
+    font-size: 2.4375rem;
+    padding-top: 65px;
+    padding-top: 4.0625rem;
+  }
+}
+
+@media (min-width: 742px) and (max-width: 777px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 40px;
+    font-size: 2.5rem;
+    padding-top: 67px;
+    padding-top: 4.1875rem;
+  }
+}
+
+@media (min-width: 778px) and (max-width: 812px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 41px;
+    font-size: 2.5625rem;
+    padding-top: 68px;
+    padding-top: 4.25rem;
+  }
+}
+
+@media (min-width: 813px) and (max-width: 847px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 42px;
+    font-size: 2.625rem;
+    padding-top: 70px;
+    padding-top: 4.375rem;
+  }
+}
+
+@media (min-width: 848px) and (max-width: 882px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 43px;
+    font-size: 2.6875rem;
+    padding-top: 72px;
+    padding-top: 4.5rem;
+  }
+}
+
+@media (min-width: 883px) and (max-width: 917px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 44px;
+    font-size: 2.75rem;
+    padding-top: 73px;
+    padding-top: 4.5625rem;
+  }
+}
+
+@media (min-width: 918px) and (max-width: 953px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 45px;
+    font-size: 2.8125rem;
+    padding-top: 75px;
+    padding-top: 4.6875rem;
+  }
+}
+
+@media (min-width: 954px) and (max-width: 988px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 46px;
+    font-size: 2.875rem;
+    padding-top: 77px;
+    padding-top: 4.8125rem;
+  }
+}
+
+@media (min-width: 989px) and (max-width: 1023px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    font-size: 47px;
+    font-size: 2.9375rem;
+    padding-top: 78px;
+    padding-top: 4.875rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 167, src/sass/sections/_announcement.scss */
+  .announcement h1 {
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 48px;
+    font-size: 3rem;
+    padding-top: 80px;
+    padding-top: 5rem;
+  }
+}
+
+/* line 203, src/sass/sections/_announcement.scss */
 .announcement img {
   opacity: 0.5;
   vertical-align: top;
   margin-left: 5%;
-  margin-top: 88px;
-  margin-top: 5.5rem;
   /**/
   /**/
 }
 
+@media screen and (max-width: 319px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 37px;
+    margin-top: 2.3125rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 333px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 38px;
+    margin-top: 2.375rem;
+  }
+}
+
+@media (min-width: 334px) and (max-width: 347px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 39px;
+    margin-top: 2.4375rem;
+  }
+}
+
+@media (min-width: 348px) and (max-width: 361px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 40px;
+    margin-top: 2.5rem;
+  }
+}
+
+@media (min-width: 362px) and (max-width: 375px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 41px;
+    margin-top: 2.5625rem;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 389px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 42px;
+    margin-top: 2.625rem;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 403px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 43px;
+    margin-top: 2.6875rem;
+  }
+}
+
+@media (min-width: 404px) and (max-width: 418px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 44px;
+    margin-top: 2.75rem;
+  }
+}
+
+@media (min-width: 419px) and (max-width: 432px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 45px;
+    margin-top: 2.8125rem;
+  }
+}
+
+@media (min-width: 433px) and (max-width: 446px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 46px;
+    margin-top: 2.875rem;
+  }
+}
+
+@media (min-width: 447px) and (max-width: 460px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 47px;
+    margin-top: 2.9375rem;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 474px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 48px;
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 475px) and (max-width: 488px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 49px;
+    margin-top: 3.0625rem;
+  }
+}
+
+@media (min-width: 489px) and (max-width: 502px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 50px;
+    margin-top: 3.125rem;
+  }
+}
+
+@media (min-width: 503px) and (max-width: 516px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 51px;
+    margin-top: 3.1875rem;
+  }
+}
+
+@media (min-width: 517px) and (max-width: 530px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 52px;
+    margin-top: 3.25rem;
+  }
+}
+
+@media (min-width: 531px) and (max-width: 544px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 53px;
+    margin-top: 3.3125rem;
+  }
+}
+
+@media (min-width: 545px) and (max-width: 558px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 54px;
+    margin-top: 3.375rem;
+  }
+}
+
+@media (min-width: 559px) and (max-width: 572px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 55px;
+    margin-top: 3.4375rem;
+  }
+}
+
+@media (min-width: 573px) and (max-width: 587px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 56px;
+    margin-top: 3.5rem;
+  }
+}
+
+@media (min-width: 588px) and (max-width: 601px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 57px;
+    margin-top: 3.5625rem;
+  }
+}
+
+@media (min-width: 602px) and (max-width: 615px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 58px;
+    margin-top: 3.625rem;
+  }
+}
+
+@media (min-width: 616px) and (max-width: 629px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 59px;
+    margin-top: 3.6875rem;
+  }
+}
+
+@media (min-width: 630px) and (max-width: 643px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 60px;
+    margin-top: 3.75rem;
+  }
+}
+
+@media (min-width: 644px) and (max-width: 657px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 61px;
+    margin-top: 3.8125rem;
+  }
+}
+
+@media (min-width: 658px) and (max-width: 671px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 62px;
+    margin-top: 3.875rem;
+  }
+}
+
+@media (min-width: 672px) and (max-width: 685px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 63px;
+    margin-top: 3.9375rem;
+  }
+}
+
+@media (min-width: 686px) and (max-width: 699px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 64px;
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 713px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 65px;
+    margin-top: 4.0625rem;
+  }
+}
+
+@media (min-width: 714px) and (max-width: 727px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 66px;
+    margin-top: 4.125rem;
+  }
+}
+
+@media (min-width: 728px) and (max-width: 741px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 67px;
+    margin-top: 4.1875rem;
+  }
+}
+
+@media (min-width: 742px) and (max-width: 755px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 68px;
+    margin-top: 4.25rem;
+  }
+}
+
+@media (min-width: 756px) and (max-width: 770px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 69px;
+    margin-top: 4.3125rem;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 784px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 70px;
+    margin-top: 4.375rem;
+  }
+}
+
+@media (min-width: 785px) and (max-width: 798px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 71px;
+    margin-top: 4.4375rem;
+  }
+}
+
+@media (min-width: 799px) and (max-width: 812px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 72px;
+    margin-top: 4.5rem;
+  }
+}
+
+@media (min-width: 813px) and (max-width: 826px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 73px;
+    margin-top: 4.5625rem;
+  }
+}
+
+@media (min-width: 827px) and (max-width: 840px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 74px;
+    margin-top: 4.625rem;
+  }
+}
+
+@media (min-width: 841px) and (max-width: 854px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 75px;
+    margin-top: 4.6875rem;
+  }
+}
+
+@media (min-width: 855px) and (max-width: 868px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 76px;
+    margin-top: 4.75rem;
+  }
+}
+
+@media (min-width: 869px) and (max-width: 882px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 77px;
+    margin-top: 4.8125rem;
+  }
+}
+
+@media (min-width: 883px) and (max-width: 896px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 78px;
+    margin-top: 4.875rem;
+  }
+}
+
+@media (min-width: 897px) and (max-width: 910px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 79px;
+    margin-top: 4.9375rem;
+  }
+}
+
+@media (min-width: 911px) and (max-width: 924px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 80px;
+    margin-top: 5rem;
+  }
+}
+
+@media (min-width: 925px) and (max-width: 939px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 81px;
+    margin-top: 5.0625rem;
+  }
+}
+
+@media (min-width: 940px) and (max-width: 953px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 82px;
+    margin-top: 5.125rem;
+  }
+}
+
+@media (min-width: 954px) and (max-width: 967px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 83px;
+    margin-top: 5.1875rem;
+  }
+}
+
+@media (min-width: 968px) and (max-width: 981px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 84px;
+    margin-top: 5.25rem;
+  }
+}
+
+@media (min-width: 982px) and (max-width: 995px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 85px;
+    margin-top: 5.3125rem;
+  }
+}
+
+@media (min-width: 996px) and (max-width: 1009px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 86px;
+    margin-top: 5.375rem;
+  }
+}
+
+@media (min-width: 1010px) and (max-width: 1023px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 87px;
+    margin-top: 5.4375rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 203, src/sass/sections/_announcement.scss */
+  .announcement img {
+    margin-top: 88px;
+    margin-top: 5.5rem;
+  }
+}
+
 @media screen and (max-width: 1023px) {
-  /* line 144, src/sass/sections/_announcement.scss */
+  /* line 203, src/sass/sections/_announcement.scss */
   .announcement img {
     width: 90%;
     max-width: 768px;
@@ -4295,7 +4950,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 144, src/sass/sections/_announcement.scss */
+  /* line 203, src/sass/sections/_announcement.scss */
   .announcement img {
     width: 52%;
     min-width: 620px;
@@ -4303,7 +4958,7 @@ header .button + ul li ul li {
   }
 }
 
-/* line 174, src/sass/sections/_announcement.scss */
+/* line 247, src/sass/sections/_announcement.scss */
 .announcement .panel {
   background-color: rgba(0, 0, 255, 0.3);
   color: #f2f3f3;
@@ -4314,7 +4969,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     width: 80%;
     right: 0;
@@ -4322,15 +4977,23 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     left: 47.5%;
     width: 47.5%;
   }
 }
 
+@media screen and (max-width: 319px) {
+  /* line 247, src/sass/sections/_announcement.scss */
+  .announcement .panel {
+    padding-top: 29px;
+    padding-top: 1.8125rem;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 356px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 30px;
     padding-top: 1.875rem;
@@ -4338,7 +5001,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 357px) and (max-width: 393px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 31px;
     padding-top: 1.9375rem;
@@ -4346,7 +5009,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 394px) and (max-width: 430px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 32px;
     padding-top: 2rem;
@@ -4354,7 +5017,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 431px) and (max-width: 467px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 33px;
     padding-top: 2.0625rem;
@@ -4362,7 +5025,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 468px) and (max-width: 504px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 34px;
     padding-top: 2.125rem;
@@ -4370,7 +5033,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 505px) and (max-width: 541px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 35px;
     padding-top: 2.1875rem;
@@ -4378,7 +5041,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 542px) and (max-width: 578px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 36px;
     padding-top: 2.25rem;
@@ -4386,7 +5049,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 579px) and (max-width: 615px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 37px;
     padding-top: 2.3125rem;
@@ -4394,7 +5057,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 616px) and (max-width: 652px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 38px;
     padding-top: 2.375rem;
@@ -4402,7 +5065,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 653px) and (max-width: 690px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 39px;
     padding-top: 2.4375rem;
@@ -4410,7 +5073,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 691px) and (max-width: 727px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 40px;
     padding-top: 2.5rem;
@@ -4418,7 +5081,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 728px) and (max-width: 764px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 41px;
     padding-top: 2.5625rem;
@@ -4426,7 +5089,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 765px) and (max-width: 801px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 42px;
     padding-top: 2.625rem;
@@ -4434,7 +5097,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 802px) and (max-width: 838px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 43px;
     padding-top: 2.6875rem;
@@ -4442,7 +5105,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 839px) and (max-width: 875px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 44px;
     padding-top: 2.75rem;
@@ -4450,7 +5113,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 876px) and (max-width: 912px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 45px;
     padding-top: 2.8125rem;
@@ -4458,7 +5121,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 913px) and (max-width: 949px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 46px;
     padding-top: 2.875rem;
@@ -4466,7 +5129,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 950px) and (max-width: 986px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 47px;
     padding-top: 2.9375rem;
@@ -4474,7 +5137,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 987px) and (max-width: 1023px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 48px;
     padding-top: 3rem;
@@ -4482,7 +5145,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1024px) and (max-width: 1080px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 42px;
     padding-top: 2.625rem;
@@ -4490,7 +5153,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1081px) and (max-width: 1138px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 43px;
     padding-top: 2.6875rem;
@@ -4498,7 +5161,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1139px) and (max-width: 1195px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 44px;
     padding-top: 2.75rem;
@@ -4506,7 +5169,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1196px) and (max-width: 1252px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 45px;
     padding-top: 2.8125rem;
@@ -4514,7 +5177,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1253px) and (max-width: 1310px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 46px;
     padding-top: 2.875rem;
@@ -4522,7 +5185,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1311px) and (max-width: 1367px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 47px;
     padding-top: 2.9375rem;
@@ -4530,70 +5193,75 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1368px) {
-  /* line 174, src/sass/sections/_announcement.scss */
+  /* line 247, src/sass/sections/_announcement.scss */
   .announcement .panel {
     padding-top: 48px;
     padding-top: 3rem;
   }
 }
 
-/* line 217, src/sass/sections/_announcement.scss */
+/* line 294, src/sass/sections/_announcement.scss */
 .announcement .panel h2 {
   background-color: rgba(0, 0, 255, 0.2);
   font-family: "Source-Sans-Pro-Light";
-  /*!!!*/
 }
 
-@media (min-width: 320px) and (max-width: 420px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+@media screen and (max-width: 319px) {
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     margin-left: 4%;
     margin-right: 4%;
+    font-size: 23px;
+    font-size: 1.4375rem;
+    line-height: 29px;
+    line-height: 1.8125rem;
+    margin-bottom: 17px;
+    margin-bottom: 1.0625rem;
   }
 }
 
-@media (min-width: 421px) and (max-width: 520px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+@media (min-width: 320px) and (max-width: 436px) {
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     margin-left: 5%;
     margin-right: 5%;
   }
 }
 
-@media (min-width: 521px) and (max-width: 621px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+@media (min-width: 437px) and (max-width: 554px) {
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     margin-left: 6%;
     margin-right: 6%;
   }
 }
 
-@media (min-width: 622px) and (max-width: 721px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+@media (min-width: 555px) and (max-width: 671px) {
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     margin-left: 7%;
     margin-right: 7%;
   }
 }
 
-@media (min-width: 722px) and (max-width: 822px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+@media (min-width: 672px) and (max-width: 788px) {
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     margin-left: 8%;
     margin-right: 8%;
   }
 }
 
-@media (min-width: 823px) and (max-width: 922px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+@media (min-width: 789px) and (max-width: 906px) {
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     margin-left: 9%;
     margin-right: 9%;
   }
 }
 
-@media (min-width: 923px) and (max-width: 1023px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+@media (min-width: 907px) and (max-width: 1023px) {
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     margin-left: 10%;
     margin-right: 10%;
@@ -4601,7 +5269,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     margin-left: 11%;
     margin-right: 11%;
@@ -4609,7 +5277,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 320px) and (max-width: 373px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 24px;
     font-size: 1.5rem;
@@ -4621,7 +5289,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 374px) and (max-width: 427px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 25px;
     font-size: 1.5625rem;
@@ -4633,7 +5301,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 428px) and (max-width: 481px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 26px;
     font-size: 1.625rem;
@@ -4645,7 +5313,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 482px) and (max-width: 536px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 27px;
     font-size: 1.6875rem;
@@ -4657,7 +5325,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 537px) and (max-width: 590px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 28px;
     font-size: 1.75rem;
@@ -4669,7 +5337,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 591px) and (max-width: 644px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 29px;
     font-size: 1.8125rem;
@@ -4681,7 +5349,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 645px) and (max-width: 698px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 30px;
     font-size: 1.875rem;
@@ -4693,7 +5361,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 699px) and (max-width: 752px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 31px;
     font-size: 1.9375rem;
@@ -4705,7 +5373,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 753px) and (max-width: 806px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 32px;
     font-size: 2rem;
@@ -4717,7 +5385,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 807px) and (max-width: 861px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 33px;
     font-size: 2.0625rem;
@@ -4729,7 +5397,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 862px) and (max-width: 915px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 34px;
     font-size: 2.125rem;
@@ -4741,7 +5409,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 916px) and (max-width: 969px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 35px;
     font-size: 2.1875rem;
@@ -4753,7 +5421,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 970px) and (max-width: 1023px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 36px;
     font-size: 2.25rem;
@@ -4765,7 +5433,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1024px) and (max-width: 1066px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 28px;
     font-size: 1.75rem;
@@ -4777,7 +5445,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1067px) and (max-width: 1109px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 29px;
     font-size: 1.8125rem;
@@ -4789,7 +5457,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1110px) and (max-width: 1152px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 30px;
     font-size: 1.875rem;
@@ -4801,7 +5469,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1153px) and (max-width: 1195px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 31px;
     font-size: 1.9375rem;
@@ -4813,7 +5481,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1196px) and (max-width: 1238px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 32px;
     font-size: 2rem;
@@ -4825,7 +5493,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1239px) and (max-width: 1281px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 33px;
     font-size: 2.0625rem;
@@ -4837,7 +5505,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1282px) and (max-width: 1324px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 34px;
     font-size: 2.125rem;
@@ -4849,7 +5517,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1325px) and (max-width: 1367px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 35px;
     font-size: 2.1875rem;
@@ -4861,7 +5529,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1368px) {
-  /* line 217, src/sass/sections/_announcement.scss */
+  /* line 294, src/sass/sections/_announcement.scss */
   .announcement .panel h2 {
     font-size: 36px;
     font-size: 2.25rem;
@@ -4872,69 +5540,12 @@ header .button + ul li ul li {
   }
 }
 
-/* line 257, src/sass/sections/_announcement.scss */
+/* line 344, src/sass/sections/_announcement.scss */
 .announcement .panel p {
   background-color: rgba(0, 255, 255, 0.2);
-  /*!!!*/
 }
 
-@media (min-width: 320px) and (max-width: 436px) {
-  /* line 257, src/sass/sections/_announcement.scss */
-  .announcement .panel p {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-}
-
-@media (min-width: 437px) and (max-width: 554px) {
-  /* line 257, src/sass/sections/_announcement.scss */
-  .announcement .panel p {
-    margin-left: 6%;
-    margin-right: 6%;
-  }
-}
-
-@media (min-width: 555px) and (max-width: 671px) {
-  /* line 257, src/sass/sections/_announcement.scss */
-  .announcement .panel p {
-    margin-left: 7%;
-    margin-right: 7%;
-  }
-}
-
-@media (min-width: 672px) and (max-width: 788px) {
-  /* line 257, src/sass/sections/_announcement.scss */
-  .announcement .panel p {
-    margin-left: 8%;
-    margin-right: 8%;
-  }
-}
-
-@media (min-width: 789px) and (max-width: 906px) {
-  /* line 257, src/sass/sections/_announcement.scss */
-  .announcement .panel p {
-    margin-left: 9%;
-    margin-right: 9%;
-  }
-}
-
-@media (min-width: 907px) and (max-width: 1023px) {
-  /* line 257, src/sass/sections/_announcement.scss */
-  .announcement .panel p {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  /* line 257, src/sass/sections/_announcement.scss */
-  .announcement .panel p {
-    margin-left: 11%;
-    margin-right: 11%;
-  }
-}
-
-/* line 274, src/sass/sections/_announcement.scss */
+/* line 356, src/sass/sections/_announcement.scss */
 .announcement .panel p:first-child {
   margin-top: 60px;
   margin-top: 3.75rem;
@@ -4942,15 +5553,88 @@ header .button + ul li ul li {
   margin-bottom: 3.75rem;
 }
 
+@media screen and (max-width: 319px) {
+  /* line 344, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 26px;
+    line-height: 1.625rem;
+  }
+  /* line 376, src/sass/sections/_announcement.scss */
+  .announcement .panel p:not(:first-child) {
+    margin-bottom: 35px;
+    margin-bottom: 2.1875rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 436px) {
+  /* line 344, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media (min-width: 437px) and (max-width: 554px) {
+  /* line 344, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
+
+@media (min-width: 555px) and (max-width: 671px) {
+  /* line 344, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
+
+@media (min-width: 672px) and (max-width: 788px) {
+  /* line 344, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+
+@media (min-width: 789px) and (max-width: 906px) {
+  /* line 344, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    margin-left: 9%;
+    margin-right: 9%;
+  }
+}
+
+@media (min-width: 907px) and (max-width: 1023px) {
+  /* line 344, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 344, src/sass/sections/_announcement.scss */
+  .announcement .panel p {
+    margin-left: 11%;
+    margin-right: 11%;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 554px) {
-  /* line 257, src/sass/sections/_announcement.scss */
+  /* line 344, src/sass/sections/_announcement.scss */
   .announcement .panel p {
     font-size: 16px;
     font-size: 1rem;
     line-height: 27px;
     line-height: 1.6875rem;
   }
-  /* line 63, src/sass/sections/_announcement.scss */
+  /* line 105, src/sass/sections/_announcement.scss */
   .announcement .panel p:not(:first-child) {
     margin-bottom: 38px;
     margin-bottom: 2.375rem;
@@ -4958,14 +5642,14 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 555px) and (max-width: 788px) {
-  /* line 257, src/sass/sections/_announcement.scss */
+  /* line 344, src/sass/sections/_announcement.scss */
   .announcement .panel p {
     font-size: 17px;
     font-size: 1.0625rem;
     line-height: 28px;
     line-height: 1.75rem;
   }
-  /* line 63, src/sass/sections/_announcement.scss */
+  /* line 105, src/sass/sections/_announcement.scss */
   .announcement .panel p:not(:first-child) {
     margin-bottom: 41px;
     margin-bottom: 2.5625rem;
@@ -4973,14 +5657,14 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 789px) and (max-width: 1023px) {
-  /* line 257, src/sass/sections/_announcement.scss */
+  /* line 344, src/sass/sections/_announcement.scss */
   .announcement .panel p {
     font-size: 18px;
     font-size: 1.125rem;
     line-height: 30px;
     line-height: 1.875rem;
   }
-  /* line 63, src/sass/sections/_announcement.scss */
+  /* line 105, src/sass/sections/_announcement.scss */
   .announcement .panel p:not(:first-child) {
     margin-bottom: 43px;
     margin-bottom: 2.6875rem;
@@ -4988,14 +5672,14 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1024px) and (max-width: 1195px) {
-  /* line 257, src/sass/sections/_announcement.scss */
+  /* line 344, src/sass/sections/_announcement.scss */
   .announcement .panel p {
     font-size: 16px;
     font-size: 1rem;
     line-height: 27px;
     line-height: 1.6875rem;
   }
-  /* line 63, src/sass/sections/_announcement.scss */
+  /* line 105, src/sass/sections/_announcement.scss */
   .announcement .panel p:not(:first-child) {
     margin-bottom: 38px;
     margin-bottom: 2.375rem;
@@ -5003,14 +5687,14 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1196px) and (max-width: 1367px) {
-  /* line 257, src/sass/sections/_announcement.scss */
+  /* line 344, src/sass/sections/_announcement.scss */
   .announcement .panel p {
     font-size: 17px;
     font-size: 1.0625rem;
     line-height: 28px;
     line-height: 1.75rem;
   }
-  /* line 63, src/sass/sections/_announcement.scss */
+  /* line 105, src/sass/sections/_announcement.scss */
   .announcement .panel p:not(:first-child) {
     margin-bottom: 41px;
     margin-bottom: 2.5625rem;
@@ -5018,27 +5702,27 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1368px) {
-  /* line 257, src/sass/sections/_announcement.scss */
+  /* line 344, src/sass/sections/_announcement.scss */
   .announcement .panel p {
     font-size: 18px;
     font-size: 1.125rem;
     line-height: 30px;
     line-height: 1.875rem;
   }
-  /* line 296, src/sass/sections/_announcement.scss */
+  /* line 399, src/sass/sections/_announcement.scss */
   .announcement .panel p:not(:first-child) {
     margin-bottom: 43px;
     margin-bottom: 2.6875rem;
   }
 }
 
-/* line 304, src/sass/sections/_announcement.scss */
+/* line 407, src/sass/sections/_announcement.scss */
 .announcement .panel p a {
   color: #ffffff;
   text-decoration: none;
 }
 
-/* line 317, src/sass/sections/_announcement.scss */
+/* line 420, src/sass/sections/_announcement.scss */
 .announcement .col {
   padding-top: 70px;
   padding-top: 4.375rem;
@@ -5047,19 +5731,19 @@ header .button + ul li ul li {
   vertical-align: middle;
 }
 
-/* line 326, src/sass/sections/_announcement.scss */
+/* line 429, src/sass/sections/_announcement.scss */
 .announcement .col:first-child {
   padding-left: 10%;
   padding-right: 5%;
 }
 
-/* line 330, src/sass/sections/_announcement.scss */
+/* line 433, src/sass/sections/_announcement.scss */
 .announcement .col:last-child {
   padding-left: 5%;
   padding-right: 10%;
 }
 
-/* line 335, src/sass/sections/_announcement.scss */
+/* line 438, src/sass/sections/_announcement.scss */
 .announcement .col h2 {
   color: #161d28;
   font-family: "Source-Sans-Pro-Light";
@@ -5069,7 +5753,7 @@ header .button + ul li ul li {
   line-height: 2.8125rem;
 }
 
-/* line 342, src/sass/sections/_announcement.scss */
+/* line 445, src/sass/sections/_announcement.scss */
 .announcement .col p,
 .announcement .col ul {
   color: #5c666f;
@@ -5079,33 +5763,33 @@ header .button + ul li ul li {
   line-height: 1.875rem;
 }
 
-/* line 350, src/sass/sections/_announcement.scss */
+/* line 453, src/sass/sections/_announcement.scss */
 .announcement .col p a,
 .announcement .col ul a {
   color: #894ea2;
   text-decoration: none;
 }
 
-/* line 356, src/sass/sections/_announcement.scss */
+/* line 459, src/sass/sections/_announcement.scss */
 .announcement .col p {
   margin-top: 32px;
   margin-top: 2rem;
 }
 
-/* line 361, src/sass/sections/_announcement.scss */
+/* line 464, src/sass/sections/_announcement.scss */
 .announcement .col ul {
   position: relative;
   margin-left: 24px;
   margin-left: 1.5rem;
 }
 
-/* line 370, src/sass/sections/_announcement.scss */
+/* line 473, src/sass/sections/_announcement.scss */
 .announcement .col ul li {
   margin-top: 18px;
   margin-top: 1.125rem;
 }
 
-/* line 373, src/sass/sections/_announcement.scss */
+/* line 476, src/sass/sections/_announcement.scss */
 .announcement .col ul li:before {
   content: "—";
   position: absolute;
@@ -5113,12 +5797,12 @@ header .button + ul li ul li {
   left: -1.5rem;
 }
 
-/* line 381, src/sass/sections/_announcement.scss */
+/* line 484, src/sass/sections/_announcement.scss */
 .announcement .col ul li p {
   margin-top: 0;
 }
 
-/* line 387, src/sass/sections/_announcement.scss */
+/* line 490, src/sass/sections/_announcement.scss */
 .announcement .col img {
   vertical-align: middle;
   margin: 0;

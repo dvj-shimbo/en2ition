@@ -3,6 +3,8 @@
 
 @mixin announcement-panel ($media-min, $media-max, $padding-min, $padding-max) {
 
+	
+
 	$d: ($padding-max - $padding-min) / 1px;
 	@for $i from 0 through $d {
 		$step: ($media-max - $media-min) / ($d + 1);
@@ -13,6 +15,46 @@
 
 			@include rem(padding-top, $padding);
 
+		}
+	}
+}
+
+
+@mixin announcement-img ($media-min, $media-max, $margin-min, $margin-max) {
+
+	
+
+	$d: ($margin-max - $margin-min) / 1px;
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+		@include media('>=' + round($min), '<' + round($max)) {
+			$margin: $i + $margin-min;
+
+			@include rem(margin-top, $margin);
+
+		}
+	}
+}
+
+
+@mixin announcement-h1 ($media-min, $media-max, $font-size-min, $font-size-max) {
+
+	/*!!!*/
+
+	$d: ($font-size-max - $font-size-min) / 1px;
+	@for $i from 0 through $d {
+		$step: ($media-max - $media-min) / ($d + 1);
+		$min: $i * $step + $media-min;
+		$max: $min + $step;
+		@include media('>=' + round($min), '<' + round($max)) {
+			$font-size: $i + $font-size-min;
+
+			@include rem(font-size, $font-size);
+
+			@include rem(padding-top, round($font-size * 1.67));
+
 //			@include rem(line-height, round($font-size * 1.25));
 //			@include rem(margin-bottom, round($font-size * 0.75));
 
@@ -21,9 +63,9 @@
 }
 
 
-
-
 @mixin announcement-h2 ($media-min, $media-max, $font-size-min, $font-size-max) {
+
+	
 
 	$d: ($font-size-max - $font-size-min) / 1px;
 	@for $i from 0 through $d {
@@ -74,7 +116,7 @@
 @mixin announcement-panel-text-margin ($media-min, $media-max, $margin-min, $margin-max) {
 
 
-	/*!!!*/
+	
 
 
 	$d: ($margin-max - $margin-min) / 1%;
@@ -129,15 +171,32 @@
 		color: $font-color;
 
 		font-family: "Source-Sans-Pro-Light";
-		@include rem(font-size, 48px);
 
-//		margin: 80px 7%;
-//		@include rem(margin-top, 80px);
-//		@include rem(margin-top, 80px);
-		@include rem(padding-top, 80px);
+//		@include rem(font-size, 48px);
+//		@include rem(padding-top, 80px);
 
-		margin-left: 7%;
-		margin-right: 7%;
+//		margin-left: 7%;
+//		margin-right: 7%;
+
+		@include media('screen', '<320px') {
+			margin-left: 4%;
+			margin-right: 4%;
+			@include rem(font-size, 27px);
+			@include rem(padding-top, 46px);
+		}
+
+		@include announcement-panel-text-margin (320px, 1024px, 5%, 6%);
+
+		@include announcement-h1 (320px, 1024px, 28px, 47px);
+
+		@include media('screen', '>=1024px') {
+			margin-left: 7%;
+			margin-right: 7%;
+			@include rem(font-size, 48px);
+			@include rem(padding-top, 80px);
+		}
+
+
 
 	}
 
@@ -147,7 +206,21 @@
 
 		vertical-align: top;
 		margin-left: 5%;
-		@include rem(margin-top, 88px);
+
+
+//		@include rem(margin-top, 88px);
+
+		@include media('screen', '<320px') {
+			@include rem(margin-top, 37px);
+		}
+
+		@include announcement-img (320px, 1024px, 38px, 87px);
+
+		@include media('screen', '>=1024px') {
+			@include rem(margin-top, 88px);
+		}
+
+
 
 		@include media('screen', '<tablet-wide') {
 			width: 90%;
@@ -204,6 +277,10 @@
 //		@include rem(padding-top, 48px);
 
 
+		@include media('screen', '<320px') {
+			@include rem(padding-top, 29px);
+		}
+
 		@include announcement-panel (320px, 1024px, 30px, 48px);
 
 		@include announcement-panel (1024px, 1368px, 42px, 47px);
@@ -224,18 +301,28 @@
 //			margin-right: 11%;
 
 			
-			@include announcement-panel-text-margin (320px, 1024px, 4%, 10%);
-
-			@include media('screen', '>=1024px') {
-				margin-left: 11%;
-				margin-right: 11%;
-			}
+			
 
 
 //			@include rem(font-size, 36px);
 //			@include rem(line-height, 45px);
 //			@include rem(margin-bottom, 27px);
 
+			@include media('screen', '<320px') {
+				margin-left: 4%;
+				margin-right: 4%;
+				@include rem(font-size, 23px);
+				@include rem(line-height, 29px);
+				@include rem(margin-bottom, 17px);
+			}
+
+
+			@include announcement-panel-text-margin (320px, 1024px, 5%, 10%);
+
+			@include media('screen', '>=1024px') {
+				margin-left: 11%;
+				margin-right: 11%;
+			}
 
 
 			@include announcement-h2 (320px, 1024px, 24px, 36px);
@@ -264,12 +351,7 @@
 //			margin-left: 11%;
 //			margin-right: 11%;
 
-			@include announcement-panel-text-margin (320px, 1024px, 5%, 10%);
 
-			@include media('screen', '>=1024px') {
-				margin-left: 11%;
-				margin-right: 11%;
-			}
 
 			&:first-child {
 //				background-color: red;
@@ -282,6 +364,27 @@
 ////				background-color: red;
 //				@include rem(margin-bottom, 43px);
 //			}
+
+
+			@include media('screen', '<320px') {
+				margin-left: 4%;
+				margin-right: 4%;
+
+				@include rem(font-size, 15px);
+				@include rem(line-height, 26px);
+
+				&:not(:first-child) {
+					@include rem(margin-bottom, 35px);
+				}
+
+			}
+
+			@include announcement-panel-text-margin (320px, 1024px, 5%, 10%);
+
+			@include media('screen', '>=1024px') {
+				margin-left: 11%;
+				margin-right: 11%;
+			}
 
 			
 			@include announcement-p (320px, 1024px, 16px, 18px);
