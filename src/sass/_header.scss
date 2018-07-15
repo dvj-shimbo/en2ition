@@ -81,15 +81,15 @@
 
 
 
-/**/
+
 body {
 
 
-/**
-	.banner-top,
+/**/
+//	.banner-top,
 //	section,
 //	.group,
-//	footer 
+	footer 
 	{
 		display: none;
 	}
@@ -446,8 +446,8 @@ header {
 
 
 			&:before {
-//				background-color: rgba(0,255,255,0.5);
-				background-color: $light-gray;
+				background-color: rgba(0,255,255,0.5);
+//				background-color: $light-gray;
 	
 				content: "";
 				position: absolute;
