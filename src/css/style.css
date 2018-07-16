@@ -156,6 +156,36 @@ table {
   font-style: italic;
 }
 
+/**************************** Icon Font *****************************/
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons/icons.eot?3b6f4cfe5e05f7ee7815103d866a28de?#iefix") format("embedded-opentype"), url("../fonts/icons/icons.woff2?3b6f4cfe5e05f7ee7815103d866a28de") format("woff2"), url("../fonts/icons/icons.woff?3b6f4cfe5e05f7ee7815103d866a28de") format("woff"), url("../fonts/icons/icons.ttf?3b6f4cfe5e05f7ee7815103d866a28de") format("truetype"), url("../fonts/icons/icons.svg?3b6f4cfe5e05f7ee7815103d866a28de#icons") format("svg");
+}
+
+/* line 11, src/icon-font-generator/_icons.scss */
+[class*="icon-"]:before {
+  font-family: icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  vertical-align: top;
+  line-height: 1;
+}
+
+/* line 19, src/icon-font-generator/_icons.scss */
+.icon-arrow-right:before {
+  content: "\f101";
+}
+
+/* line 22, src/icon-font-generator/_icons.scss */
+.icon-chevron-down:before {
+  content: "\f102";
+}
+
+/* line 25, src/icon-font-generator/_icons.scss */
+.icon-chevron-up:before {
+  content: "\f103";
+}
+
 /*************************** Base Styles ****************************/
 /**
 html,
@@ -174,8 +204,8 @@ body {
   background-color: #f2f3f3;
   overflow-x: hidden;
   /**
-	background-image: url(../img/dev/Home-Page_tablet-768x1024_2.png);
-//	background-image: url(../img/dev/Home-Page_desktop.png);
+//	background-image: url(../img/dev/Home-Page_tablet-768x1024_2.png);
+	background-image: url(../img/dev/Home-Page_desktop.png);
 	background-repeat: no-repeat;
 /**/
   font-family: "Source-Sans-Pro";
@@ -2266,27 +2296,40 @@ header .button + ul li ul li {
     left: -2.625rem;
     width: 100%;
   }
-  /* line 682, src/sass/_header.scss */
+  /* line 685, src/sass/_header.scss */
+  header ul li ul:not(.active):after {
+    font-family: "icons";
+    content: "\f102";
+    font-size: 6px;
+    font-size: 0.375rem;
+    float: right;
+    -moz-transform: translate(0, -120%);
+    -o-transform: translate(0, -120%);
+    -ms-transform: translate(0, -120%);
+    -webkit-transform: translate(0, -120%);
+    transform: translate(0, -120%);
+  }
+  /* line 696, src/sass/_header.scss */
   header ul li ul:not(.active) li {
     display: none;
   }
-  /* line 689, src/sass/_header.scss */
+  /* line 703, src/sass/_header.scss */
   header ul li ul.active {
     left: -42px;
     left: -2.625rem;
     width: 170%;
   }
-  /* line 711, src/sass/_header.scss */
+  /* line 725, src/sass/_header.scss */
   header ul li ul li {
     background-color: #894ea2;
     color: #161d28;
   }
-  /* line 725, src/sass/_header.scss */
+  /* line 739, src/sass/_header.scss */
   header ul li ul li:first-child {
     padding-top: 14px;
     padding-top: 0.875rem;
   }
-  /* line 729, src/sass/_header.scss */
+  /* line 743, src/sass/_header.scss */
   header ul li ul li:first-child:before {
     position: absolute;
     content: "";
@@ -2299,7 +2342,7 @@ header .button + ul li ul li {
     border-width: 0 0.875rem 0.875rem 0.875rem;
     border-color: transparent transparent #894ea2 transparent;
   }
-  /* line 745, src/sass/_header.scss */
+  /* line 759, src/sass/_header.scss */
   header ul li ul li:not(:first-child):before {
     content: "";
     position: relative;
@@ -2311,25 +2354,25 @@ header .button + ul li ul li {
     top: -8px;
     top: -0.5rem;
   }
-  /* line 757, src/sass/_header.scss */
+  /* line 771, src/sass/_header.scss */
   header ul li ul li:not(:first-child) {
     padding-top: 8px;
     padding-top: 0.5rem;
   }
-  /* line 761, src/sass/_header.scss */
+  /* line 775, src/sass/_header.scss */
   header ul li ul li:last-child {
     padding-bottom: 14px;
     padding-bottom: 0.875rem;
   }
-  /* line 767, src/sass/_header.scss */
+  /* line 781, src/sass/_header.scss */
   header ul li ul li a {
     color: #ffffff;
   }
-  /* line 769, src/sass/_header.scss */
+  /* line 783, src/sass/_header.scss */
   header ul li ul li a:hover {
     color: #161d28;
   }
-  /* line 788, src/sass/_header.scss */
+  /* line 802, src/sass/_header.scss */
   header .button {
     float: right;
     margin-right: 5%;
@@ -2337,7 +2380,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1024px) and (max-width: 1060px) {
-  /* line 799, src/sass/_header.scss */
+  /* line 813, src/sass/_header.scss */
   header ul li {
     padding: 0 16px 8px;
     padding: 0 1rem 0.5rem;
@@ -2345,7 +2388,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1061px) and (max-width: 1098px) {
-  /* line 799, src/sass/_header.scss */
+  /* line 813, src/sass/_header.scss */
   header ul li {
     padding: 0 17px 8px;
     padding: 0 1.0625rem 0.5rem;
@@ -2353,7 +2396,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1099px) and (max-width: 1135px) {
-  /* line 799, src/sass/_header.scss */
+  /* line 813, src/sass/_header.scss */
   header ul li {
     padding: 0 18px 8px;
     padding: 0 1.125rem 0.5rem;
@@ -2361,7 +2404,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1136px) and (max-width: 1172px) {
-  /* line 799, src/sass/_header.scss */
+  /* line 813, src/sass/_header.scss */
   header ul li {
     padding: 0 19px 8px;
     padding: 0 1.1875rem 0.5rem;
@@ -2369,7 +2412,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1173px) and (max-width: 1210px) {
-  /* line 799, src/sass/_header.scss */
+  /* line 813, src/sass/_header.scss */
   header ul li {
     padding: 0 20px 8px;
     padding: 0 1.25rem 0.5rem;
@@ -2377,7 +2420,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1211px) and (max-width: 1247px) {
-  /* line 799, src/sass/_header.scss */
+  /* line 813, src/sass/_header.scss */
   header ul li {
     padding: 0 21px 8px;
     padding: 0 1.3125rem 0.5rem;
@@ -2385,7 +2428,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1248px) {
-  /* line 799, src/sass/_header.scss */
+  /* line 813, src/sass/_header.scss */
   header ul li {
     padding: 0 22px 8px;
     padding: 0 1.375rem 0.5rem;
@@ -5993,18 +6036,25 @@ header .button + ul li ul li {
   text-decoration: none;
 }
 
-/* line 603, src/sass/sections/_announcement.scss */
+/* line 591, src/sass/sections/_announcement.scss */
+.announcement .panel p a:after {
+  font-family: "icons";
+  content: "\00a0\00a0\00a0\f101";
+  vertical-align: middle;
+}
+
+/* line 611, src/sass/sections/_announcement.scss */
 .announcement .col-tablet-wide {
   vertical-align: middle;
 }
 
-/* line 615, src/sass/sections/_announcement.scss */
+/* line 623, src/sass/sections/_announcement.scss */
 .announcement .col-tablet-wide:first-child {
   padding-right: 5%;
 }
 
 @media screen and (max-width: 319px) {
-  /* line 615, src/sass/sections/_announcement.scss */
+  /* line 623, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide:first-child {
     padding-top: 4px;
     padding-top: 0.25rem;
@@ -6014,7 +6064,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 320px) and (max-width: 383px) {
-  /* line 615, src/sass/sections/_announcement.scss */
+  /* line 623, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide:first-child {
     padding-top: 10px;
     padding-top: 0.625rem;
@@ -6024,7 +6074,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 384px) and (max-width: 447px) {
-  /* line 615, src/sass/sections/_announcement.scss */
+  /* line 623, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide:first-child {
     padding-top: 11px;
     padding-top: 0.6875rem;
@@ -6034,7 +6084,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 448px) and (max-width: 511px) {
-  /* line 615, src/sass/sections/_announcement.scss */
+  /* line 623, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide:first-child {
     padding-top: 12px;
     padding-top: 0.75rem;
@@ -6044,7 +6094,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 512px) and (max-width: 575px) {
-  /* line 615, src/sass/sections/_announcement.scss */
+  /* line 623, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide:first-child {
     padding-top: 13px;
     padding-top: 0.8125rem;
@@ -6054,7 +6104,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 576px) and (max-width: 639px) {
-  /* line 615, src/sass/sections/_announcement.scss */
+  /* line 623, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide:first-child {
     padding-top: 14px;
     padding-top: 0.875rem;
@@ -6064,7 +6114,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 640px) and (max-width: 703px) {
-  /* line 615, src/sass/sections/_announcement.scss */
+  /* line 623, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide:first-child {
     padding-top: 15px;
     padding-top: 0.9375rem;
@@ -6074,7 +6124,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 704px) and (max-width: 767px) {
-  /* line 615, src/sass/sections/_announcement.scss */
+  /* line 623, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide:first-child {
     padding-top: 16px;
     padding-top: 1rem;
@@ -6084,7 +6134,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 768px) and (max-width: 831px) {
-  /* line 615, src/sass/sections/_announcement.scss */
+  /* line 623, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide:first-child {
     padding-top: 17px;
     padding-top: 1.0625rem;
@@ -6094,7 +6144,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 832px) and (max-width: 895px) {
-  /* line 615, src/sass/sections/_announcement.scss */
+  /* line 623, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide:first-child {
     padding-top: 18px;
     padding-top: 1.125rem;
@@ -6104,7 +6154,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 896px) and (max-width: 959px) {
-  /* line 615, src/sass/sections/_announcement.scss */
+  /* line 623, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide:first-child {
     padding-top: 19px;
     padding-top: 1.1875rem;
@@ -6114,7 +6164,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 960px) and (max-width: 1023px) {
-  /* line 615, src/sass/sections/_announcement.scss */
+  /* line 623, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide:first-child {
     padding-top: 20px;
     padding-top: 1.25rem;
@@ -6124,11 +6174,11 @@ header .button + ul li ul li {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 633, src/sass/sections/_announcement.scss */
+  /* line 641, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide:first-child {
     padding-left: 5%;
   }
-  /* line 642, src/sass/sections/_announcement.scss */
+  /* line 650, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2,
   .announcement .col-tablet-wide p,
   .announcement .col-tablet-wide ul {
@@ -6139,34 +6189,34 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 603, src/sass/sections/_announcement.scss */
+  /* line 611, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide {
     padding-top: 70px;
     padding-top: 4.375rem;
     padding-bottom: 74px;
     padding-bottom: 4.625rem;
   }
-  /* line 656, src/sass/sections/_announcement.scss */
+  /* line 664, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide:first-child {
     padding-left: 10%;
   }
 }
 
-/* line 664, src/sass/sections/_announcement.scss */
+/* line 672, src/sass/sections/_announcement.scss */
 .announcement .col-tablet-wide h2 {
   color: #161d28;
   font-family: "Source-Sans-Pro-Light";
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     margin-top: 14%;
   }
 }
 
 @media screen and (max-width: 319px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 23px;
     font-size: 1.4375rem;
@@ -6176,7 +6226,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 320px) and (max-width: 373px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 24px;
     font-size: 1.5rem;
@@ -6186,7 +6236,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 374px) and (max-width: 427px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 25px;
     font-size: 1.5625rem;
@@ -6196,7 +6246,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 428px) and (max-width: 481px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 26px;
     font-size: 1.625rem;
@@ -6206,7 +6256,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 482px) and (max-width: 536px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 27px;
     font-size: 1.6875rem;
@@ -6216,7 +6266,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 537px) and (max-width: 590px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 28px;
     font-size: 1.75rem;
@@ -6226,7 +6276,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 591px) and (max-width: 644px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 29px;
     font-size: 1.8125rem;
@@ -6236,7 +6286,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 645px) and (max-width: 698px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 30px;
     font-size: 1.875rem;
@@ -6246,7 +6296,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 699px) and (max-width: 752px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 31px;
     font-size: 1.9375rem;
@@ -6256,7 +6306,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 753px) and (max-width: 806px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 32px;
     font-size: 2rem;
@@ -6266,7 +6316,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 807px) and (max-width: 861px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 33px;
     font-size: 2.0625rem;
@@ -6276,7 +6326,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 862px) and (max-width: 915px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 34px;
     font-size: 2.125rem;
@@ -6286,7 +6336,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 916px) and (max-width: 969px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 35px;
     font-size: 2.1875rem;
@@ -6296,7 +6346,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 970px) and (max-width: 1023px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 36px;
     font-size: 2.25rem;
@@ -6306,7 +6356,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1024px) and (max-width: 1066px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 28px;
     font-size: 1.75rem;
@@ -6316,7 +6366,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1067px) and (max-width: 1109px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 29px;
     font-size: 1.8125rem;
@@ -6326,7 +6376,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1110px) and (max-width: 1152px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 30px;
     font-size: 1.875rem;
@@ -6336,7 +6386,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1153px) and (max-width: 1195px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 31px;
     font-size: 1.9375rem;
@@ -6346,7 +6396,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1196px) and (max-width: 1238px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 32px;
     font-size: 2rem;
@@ -6356,7 +6406,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1239px) and (max-width: 1281px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 33px;
     font-size: 2.0625rem;
@@ -6366,7 +6416,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1282px) and (max-width: 1324px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 34px;
     font-size: 2.125rem;
@@ -6376,7 +6426,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1325px) and (max-width: 1367px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 35px;
     font-size: 2.1875rem;
@@ -6386,7 +6436,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1368px) {
-  /* line 664, src/sass/sections/_announcement.scss */
+  /* line 672, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide h2 {
     font-size: 36px;
     font-size: 2.25rem;
@@ -6395,14 +6445,14 @@ header .button + ul li ul li {
   }
 }
 
-/* line 696, src/sass/sections/_announcement.scss */
+/* line 704, src/sass/sections/_announcement.scss */
 .announcement .col-tablet-wide p,
 .announcement .col-tablet-wide ul {
   color: #5c666f;
 }
 
 @media screen and (max-width: 319px) {
-  /* line 696, src/sass/sections/_announcement.scss */
+  /* line 704, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide p,
   .announcement .col-tablet-wide ul {
     font-size: 15px;
@@ -6413,7 +6463,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 320px) and (max-width: 554px) {
-  /* line 696, src/sass/sections/_announcement.scss */
+  /* line 704, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide p,
   .announcement .col-tablet-wide ul {
     font-size: 16px;
@@ -6424,7 +6474,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 555px) and (max-width: 788px) {
-  /* line 696, src/sass/sections/_announcement.scss */
+  /* line 704, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide p,
   .announcement .col-tablet-wide ul {
     font-size: 17px;
@@ -6435,7 +6485,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 789px) and (max-width: 1023px) {
-  /* line 696, src/sass/sections/_announcement.scss */
+  /* line 704, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide p,
   .announcement .col-tablet-wide ul {
     font-size: 18px;
@@ -6446,7 +6496,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1024px) and (max-width: 1195px) {
-  /* line 696, src/sass/sections/_announcement.scss */
+  /* line 704, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide p,
   .announcement .col-tablet-wide ul {
     font-size: 16px;
@@ -6457,7 +6507,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1196px) and (max-width: 1367px) {
-  /* line 696, src/sass/sections/_announcement.scss */
+  /* line 704, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide p,
   .announcement .col-tablet-wide ul {
     font-size: 17px;
@@ -6468,7 +6518,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1368px) {
-  /* line 696, src/sass/sections/_announcement.scss */
+  /* line 704, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide p,
   .announcement .col-tablet-wide ul {
     font-size: 18px;
@@ -6478,15 +6528,23 @@ header .button + ul li ul li {
   }
 }
 
-/* line 723, src/sass/sections/_announcement.scss */
+/* line 731, src/sass/sections/_announcement.scss */
 .announcement .col-tablet-wide p a,
 .announcement .col-tablet-wide ul a {
   color: #894ea2;
   text-decoration: none;
 }
 
+/* line 736, src/sass/sections/_announcement.scss */
+.announcement .col-tablet-wide p a:after,
+.announcement .col-tablet-wide ul a:after {
+  font-family: "icons";
+  content: "\00a0\00a0\00a0\00a0\00a0\f101";
+  vertical-align: middle;
+}
+
 @media screen and (max-width: 319px) {
-  /* line 729, src/sass/sections/_announcement.scss */
+  /* line 745, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide p {
     margin-top: 26px;
     margin-top: 1.625rem;
@@ -6494,7 +6552,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 320px) and (max-width: 554px) {
-  /* line 729, src/sass/sections/_announcement.scss */
+  /* line 745, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide p {
     margin-top: 28px;
     margin-top: 1.75rem;
@@ -6502,7 +6560,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 555px) and (max-width: 788px) {
-  /* line 729, src/sass/sections/_announcement.scss */
+  /* line 745, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide p {
     margin-top: 30px;
     margin-top: 1.875rem;
@@ -6510,7 +6568,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 789px) and (max-width: 1023px) {
-  /* line 729, src/sass/sections/_announcement.scss */
+  /* line 745, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide p {
     margin-top: 32px;
     margin-top: 2rem;
@@ -6518,7 +6576,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1024px) and (max-width: 1195px) {
-  /* line 729, src/sass/sections/_announcement.scss */
+  /* line 745, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide p {
     margin-top: 28px;
     margin-top: 1.75rem;
@@ -6526,7 +6584,7 @@ header .button + ul li ul li {
 }
 
 @media (min-width: 1196px) and (max-width: 1367px) {
-  /* line 729, src/sass/sections/_announcement.scss */
+  /* line 745, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide p {
     margin-top: 30px;
     margin-top: 1.875rem;
@@ -6534,39 +6592,39 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1368px) {
-  /* line 729, src/sass/sections/_announcement.scss */
+  /* line 745, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide p {
     margin-top: 32px;
     margin-top: 2rem;
   }
 }
 
-/* line 747, src/sass/sections/_announcement.scss */
+/* line 763, src/sass/sections/_announcement.scss */
 .announcement .col-tablet-wide ul {
   position: relative;
   padding-left: 24px;
   padding-left: 1.5rem;
 }
 
-/* line 757, src/sass/sections/_announcement.scss */
+/* line 773, src/sass/sections/_announcement.scss */
 .announcement .col-tablet-wide ul li {
   margin-top: 18px;
   margin-top: 1.125rem;
 }
 
-/* line 760, src/sass/sections/_announcement.scss */
+/* line 776, src/sass/sections/_announcement.scss */
 .announcement .col-tablet-wide ul li:before {
   content: "—";
   position: absolute;
   left: 0;
 }
 
-/* line 769, src/sass/sections/_announcement.scss */
+/* line 785, src/sass/sections/_announcement.scss */
 .announcement .col-tablet-wide ul li p {
   margin-top: 0;
 }
 
-/* line 777, src/sass/sections/_announcement.scss */
+/* line 793, src/sass/sections/_announcement.scss */
 .announcement .col-tablet-wide img {
   background-color: red;
   vertical-align: middle;
@@ -6577,7 +6635,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 777, src/sass/sections/_announcement.scss */
+  /* line 793, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide img {
     width: 90%;
     max-width: 640px;
@@ -6586,7 +6644,7 @@ header .button + ul li ul li {
 }
 
 @media screen and (min-width: 1024px) {
-  /* line 777, src/sass/sections/_announcement.scss */
+  /* line 793, src/sass/sections/_announcement.scss */
   .announcement .col-tablet-wide img {
     width: 80%;
   }

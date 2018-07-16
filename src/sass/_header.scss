@@ -660,7 +660,7 @@ header {
 	
 				ul {
 	
-	//				background-color: rgba(0,255,0,0.8);
+//					background-color: rgba(0,255,0,0.6);
 	
 					position: absolute;
 	
@@ -674,10 +674,24 @@ header {
 	
 	
 					&:not(.active) {
+
+//						background-color: rgba(0,255,0,0.2);
+
 						cursor: pointer;			
 						@include rem(top, -18px);
 						@include rem(left, -42px);
 						width: 100%;
+
+						&:after {
+//							background-color: rgba(0,0,255,0.2);
+							font-family: "icons";
+							content: "\f102";
+							@include rem(font-size, 6px);
+//							display: block;
+							float: right;
+							@include translate (0, -120%);
+						}
+						
 	
 						li {
 							display: none;

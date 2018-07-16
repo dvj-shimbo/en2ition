@@ -54,14 +54,18 @@ $(window).on("load", function() {
 				var img = panel.prev();
 				if (img.css("max-width") === "768px") {
 
-//					var paddingPottom = panel.height() / 2;
 					var paddingPottom = panel.outerHeight() / 2;
 
-					if (paddingPottom > img.height() / 2) {
-						paddingPottom += paddingPottom - img.height() / 2;
+//					if (paddingPottom > img.height() / 2) {
+//						paddingPottom += paddingPottom - img.height() / 2;
+//					}
+
+					if (paddingPottom > img.height() / 5) {
+						paddingPottom += paddingPottom - img.height() / 5;
 					}
 
-//					console.log (img.height());
+//					console.log (paddingPottom + "   " + img.height() / 5);
+
 					
 //					console.log (panel.height() + "   " + panel.outerHeight());
 
